@@ -1,0 +1,16 @@
+package Liza;
+
+import org.bukkit.craftbukkit.CraftServer;
+
+public class LizaServer {
+	private final CraftServer cs;
+	
+	public LizaServer() {
+		
+	}
+	
+	private CraftServer getCraftServer() {
+		ThreadGroup rootGroup = Thread.currentThread().getThreadGroup();
+		
+	}
+}

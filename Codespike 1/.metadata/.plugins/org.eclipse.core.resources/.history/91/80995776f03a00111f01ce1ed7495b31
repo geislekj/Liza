@@ -1,0 +1,20 @@
+package DemoTest;
+
+import Liza.LizaPlayer;
+import Liza.LizaServer;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//start up the server
+		LizaServer ls = new LizaServer();
+		
+		System.out.println("hello there!");
+		
+		LizaPlayer lp = new LizaPlayer();
+		lp.connect();
+		
+		//shut down server
+		//ls.stop();
+	}
+}

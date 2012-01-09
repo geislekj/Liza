@@ -1,0 +1,43 @@
+package Liza;
+
+import net.minecraft.server.ThreadServerApplication;
+
+import org.bukkit.craftbukkit.CraftServer;
+
+public class LizaServer {
+	public static final String MINECRAFT_SERVER_THREAD_NAME = "Server thread";
+	public static final String MINECRAFT_SERVER_FIELD_NAME = "a";
+	
+	private final CraftServer cs;
+	
+	public LizaServer() {
+		
+	}
+	
+	private CraftServer getCraftServer() {
+		ThreadGroup rootGroup = Thread.currentThread().getThreadGroup();
+		
+		while (rootGroup.getParent() != null) {
+			rootGroup = rootGroup.getParent();
+		}
+		
+		Thread threads[] = new Thread[rootGroup.activeCount()];
+		
+		// activeCount() only provides an estimate for the number of
+		// running threads, so this loop ensures that all threads are
+		// captured.
+		while ( rootGroup.enumerate(threads, true) >= threads.length) {
+			threads = new Thread[threads.length * 2];
+		}
+		
+		// This is the Minecraft thread that is running the server
+		ThreadServerApplication tsa = null;
+		
+		for (Thread t : threads) {
+			if (t != null && t.getName() != null && t.getName().equals(MINECRAFT_SERVER_THREAD_NAME)) {
+				tsa = (ThreadServerApplication)t;
+				break;
+			}
+		}
+	}
+}

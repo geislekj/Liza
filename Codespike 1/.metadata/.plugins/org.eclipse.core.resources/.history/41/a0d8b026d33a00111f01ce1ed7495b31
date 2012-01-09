@@ -1,0 +1,13 @@
+package DemoTest;
+
+import Liza.LizaServer;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//start up the server
+		LizaServer ls = new LizaServer();
+		
+		ls.stop();
+	}
+}

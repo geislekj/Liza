@@ -1,0 +1,7 @@
+package Liza;
+
+import org.bukkit.craftbukkit.entity.CraftPlayer;
+
+public class LizaPlayer extends CraftPlayer {
+
+}

@@ -1,0 +1,51 @@
+package DemoTest;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+
+import Liza.LizaServer;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//start up the server
+		LizaServer ls = new LizaServer();
+		
+		System.out.println("hello there!");
+		
+		Player playerList[];
+		// Here, we would make the mock player and connect it to the server
+		// But for now, we wait (very busily) until I log in
+		while ((playerList = ls.getOnlinePlayers()).length == 0) {}
+		
+		Player activePlayer = playerList[0];
+		
+		try {
+			ls.broadcastMessage("Hi there, " + activePlayer.getDisplayName() + "!");
+			
+			Thread.sleep(5000);
+			
+			ls.broadcastMessage("Before we begin, I'd like to clear your inventory.");
+			activePlayer.getInventory().clear();
+			
+			Thread.sleep(5000);
+			
+			ls.broadcastMessage("Now, take this diamond pickaxe. :)");
+			activePlayer.setItemInHand(new ItemStack(Material.DIAMOND_PICKAXE, 1));
+		} catch (InterruptedException e) {
+			
+		}
+		
+		// Normally we would wait until the mock player is removed
+		// But for now, we wait (very busily) until I log off
+		try {
+			while (ls.getOnlinePlayers().length != 0) {}
+		} catch (IndexOutOfBoundsException e) {
+			// possible when I disconnect due to synchronization
+		}
+		
+		
+		//shut down server
+		ls.stop();
+	}
+}

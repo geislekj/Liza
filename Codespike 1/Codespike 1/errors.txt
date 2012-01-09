@@ -1,0 +1,18 @@
+Exception in thread "main" java.lang.ClassCastException: MockServer cannot be cast to net.minecraft.server.ThreadServerApplication
+	at CodeSpike1.main(CodeSpike1.java:28)
+09:59:31 [INFO] Starting minecraft server version 1.0.1
+09:59:31 [WARNING] **** NOT ENOUGH RAM!
+09:59:31 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+09:59:31 [INFO] Loading properties
+09:59:31 [INFO] Starting Minecraft server on localhost:25565
+09:59:31 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+09:59:31 [INFO] Preparing level "world"
+09:59:31 [INFO] Default game type: 0
+09:59:31 [INFO] Preparing start region for level 0 (Seed: -8414055255407903475)
+09:59:32 [INFO] Preparing spawn area: 65%
+09:59:33 [INFO] Preparing start region for level 1 (Seed: -8414055255407903475)
+09:59:34 [INFO] Preparing spawn area: 65%
+09:59:34 [INFO] Preparing start region for level 2 (Seed: -8414055255407903475)
+09:59:35 [INFO] Preparing spawn area: 52%
+09:59:35 [INFO] Server permissions file permissions.yml is empty, ignoring it
+09:59:35 [INFO] Done (0.361s)! For help, type "help" or "?"

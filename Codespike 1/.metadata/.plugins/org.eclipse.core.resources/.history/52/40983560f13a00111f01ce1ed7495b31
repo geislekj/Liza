@@ -1,0 +1,26 @@
+package DemoTest;
+
+import Liza.LizaServer;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//start up the server
+		LizaServer ls = new LizaServer();
+		
+		System.out.println("hello there!");
+		
+		// Here, we would make the mock player and connect it to the server
+		// But for now, we wait until I log in
+		
+		while (ls.getOnlinePlayers().length == 0) {}
+		
+		ls.broadcastMessage("Hi there!");
+		
+		while (ls.getOnlinePlayers().length != 0) {}
+		
+		
+		//shut down server
+		ls.stop();
+	}
+}

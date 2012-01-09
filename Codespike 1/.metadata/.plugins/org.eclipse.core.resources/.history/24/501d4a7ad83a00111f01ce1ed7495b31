@@ -1,0 +1,13 @@
+package Liza;
+
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.MinecraftServer;
+
+import org.bukkit.craftbukkit.entity.CraftPlayer;
+
+public class LizaPlayer extends CraftPlayer {
+	
+	public LizaPlayer(MinecraftServer server, EntityHuman entity) {
+		super(server, entity);
+	}
+}

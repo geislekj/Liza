@@ -1,0 +1,7 @@
+package Liza;
+
+import org.bukkit.craftbukkit.CraftServer;
+
+public class LizaServer extends CraftServer {
+
+}

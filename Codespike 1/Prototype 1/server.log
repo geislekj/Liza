@@ -1,0 +1,647 @@
+2012-01-08 17:41:47 [INFO] Starting minecraft server version 1.0.1
+2012-01-08 17:41:47 [WARNING] **** NOT ENOUGH RAM!
+2012-01-08 17:41:47 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-08 17:41:47 [INFO] Loading properties
+2012-01-08 17:41:47 [WARNING] server.properties does not exist
+2012-01-08 17:41:47 [INFO] Generating new properties file
+2012-01-08 17:41:47 [INFO] Starting Minecraft server on localhost:25565
+2012-01-08 17:41:48 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-08 17:41:48 [WARNING] Failed to load ban list: java.io.FileNotFoundException: banned-players.txt (The system cannot find the file specified)
+2012-01-08 17:41:48 [WARNING] Failed to load ip ban list: java.io.FileNotFoundException: banned-ips.txt (The system cannot find the file specified)
+2012-01-08 17:41:48 [WARNING] Failed to load operators list: java.io.FileNotFoundException: ops.txt (The system cannot find the file specified)
+2012-01-08 17:41:48 [WARNING] Failed to load white-list: java.io.FileNotFoundException: white-list.txt (The system cannot find the file specified)
+2012-01-08 17:41:48 [INFO] Preparing level "world"
+2012-01-08 17:41:48 [INFO] Default game type: 0
+2012-01-08 17:41:49 [INFO] Unable to find spawn biome
+2012-01-08 17:41:50 [INFO] Unable to find spawn biome
+2012-01-08 17:41:54 [INFO] Preparing start region for level 0 (Seed: 4186248647938519043)
+2012-01-08 17:41:55 [INFO] Preparing spawn area: 8%
+2012-01-08 17:41:56 [INFO] Preparing spawn area: 12%
+2012-01-08 17:41:57 [INFO] Preparing spawn area: 20%
+2012-01-08 17:41:58 [INFO] Preparing spawn area: 28%
+2012-01-08 17:41:59 [INFO] Preparing spawn area: 32%
+2012-01-08 17:42:00 [INFO] Preparing spawn area: 40%
+2012-01-08 17:42:01 [INFO] Preparing spawn area: 48%
+2012-01-08 17:42:02 [INFO] Preparing spawn area: 56%
+2012-01-08 17:42:03 [INFO] Preparing spawn area: 65%
+2012-01-08 17:42:04 [INFO] Preparing spawn area: 69%
+2012-01-08 17:42:05 [INFO] Preparing spawn area: 77%
+2012-01-08 17:42:06 [INFO] Preparing spawn area: 85%
+2012-01-08 17:42:07 [INFO] Preparing spawn area: 89%
+2012-01-08 17:42:08 [INFO] Preparing spawn area: 97%
+2012-01-08 17:42:09 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-08 17:42:09 [INFO] Preparing spawn area: 4%
+2012-01-08 17:42:10 [INFO] Preparing spawn area: 16%
+2012-01-08 17:42:11 [INFO] Preparing spawn area: 20%
+2012-01-08 17:42:13 [INFO] Preparing spawn area: 28%
+2012-01-08 17:42:14 [INFO] Preparing spawn area: 36%
+2012-01-08 17:42:15 [INFO] Preparing spawn area: 44%
+2012-01-08 17:42:16 [INFO] Preparing spawn area: 52%
+2012-01-08 17:42:17 [INFO] Preparing spawn area: 65%
+2012-01-08 17:42:18 [INFO] Preparing spawn area: 73%
+2012-01-08 17:42:19 [INFO] Preparing spawn area: 81%
+2012-01-08 17:42:20 [INFO] Preparing spawn area: 93%
+2012-01-08 17:42:21 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-08 17:42:21 [INFO] Preparing spawn area: 12%
+2012-01-08 17:42:22 [INFO] Preparing spawn area: 32%
+2012-01-08 17:42:23 [INFO] Preparing spawn area: 60%
+2012-01-08 17:42:24 [INFO] Preparing spawn area: 85%
+2012-01-08 17:42:25 [INFO] Done (3.750s)! For help, type "help" or "?"
+2012-01-08 17:42:34 [INFO] SoggyNoose [/127.0.0.1:65042] logged in with entity id 1634 at ([world] 447.5, 67.62000000476837, 128.5)
+2012-01-09 10:03:00 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 10:03:00 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 10:03:00 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 10:03:00 [INFO] Loading properties
+2012-01-09 10:03:00 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 10:03:00 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 10:03:00 [INFO] Preparing level "world"
+2012-01-09 10:03:00 [INFO] Default game type: 0
+2012-01-09 10:03:01 [INFO] Preparing start region for level 0 (Seed: 4186248647938519043)
+2012-01-09 10:03:02 [INFO] Preparing spawn area: 28%
+2012-01-09 10:03:03 [INFO] Preparing spawn area: 44%
+2012-01-09 10:03:04 [INFO] Preparing spawn area: 56%
+2012-01-09 10:03:05 [INFO] Preparing spawn area: 65%
+2012-01-09 10:03:06 [INFO] Preparing spawn area: 73%
+2012-01-09 10:03:07 [INFO] Preparing spawn area: 77%
+2012-01-09 10:03:08 [INFO] Preparing spawn area: 89%
+2012-01-09 10:03:09 [INFO] Preparing spawn area: 97%
+2012-01-09 10:03:09 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 10:03:10 [INFO] Preparing spawn area: 12%
+2012-01-09 10:03:11 [INFO] Preparing spawn area: 16%
+2012-01-09 10:03:12 [INFO] Preparing spawn area: 28%
+2012-01-09 10:03:13 [INFO] Preparing spawn area: 40%
+2012-01-09 10:03:14 [INFO] Preparing spawn area: 52%
+2012-01-09 10:03:15 [INFO] Preparing spawn area: 69%
+2012-01-09 10:03:16 [INFO] Preparing spawn area: 77%
+2012-01-09 10:03:17 [INFO] Preparing spawn area: 93%
+2012-01-09 10:03:18 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 10:03:18 [INFO] Preparing spawn area: 12%
+2012-01-09 10:03:19 [INFO] Preparing spawn area: 52%
+2012-01-09 10:03:20 [INFO] Preparing spawn area: 85%
+2012-01-09 10:03:21 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 10:03:21 [INFO] Done (2.015s)! For help, type "help" or "?"
+2012-01-09 10:03:40 [INFO] Stopping server
+2012-01-09 10:03:40 [INFO] Saving chunks
+2012-01-09 10:07:08 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 10:07:08 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 10:07:08 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 10:07:08 [INFO] Loading properties
+2012-01-09 10:07:08 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 10:07:08 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 10:07:08 [INFO] Preparing level "world"
+2012-01-09 10:07:08 [INFO] Default game type: 0
+2012-01-09 10:07:08 [INFO] Preparing start region for level 0 (Seed: 4186248647938519043)
+2012-01-09 10:07:10 [INFO] Preparing spawn area: 69%
+2012-01-09 10:07:10 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 10:07:11 [INFO] Preparing spawn area: 52%
+2012-01-09 10:07:11 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 10:07:12 [INFO] Preparing spawn area: 44%
+2012-01-09 10:07:12 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 10:07:12 [INFO] Done (0.364s)! For help, type "help" or "?"
+2012-01-09 10:07:17 [INFO] SoggyNoose [/127.0.0.1:49775] logged in with entity id 144 at ([world] 446.5, 67.62000000476837, 141.5)
+2012-01-09 10:07:30 [INFO] <SoggyNoose> hi
+2012-01-09 10:08:30 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 10:08:30 [INFO] Connection reset
+2012-01-09 10:36:46 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 10:36:46 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 10:36:46 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 10:36:46 [INFO] Loading properties
+2012-01-09 10:36:46 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 10:36:46 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 10:36:47 [INFO] Preparing level "world"
+2012-01-09 10:36:47 [INFO] Default game type: 0
+2012-01-09 10:36:47 [INFO] Preparing start region for level 0 (Seed: 4186248647938519043)
+2012-01-09 10:36:48 [INFO] Preparing spawn area: 73%
+2012-01-09 10:36:48 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 10:36:49 [INFO] Preparing spawn area: 61%
+2012-01-09 10:36:49 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 10:36:50 [INFO] Preparing spawn area: 85%
+2012-01-09 10:36:50 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 10:36:50 [INFO] Done (0.330s)! For help, type "help" or "?"
+2012-01-09 10:36:51 [INFO] /127.0.0.1:50935 lost connection
+2012-01-09 10:36:53 [INFO] SoggyNoose [/127.0.0.1:50936] logged in with entity id 209 at ([world] 537.75, 66.0, 126.28125)
+2012-01-09 10:37:26 [INFO] hello there!
+2012-01-09 10:37:48 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 10:37:48 [INFO] Connection reset
+2012-01-09 10:51:18 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 10:51:18 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 10:51:18 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 10:51:18 [INFO] Loading properties
+2012-01-09 10:51:18 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 10:51:19 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 10:51:19 [INFO] Preparing level "world"
+2012-01-09 10:51:19 [INFO] Default game type: 0
+2012-01-09 10:51:19 [INFO] Preparing start region for level 0 (Seed: 4186248647938519043)
+2012-01-09 10:51:20 [INFO] Preparing spawn area: 61%
+2012-01-09 10:51:21 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 10:51:21 [INFO] Preparing spawn area: 32%
+2012-01-09 10:51:22 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 10:51:22 [INFO] Preparing spawn area: 0%
+2012-01-09 10:51:23 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 10:51:23 [INFO] Done (0.405s)! For help, type "help" or "?"
+2012-01-09 10:51:58 [INFO] hello there!
+2012-01-09 10:52:04 [INFO] SoggyNoose [/127.0.0.1:54111] logged in with entity id 179 at ([world] 538.9332860118226, 72.0, 121.45734656195063)
+2012-01-09 10:52:05 [INFO] /127.0.0.1:54109 lost connection
+2012-01-09 10:52:16 [INFO] Connection reset
+2012-01-09 10:52:16 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 11:14:35 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-09 11:14:38 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-09 11:14:43 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-09 13:28:38 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 13:28:38 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 13:28:38 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 13:28:38 [INFO] Loading properties
+2012-01-09 13:28:38 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 13:28:38 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 13:28:38 [INFO] Preparing level "world"
+2012-01-09 13:28:38 [INFO] Default game type: 0
+2012-01-09 13:28:38 [INFO] Unable to find spawn biome
+2012-01-09 13:28:40 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 13:28:41 [INFO] Preparing spawn area: 8%
+2012-01-09 13:28:42 [INFO] Preparing spawn area: 16%
+2012-01-09 13:28:43 [INFO] Preparing spawn area: 24%
+2012-01-09 13:28:44 [INFO] Preparing spawn area: 32%
+2012-01-09 13:28:45 [INFO] Preparing spawn area: 44%
+2012-01-09 13:28:46 [INFO] Preparing spawn area: 52%
+2012-01-09 13:28:47 [INFO] Preparing spawn area: 60%
+2012-01-09 13:28:48 [INFO] Preparing spawn area: 69%
+2012-01-09 13:28:49 [INFO] Preparing spawn area: 73%
+2012-01-09 13:28:50 [INFO] Preparing spawn area: 85%
+2012-01-09 13:28:51 [INFO] Preparing spawn area: 93%
+2012-01-09 13:28:52 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 13:28:52 [INFO] Preparing spawn area: 8%
+2012-01-09 13:28:53 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 13:28:53 [INFO] Preparing spawn area: 3%
+2012-01-09 13:28:54 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 13:28:54 [INFO] Done (1.582s)! For help, type "help" or "?"
+2012-01-09 13:28:55 [INFO] /127.0.0.1:60114 lost connection
+2012-01-09 13:28:57 [INFO] SoggyNoose [/127.0.0.1:60134] logged in with entity id 598 at ([world] 54.5, 63.62000000476837, -51.5)
+2012-01-09 13:29:17 [INFO] hello there!
+2012-01-09 13:29:25 [INFO] /127.0.0.1:60139 lost connection
+2012-01-09 13:29:53 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 13:29:53 [INFO] Connection reset
+2012-01-09 13:38:57 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 13:38:57 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 13:38:57 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 13:38:57 [INFO] Loading properties
+2012-01-09 13:38:57 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 13:38:57 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 13:38:57 [INFO] Preparing level "world"
+2012-01-09 13:38:57 [INFO] Default game type: 0
+2012-01-09 13:38:58 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 13:38:59 [INFO] Preparing spawn area: 77%
+2012-01-09 13:38:59 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 13:39:00 [INFO] Preparing spawn area: 73%
+2012-01-09 13:39:00 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 13:39:01 [INFO] hello there!
+2012-01-09 13:39:01 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 13:39:01 [INFO] Done (0.324s)! For help, type "help" or "?"
+2012-01-09 13:39:10 [INFO] SoggyNoose [/127.0.0.1:60571] logged in with entity id 144 at ([world] 51.66491335016581, 63.0, -55.35100221105998)
+2012-01-09 13:39:10 [INFO] Hi there!
+2012-01-09 13:39:47 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 13:39:47 [INFO] Connection reset
+2012-01-09 13:39:47 [INFO] Stopping server
+2012-01-09 13:39:47 [INFO] Saving chunks
+2012-01-09 13:39:48 [INFO] Stopping server
+2012-01-09 13:39:48 [INFO] Saving chunks
+2012-01-09 13:41:26 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 13:41:26 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 13:41:26 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 13:41:26 [INFO] Loading properties
+2012-01-09 13:41:26 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 13:41:26 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 13:41:27 [INFO] Preparing level "world"
+2012-01-09 13:41:27 [INFO] Default game type: 0
+2012-01-09 13:41:27 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 13:41:28 [INFO] Preparing spawn area: 65%
+2012-01-09 13:41:28 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 13:41:29 [INFO] Preparing spawn area: 65%
+2012-01-09 13:41:29 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 13:41:30 [INFO] Preparing spawn area: 93%
+2012-01-09 13:41:30 [INFO] hello there!
+2012-01-09 13:41:30 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 13:41:30 [INFO] Done (0.326s)! For help, type "help" or "?"
+2012-01-09 13:41:32 [INFO] /127.0.0.1:60667 lost connection
+2012-01-09 13:41:34 [INFO] SoggyNoose [/127.0.0.1:60668] logged in with entity id 118 at ([world] 62.63215195877751, 66.0, -57.78317448846523)
+2012-01-09 13:41:34 [INFO] Hi there, SoggyNoose!
+2012-01-09 13:42:16 [INFO] Connection reset
+2012-01-09 13:42:16 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 13:42:16 [SEVERE] Exception in thread "main" 
+2012-01-09 13:42:16 [SEVERE] java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2012-01-09 13:42:16 [SEVERE] 	at java.util.ArrayList.RangeCheck(Unknown Source)
+2012-01-09 13:42:16 [SEVERE] 	at java.util.ArrayList.get(Unknown Source)
+2012-01-09 13:42:16 [SEVERE] 	at org.bukkit.craftbukkit.CraftServer.getOnlinePlayers(CraftServer.java:220)
+2012-01-09 13:42:16 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 13:42:16 [SEVERE] 	at DemoTest.Demo.main(Demo.java:26)
+2012-01-09 13:45:56 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 13:45:56 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 13:45:56 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 13:45:56 [INFO] Loading properties
+2012-01-09 13:45:56 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 13:45:56 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 13:45:56 [INFO] Preparing level "world"
+2012-01-09 13:45:56 [INFO] Default game type: 0
+2012-01-09 13:45:57 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 13:45:58 [INFO] Preparing spawn area: 69%
+2012-01-09 13:45:58 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 13:45:59 [INFO] Preparing spawn area: 52%
+2012-01-09 13:45:59 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 13:46:00 [INFO] hello there!
+2012-01-09 13:46:00 [INFO] Preparing spawn area: 56%
+2012-01-09 13:46:00 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 13:46:00 [INFO] Done (0.365s)! For help, type "help" or "?"
+2012-01-09 13:46:03 [INFO] /127.0.0.1:60835 lost connection
+2012-01-09 13:46:04 [INFO] SoggyNoose [/127.0.0.1:60838] logged in with entity id 108 at ([world] 46.3971923412, 65.0, -81.441932487952)
+2012-01-09 13:46:04 [INFO] Hi there, SoggyNoose!
+2012-01-09 13:46:18 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 13:46:18 [INFO] Connection reset
+2012-01-09 13:46:18 [INFO] Stopping server
+2012-01-09 13:46:18 [INFO] Saving chunks
+2012-01-09 13:46:18 [INFO] Stopping server
+2012-01-09 14:05:08 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 14:05:08 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 14:05:08 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 14:05:08 [INFO] Loading properties
+2012-01-09 14:05:08 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 14:05:08 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 14:05:09 [INFO] Preparing level "world"
+2012-01-09 14:05:09 [INFO] Default game type: 0
+2012-01-09 14:05:09 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 14:05:10 [INFO] Preparing spawn area: 73%
+2012-01-09 14:05:10 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 14:05:11 [INFO] Preparing spawn area: 65%
+2012-01-09 14:05:11 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 14:05:12 [INFO] Preparing spawn area: 73%
+2012-01-09 14:05:12 [INFO] hello there!
+2012-01-09 14:05:12 [SEVERE] Exception in thread "main" 
+2012-01-09 14:05:12 [SEVERE] java.lang.ClassCastException: [Lorg.bukkit.entity.Player; cannot be cast to [LLiza.LizaPlayer;
+2012-01-09 14:05:12 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 14:05:12 [SEVERE] 	at DemoTest.Demo.main(Demo.java:20)
+2012-01-09 14:05:12 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 14:05:12 [INFO] Done (0.336s)! For help, type "help" or "?"
+2012-01-09 14:05:52 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 14:05:52 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 14:05:52 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 14:05:52 [INFO] Loading properties
+2012-01-09 14:05:52 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 14:05:52 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 14:05:52 [INFO] Preparing level "world"
+2012-01-09 14:05:52 [INFO] Default game type: 0
+2012-01-09 14:05:52 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 14:05:53 [INFO] Preparing spawn area: 81%
+2012-01-09 14:05:53 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 14:05:54 [INFO] Preparing spawn area: 73%
+2012-01-09 14:05:54 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 14:05:55 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 14:05:55 [INFO] Done (0.316s)! For help, type "help" or "?"
+2012-01-09 14:05:55 [INFO] hello there!
+2012-01-09 14:05:55 [SEVERE] Exception in thread "main" 
+2012-01-09 14:05:55 [SEVERE] java.lang.ClassCastException: [Lorg.bukkit.entity.Player; cannot be cast to [LLiza.LizaPlayer;
+2012-01-09 14:05:55 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 14:05:55 [SEVERE] 	at DemoTest.Demo.main(Demo.java:21)
+2012-01-09 14:06:21 [INFO] SoggyNoose [/127.0.0.1:61639] logged in with entity id 110 at ([world] 64.38344423671698, 66.0, -52.414852551655386)
+2012-01-09 14:06:37 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 14:06:37 [INFO] Connection reset
+2012-01-09 14:07:05 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 14:07:05 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 14:07:05 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 14:07:05 [INFO] Loading properties
+2012-01-09 14:07:05 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 14:07:05 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 14:07:06 [INFO] Preparing level "world"
+2012-01-09 14:07:06 [INFO] Default game type: 0
+2012-01-09 14:07:06 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 14:07:07 [INFO] Preparing spawn area: 69%
+2012-01-09 14:07:07 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 14:07:08 [INFO] Preparing spawn area: 77%
+2012-01-09 14:07:08 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 14:07:09 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 14:07:09 [INFO] hello there!
+2012-01-09 14:07:09 [INFO] Done (0.321s)! For help, type "help" or "?"
+2012-01-09 14:07:09 [SEVERE] Exception in thread "main" 
+2012-01-09 14:07:09 [SEVERE] java.lang.ClassCastException: [Lorg.bukkit.entity.Player; cannot be cast to [LLiza.LizaPlayer;
+2012-01-09 14:07:09 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 14:07:09 [SEVERE] 	at DemoTest.Demo.main(Demo.java:21)
+2012-01-09 14:08:46 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 14:08:46 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 14:08:46 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 14:08:46 [INFO] Loading properties
+2012-01-09 14:08:46 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 14:08:46 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 14:08:47 [INFO] Preparing level "world"
+2012-01-09 14:08:47 [INFO] Default game type: 0
+2012-01-09 14:08:47 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 14:08:48 [INFO] Preparing spawn area: 28%
+2012-01-09 14:08:49 [INFO] Preparing spawn area: 73%
+2012-01-09 14:08:49 [INFO] hello there!
+2012-01-09 14:08:49 [SEVERE] Exception in thread "main" 
+2012-01-09 14:08:49 [SEVERE] java.lang.ClassCastException: [Lorg.bukkit.entity.Player; cannot be cast to [LLiza.LizaPlayer;
+2012-01-09 14:08:49 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 14:08:49 [SEVERE] 	at DemoTest.Demo.main(Demo.java:21)
+2012-01-09 14:08:49 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 14:08:50 [INFO] Preparing spawn area: 24%
+2012-01-09 14:08:51 [INFO] Preparing spawn area: 69%
+2012-01-09 14:08:52 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 14:08:52 [INFO] Preparing spawn area: 12%
+2012-01-09 14:08:53 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 14:08:53 [INFO] Done (0.652s)! For help, type "help" or "?"
+2012-01-09 14:11:38 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 14:11:38 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 14:11:38 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 14:11:38 [INFO] Loading properties
+2012-01-09 14:11:38 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 14:11:38 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 14:11:38 [INFO] Preparing level "world"
+2012-01-09 14:11:38 [INFO] Default game type: 0
+2012-01-09 14:11:38 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 14:11:39 [INFO] Preparing spawn area: 69%
+2012-01-09 14:11:40 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 14:11:40 [INFO] Preparing spawn area: 61%
+2012-01-09 14:11:41 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 14:11:41 [INFO] Preparing spawn area: 65%
+2012-01-09 14:11:41 [INFO] hello there!
+2012-01-09 14:11:42 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 14:11:42 [INFO] Done (0.348s)! For help, type "help" or "?"
+2012-01-09 14:11:45 [INFO] SoggyNoose [/127.0.0.1:61824] logged in with entity id 105 at ([world] 64.51686407297159, 66.0, -56.14217757622262)
+2012-01-09 14:11:45 [INFO] Hi there, SoggyNoose!
+2012-01-09 14:11:50 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 14:11:55 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 14:12:01 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 14:12:01 [INFO] Connection reset
+2012-01-09 14:12:01 [INFO] Stopping server
+2012-01-09 14:12:01 [INFO] Saving chunks
+2012-01-09 15:28:49 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:28:49 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:28:49 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:28:49 [INFO] Loading properties
+2012-01-09 15:28:49 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:28:49 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:28:50 [INFO] Preparing level "world"
+2012-01-09 15:28:50 [INFO] Default game type: 0
+2012-01-09 15:28:50 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:28:51 [INFO] Preparing spawn area: 69%
+2012-01-09 15:28:51 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:28:52 [INFO] Preparing spawn area: 65%
+2012-01-09 15:28:52 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:28:53 [INFO] Preparing spawn area: 73%
+2012-01-09 15:28:53 [INFO] hello there!
+2012-01-09 15:28:53 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:28:53 [INFO] Done (0.344s)! For help, type "help" or "?"
+2012-01-09 15:28:56 [INFO] /127.0.0.1:52525 lost connection
+2012-01-09 15:29:01 [INFO] SoggyNoose [/127.0.0.1:52526] logged in with entity id 105 at ([world] 64.51686407297159, 66.0, -56.14217757622262)
+2012-01-09 15:29:01 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:29:01 [INFO] Making sure it's daytime...
+2012-01-09 15:29:06 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:29:11 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:29:11 [SEVERE] Exception in thread "main" 
+2012-01-09 15:29:11 [SEVERE] java.lang.ClassCastException: org.bukkit.craftbukkit.block.CraftBlock cannot be cast to Liza.LizaBlock
+2012-01-09 15:29:11 [SEVERE] 	at DemoTest.Demo.main(Demo.java:46)
+2012-01-09 15:29:25 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:29:25 [INFO] Connection reset
+2012-01-09 15:30:49 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:30:49 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:30:49 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:30:49 [INFO] Loading properties
+2012-01-09 15:30:49 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:30:49 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:30:49 [INFO] Preparing level "world"
+2012-01-09 15:30:49 [INFO] Default game type: 0
+2012-01-09 15:30:49 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:30:50 [INFO] Preparing spawn area: 69%
+2012-01-09 15:30:50 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:30:51 [INFO] Preparing spawn area: 73%
+2012-01-09 15:30:51 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:30:52 [INFO] Preparing spawn area: 89%
+2012-01-09 15:30:52 [INFO] hello there!
+2012-01-09 15:30:52 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:30:52 [INFO] Done (0.327s)! For help, type "help" or "?"
+2012-01-09 15:30:58 [INFO] SoggyNoose [/127.0.0.1:52620] logged in with entity id 103 at ([world] 64.5, 66.0, -56.15625)
+2012-01-09 15:30:58 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:30:58 [INFO] Making sure it's daytime...
+2012-01-09 15:31:03 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:31:08 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:31:08 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 15:31:08 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 15:31:41 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:31:41 [INFO] Connection reset
+2012-01-09 15:31:41 [INFO] Stopping server
+2012-01-09 15:31:41 [INFO] Saving chunks
+2012-01-09 15:31:41 [INFO] Stopping server
+2012-01-09 15:34:03 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:34:03 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:34:03 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:34:03 [INFO] Loading properties
+2012-01-09 15:34:03 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:34:03 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:34:03 [INFO] Preparing level "world"
+2012-01-09 15:34:03 [INFO] Default game type: 0
+2012-01-09 15:34:03 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:34:04 [INFO] Preparing spawn area: 60%
+2012-01-09 15:34:04 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:34:05 [INFO] Preparing spawn area: 48%
+2012-01-09 15:34:06 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:34:06 [INFO] hello there!
+2012-01-09 15:34:06 [INFO] Preparing spawn area: 65%
+2012-01-09 15:34:06 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:34:06 [INFO] Done (0.343s)! For help, type "help" or "?"
+2012-01-09 15:34:11 [INFO] SoggyNoose [/127.0.0.1:52743] logged in with entity id 99 at ([world] 61.1875, 66.0, -59.1875)
+2012-01-09 15:34:11 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:34:11 [INFO] Making sure it's daytime...
+2012-01-09 15:34:16 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:34:21 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:34:22 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 15:34:22 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 15:34:22 [INFO] assertBlockType returned true!
+2012-01-09 15:34:49 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:34:49 [INFO] Connection reset
+2012-01-09 15:34:49 [INFO] Stopping server
+2012-01-09 15:34:49 [INFO] Saving chunks
+2012-01-09 15:34:49 [INFO] Stopping server
+2012-01-09 15:34:49 [INFO] Saving chunks
+2012-01-09 15:36:00 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:36:00 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:36:00 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:36:00 [INFO] Loading properties
+2012-01-09 15:36:00 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:36:00 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:36:00 [INFO] Preparing level "world"
+2012-01-09 15:36:00 [INFO] Default game type: 0
+2012-01-09 15:36:01 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:36:02 [INFO] Preparing spawn area: 69%
+2012-01-09 15:36:02 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:36:03 [INFO] Preparing spawn area: 61%
+2012-01-09 15:36:03 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:36:03 [INFO] hello there!
+2012-01-09 15:36:04 [INFO] Preparing spawn area: 69%
+2012-01-09 15:36:04 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:36:04 [INFO] Done (0.344s)! For help, type "help" or "?"
+2012-01-09 15:36:07 [INFO] SoggyNoose [/127.0.0.1:52820] logged in with entity id 154 at ([world] 42.331472564104, 66.0, -81.43745018947594)
+2012-01-09 15:36:07 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:36:07 [INFO] Making sure it's daytime...
+2012-01-09 15:36:12 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:36:17 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:36:17 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 15:36:17 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 15:36:17 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:36:48 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:36:48 [INFO] Connection reset
+2012-01-09 15:36:48 [INFO] Stopping server
+2012-01-09 15:36:48 [INFO] Saving chunks
+2012-01-09 15:36:48 [INFO] Stopping server
+2012-01-09 15:37:16 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:37:16 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:37:16 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:37:16 [INFO] Loading properties
+2012-01-09 15:37:16 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:37:16 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:37:16 [INFO] Preparing level "world"
+2012-01-09 15:37:16 [INFO] Default game type: 0
+2012-01-09 15:37:16 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:37:17 [INFO] Preparing spawn area: 60%
+2012-01-09 15:37:18 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:37:18 [INFO] Preparing spawn area: 52%
+2012-01-09 15:37:19 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:37:19 [INFO] Preparing spawn area: 69%
+2012-01-09 15:37:19 [INFO] hello there!
+2012-01-09 15:37:20 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:37:20 [INFO] Done (0.341s)! For help, type "help" or "?"
+2012-01-09 15:37:22 [INFO] SoggyNoose [/127.0.0.1:52878] logged in with entity id 130 at ([world] 49.615389740602325, 64.0, -83.17699489670031)
+2012-01-09 15:37:22 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:37:22 [INFO] Making sure it's daytime...
+2012-01-09 15:37:27 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:37:33 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:37:33 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 15:37:33 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 15:37:33 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:34 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:35 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:35 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:36 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:36 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:37 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:37 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:38 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:38 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:39 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:39 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:40 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:37:40 [INFO] assertBlockType returned false! (GOLD_BLOCK)
+2012-01-09 15:38:04 [INFO] Connection reset
+2012-01-09 15:38:04 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:38:04 [INFO] Stopping server
+2012-01-09 15:38:04 [INFO] Saving chunks
+2012-01-09 15:38:05 [INFO] Stopping server
+2012-01-09 15:38:05 [INFO] Saving chunks
+2012-01-09 15:41:20 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 15:41:20 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 15:41:20 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 15:41:20 [INFO] Loading properties
+2012-01-09 15:41:20 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 15:41:20 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 15:41:20 [INFO] Preparing level "world"
+2012-01-09 15:41:20 [INFO] Default game type: 0
+2012-01-09 15:41:21 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 15:41:22 [INFO] Preparing spawn area: 65%
+2012-01-09 15:41:22 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 15:41:23 [INFO] Preparing spawn area: 65%
+2012-01-09 15:41:23 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 15:41:24 [INFO] Preparing spawn area: 77%
+2012-01-09 15:41:24 [INFO] Connect to localhost to begin demo!
+2012-01-09 15:41:24 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 15:41:24 [INFO] Done (0.345s)! For help, type "help" or "?"
+2012-01-09 15:41:28 [INFO] SoggyNoose [/127.0.0.1:53029] logged in with entity id 118 at ([world] 46.83389579834349, 65.0, -84.41769108520091)
+2012-01-09 15:41:28 [INFO] Hi there, SoggyNoose!
+2012-01-09 15:41:28 [INFO] Making sure it's daytime...
+2012-01-09 15:41:28 [INFO] Making sure you're an op
+2012-01-09 15:41:33 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 15:41:38 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 15:41:39 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 15:41:39 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 15:41:39 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:39 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:40 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:40 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:41 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:41 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:42 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:42 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:43 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 15:41:43 [INFO] assertBlockType returned true! (AIR)
+2012-01-09 15:41:56 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 15:41:56 [INFO] Connection reset
+2012-01-09 15:41:56 [SEVERE] Exception in thread "main" 
+2012-01-09 15:41:56 [SEVERE] java.lang.NullPointerException
+2012-01-09 15:41:56 [SEVERE] 	at org.bukkit.craftbukkit.CraftServer.getOnlinePlayers(CraftServer.java:220)
+2012-01-09 15:41:56 [SEVERE] 	at Liza.LizaServer.getOnlinePlayers(LizaServer.java:81)
+2012-01-09 15:41:56 [SEVERE] 	at DemoTest.Demo.main(Demo.java:73)
+2012-01-09 18:27:45 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 18:27:45 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 18:27:45 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 18:27:45 [INFO] Loading properties
+2012-01-09 18:27:45 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 18:27:46 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 18:27:46 [INFO] Preparing level "world"
+2012-01-09 18:27:46 [INFO] Default game type: 0
+2012-01-09 18:27:46 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 18:27:47 [INFO] Preparing spawn area: 89%
+2012-01-09 18:27:47 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 18:27:48 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 18:27:48 [INFO] Preparing spawn area: 0%
+2012-01-09 18:27:49 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 18:27:49 [INFO] Done (0.295s)! For help, type "help" or "?"
+2012-01-09 18:27:49 [INFO] Connect to localhost to begin demo!
+2012-01-09 18:28:10 [INFO] SoggyNoose [/127.0.0.1:56509] logged in with entity id 116 at ([world] 61.127274307532325, 66.0, -63.88681579158773)
+2012-01-09 18:28:10 [INFO] Hi there, SoggyNoose!
+2012-01-09 18:28:10 [INFO] Making sure it's daytime...
+2012-01-09 18:28:10 [INFO] Making sure you're an op
+2012-01-09 18:28:15 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 18:28:20 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 18:28:20 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 18:28:20 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 18:28:20 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:21 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:22 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:23 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:24 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:25 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:28:26 [INFO] assertBlockType returned true! (AIR)
+2012-01-09 18:28:27 [INFO] Congratulations. This test module will explode in 3 seconds.
+2012-01-09 18:28:33 [INFO] Stopping server
+2012-01-09 18:28:33 [INFO] Saving chunks
+2012-01-09 18:28:33 [INFO] Stopping server
+2012-01-09 18:28:47 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 18:28:47 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 18:28:47 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 18:28:47 [INFO] Loading properties
+2012-01-09 18:28:47 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 18:28:47 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 18:28:47 [INFO] Preparing level "world"
+2012-01-09 18:28:47 [INFO] Default game type: 0
+2012-01-09 18:28:48 [INFO] Preparing start region for level 0 (Seed: -2159692489410541993)
+2012-01-09 18:28:49 [INFO] Preparing spawn area: 61%
+2012-01-09 18:28:49 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-09 18:28:50 [INFO] Preparing spawn area: 77%
+2012-01-09 18:28:50 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-09 18:28:51 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 18:28:51 [INFO] Connect to localhost to begin demo!
+2012-01-09 18:28:51 [INFO] Done (0.319s)! For help, type "help" or "?"
+2012-01-09 18:28:52 [INFO] /127.0.0.1:56552 lost connection
+2012-01-09 18:28:55 [INFO] SoggyNoose [/127.0.0.1:56553] logged in with entity id 306 at ([world] 61.5, 64.0, -46.5)
+2012-01-09 18:28:55 [INFO] Hi there, SoggyNoose!
+2012-01-09 18:28:55 [INFO] Making sure it's daytime...
+2012-01-09 18:28:55 [INFO] Making sure you're an op
+2012-01-09 18:29:00 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-09 18:29:05 [INFO] Now, take this diamond pickaxe. :)
+2012-01-09 18:29:05 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-09 18:29:05 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-09 18:29:05 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:06 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:07 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:08 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:09 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:10 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:11 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-09 18:29:12 [INFO] assertBlockType returned true! (AIR)
+2012-01-09 18:29:13 [INFO] Congratulations. This test module will explode in 3 seconds.
+2012-01-09 18:29:25 [INFO] Stopping server
+2012-01-09 18:29:25 [INFO] Saving chunks

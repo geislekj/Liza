@@ -1,0 +1,30 @@
+import java.lang.reflect.Field;
+
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.ThreadServerApplication;
+
+public class CodeSpike1 {
+	
+	public static MockServer ms;
+
+	public static void main(String[] args) {
+		ms = new MockServer("Server thread");
+		ms.start();
+		Thread.sleep(4000);
+		ThreadGroup rootGroup = Thread.currentThread().getThreadGroup();
+		ThreadGroup parentGroup;
+		while ( ( parentGroup = rootGroup.getParent() ) != null ) {
+		    rootGroup = parentGroup;
+		}
+		
+		Thread[] threads = new Thread[rootGroup.activeCount()];
+		while ( rootGroup.enumerate( threads, true ) == threads.length ) {
+		    threads = new Thread[ threads.length * 2 ];
+		}
+		for (Thread t : threads) {
+			if (t != null && t.getName() != null) {
+				System.out.println(t.getName());
+			}
+		}
+	}
+}

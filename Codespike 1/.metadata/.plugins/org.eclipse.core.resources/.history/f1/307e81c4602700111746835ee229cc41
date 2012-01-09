@@ -1,0 +1,15 @@
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.ServerConfigurationManager;
+
+import org.bukkit.craftbukkit.CraftServer;
+
+
+public class MockServer {
+	CraftServer cs;
+	MinecraftServer ms;
+	ServerConfigurationManager scm;
+	
+	public MockServer() {
+		
+	}
+}

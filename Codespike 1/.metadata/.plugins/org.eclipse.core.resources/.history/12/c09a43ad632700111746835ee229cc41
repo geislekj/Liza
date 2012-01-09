@@ -1,0 +1,12 @@
+import org.bukkit.craftbukkit.CraftServer;
+
+
+
+
+public class MockServer {
+	
+	public MockServer() {
+		String args[] = {""};
+		Main.main(args);
+	}
+}

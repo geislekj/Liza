@@ -1,0 +1,12 @@
+package Liza;
+
+public class LizaServerThread extends Thread {
+
+	public LizaServerThread(String name) {
+		super(name);
+	}
+	
+	public run() {
+		
+	}
+}

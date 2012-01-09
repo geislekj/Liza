@@ -1,0 +1,9 @@
+package DemoTest;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//start up the server
+		LizaServer ls = new LizaServer();
+	}
+}

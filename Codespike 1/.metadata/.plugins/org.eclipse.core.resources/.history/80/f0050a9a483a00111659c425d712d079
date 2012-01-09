@@ -1,0 +1,13 @@
+package Liza;
+
+public class LizaServerThread extends Thread {
+	private final String args[] = {"-h", "localhost", "-p", "25565"};
+	
+	public LizaServerThread(String name) {
+		super(name);
+	}
+	
+	public run() {
+		
+	}
+}

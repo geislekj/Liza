@@ -1,0 +1,11 @@
+import org.bukkit.craftbukkit.Main;
+
+
+
+
+public class MockServer {
+	
+	public MockServer() {
+		Main.main(null);
+	}
+}

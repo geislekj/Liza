@@ -1,0 +1,10 @@
+public class CodeSpike1 {
+
+	public static void main(String[] args) {
+		try {
+			MockServer ms = new MockServer();
+		} catch (Exception e) {
+			System.out.println("lol");
+		}
+	}
+}

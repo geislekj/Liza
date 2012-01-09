@@ -1,0 +1,10 @@
+import org.bukkit.craftbukkit.CraftServer;
+
+
+public class MockServer {
+	CraftServer cs;
+	
+	public MockServer() {
+		
+	}
+}

@@ -1,0 +1,10 @@
+package Liza;
+
+import org.bukkit.craftbukkit.entity.CraftPlayer;
+
+public class LizaPlayer extends CraftPlayer {
+	
+	public LizaPlayer(MinecraftServer server, EntityHuman entity) {
+		super(server, entity);
+	}
+}

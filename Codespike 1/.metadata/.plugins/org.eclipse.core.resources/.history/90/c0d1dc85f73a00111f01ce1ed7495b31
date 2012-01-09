@@ -1,0 +1,16 @@
+package Liza;
+
+import org.bukkit.craftbukkit.CraftChunk;
+import org.bukkit.craftbukkit.block.CraftBlock;
+
+public class LizaCraftBlock extends CraftBlock implements LizaBlock {
+
+	public LizaCraftBlock(CraftChunk chunk, int x, int y, int z) {
+		super(chunk, x, y, z);
+	}
+	
+	public LizaCraftBlock(CraftBlock block) {
+		LizaCraftBlock(block.chunk, block.x, block.y, block.z);
+	}
+
+}

@@ -1,0 +1,19 @@
+import joptsimple.OptionSet;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.ServerConfigurationManager;
+
+import org.bukkit.craftbukkit.CraftServer;
+
+
+public class MockServer {
+	CraftServer cs;
+	
+	MinecraftServer ms;
+	ServerConfigurationManager scm;
+	
+	public MockServer() {
+		ms = new MinecraftServer(null);
+		scm = new ServerConfigurationManager(ms);
+		cs = new CraftServer(ms, scm);
+	}
+}
