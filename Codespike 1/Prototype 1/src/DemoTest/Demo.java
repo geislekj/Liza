@@ -16,6 +16,7 @@ public class Demo {
 	public static void main(String[] args) {
 		//start up the server
 		LizaServer ls = new LizaServer();
+		// should probably start it using ls.start()
 		
 		System.out.println("Connect to localhost to begin demo!");
 		
@@ -31,7 +32,7 @@ public class Demo {
 			ls.broadcastMessage("Hi there, " + activePlayer.getDisplayName() + "!");
 			ls.broadcastMessage("Making sure it's daytime...");
 			w.setTime(0L);
-			ls.broadcastMessage("Making sure you're an op");
+			ls.broadcastMessage("Making sure you're an op...");
 			activePlayer.setOp(true);
 			
 			Thread.sleep(5000);
@@ -44,7 +45,7 @@ public class Demo {
 			ls.broadcastMessage("Now, take this diamond pickaxe. :)");
 			activePlayer.setItemInHand(new ItemStack(Material.DIAMOND_PICKAXE, 1));
 			
-			Thread.sleep(500);
+			Thread.sleep(5000);
 			
 			Location l = activePlayer.getLocation();
 			LizaBlock b = new LizaCraftBlock(w.getBlockAt(l).getRelative(BlockFace.NORTH));
@@ -56,13 +57,13 @@ public class Demo {
 			boolean annoying = true;
 			while (annoying) {
 				ls.broadcastMessage("assertBlockType returned " + !annoying + "! (expected AIR but got " + b.getType() + ")");
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				annoying = !b.assertBlockType(Material.AIR);
 			}
 			
 			ls.broadcastMessage("assertBlockType returned " + !annoying + "! (" + b.getType() + ")");
 			
-			Thread.sleep(500);
+			Thread.sleep(5000);
 			
 			ls.broadcastMessage("Congratulations. This test module will explode in 3 seconds.");
 			

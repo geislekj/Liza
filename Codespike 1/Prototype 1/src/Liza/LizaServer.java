@@ -54,6 +54,7 @@ public class LizaServer {
 			}
 		}
 		
+		// Begin Java Reflection stuff
 		Class<? extends ThreadServerApplication> c = tsa.getClass();
 		Field f;
 		MinecraftServer ms = null;
@@ -64,6 +65,7 @@ public class LizaServer {
 		} catch (Exception e) { //lol
 			
 		}
+		// End Java Reflection stuff
 		
 		return ms.server;
 	}
@@ -78,7 +80,7 @@ public class LizaServer {
 	}
 	
 	public Player[] getOnlinePlayers() {
-		return (cs.getOnlinePlayers());
+		return cs.getOnlinePlayers();
 	}
 	
 }
