@@ -1,0 +1,16 @@
+package Test;
+
+import Liza.LizaServer;
+import LizaCraft.LizaCraftServer;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LizaCraftServer ls = new LizaCraftServer();
+	}
+
+}

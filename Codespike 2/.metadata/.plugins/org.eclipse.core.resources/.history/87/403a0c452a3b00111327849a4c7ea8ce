@@ -1,0 +1,37 @@
+package Test;
+
+import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.PluginManager;
+
+import LizaCraft.LizaCraftServer;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LizaCraftServer ls = new LizaCraftServer();
+		
+		try {
+			Thread.sleep(4000);
+			
+			
+			System.out.println("Before");
+			PluginManager pm = ls.getPluginManager();
+			Plugin ps[] = pm.getPlugins();
+			System.out.println(ps.length);
+			
+			System.out.println("After");
+			ls.enableLizaPlugin();
+			Plugin ps[] = pm.getPlugins();
+			System.out.println(ps.length);
+		} catch (InterruptedException e) {
+			
+		}
+		
+		
+	}
+
+}

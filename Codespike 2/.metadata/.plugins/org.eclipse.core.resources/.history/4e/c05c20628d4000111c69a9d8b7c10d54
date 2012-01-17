@@ -1,0 +1,31 @@
+package LizaCraft;
+
+import java.util.logging.Logger;
+
+import org.bukkit.event.Event;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+// to become LizaCraftListener
+public class LizaPlugin extends JavaPlugin {
+	private static final Logger log = Logger.getLogger("Minecraft");
+	
+	private LizaPlayerListener playerListener = new LizaPlayerListener();
+		
+	@Override
+	public void onDisable() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onEnable() {
+		// TODO Auto-generated method stub
+		// register events here
+		PluginManager pm = getServer().getPluginManager();
+		pm.registerEvent(Event.Type.PLAYER_JOIN, playerListener, Event.Priority.Normal, this);
+		
+		log.info("LizaPlugin enabled");
+	}
+
+}

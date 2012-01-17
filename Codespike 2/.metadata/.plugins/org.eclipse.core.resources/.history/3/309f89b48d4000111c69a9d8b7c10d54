@@ -1,0 +1,7 @@
+package LizaCraft;
+
+import Liza.LizaEventListener;
+
+public class LizaCraftEventListener implements LizaEventListener {
+
+}

@@ -1,0 +1,21 @@
+package LizaCraft;
+
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.craftbukkit.CraftChunk;
+import org.bukkit.craftbukkit.block.CraftBlock;
+
+import Liza.LizaBlock;
+
+public class LizaCraftBlock implements LizaBlock {
+	private CraftBlock block;
+
+	public LizaCraftBlock(CraftBlock block) {
+		this.block = block
+	}
+
+	public boolean assertBlockType(Material type) {
+		return this.getType().equals(type);
+	}
+
+}

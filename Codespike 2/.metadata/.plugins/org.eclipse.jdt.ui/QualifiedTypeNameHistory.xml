@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.Server"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="Liza.LizaServer"/>
+<fullyQualifiedTypeName name="LizaCraft.LizaCraftServer"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.SimplePluginManager"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.Plugin"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Event.Priority"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerListener"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerJoinEvent"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.PluginLoader"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Event"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Event.Type"/>
+</qualifiedTypeNameHistroy>
