@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.entity.Entity"/>
+<fullyQualifiedTypeName name="Liza.LizaServer"/>
+<fullyQualifiedTypeName name="org.bukkit.Server"/>
+<fullyQualifiedTypeName name="Liza.LizaWorld"/>
+<fullyQualifiedTypeName name="org.bukkit.World"/>
+</qualifiedTypeNameHistroy>

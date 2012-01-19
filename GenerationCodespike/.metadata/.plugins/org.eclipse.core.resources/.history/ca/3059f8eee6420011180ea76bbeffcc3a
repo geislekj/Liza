@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package Liza;
+
+import org.bukkit.Server;
+
+/**
+ * @author geislekj
+ *
+ */
+public interface LizaServer extends Server{
+
+}

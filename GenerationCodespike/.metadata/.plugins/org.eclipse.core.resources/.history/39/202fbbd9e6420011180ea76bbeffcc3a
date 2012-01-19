@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package Liza;
+
+/**
+ * @author geislekj
+ *
+ */
+public interface LizaServer {
+
+}
