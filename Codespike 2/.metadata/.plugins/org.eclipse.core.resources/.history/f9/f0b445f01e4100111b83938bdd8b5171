@@ -1,0 +1,7 @@
+package LizaCraft;
+
+import org.bukkit.event.block.BlockListener;
+
+public class LizaBlockListener extends BlockListener {
+
+}

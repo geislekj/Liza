@@ -387,3 +387,132 @@ java.io.IOException: Server returned HTTP response code: 500 for URL: https://pi
 	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:94)
 	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:41)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 4 2012-01-11 12:29:14.341
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:624)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:449)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:441)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:531)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:191)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:659)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:701)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:452)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:387)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2012-01-11 12:29:30.240 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2012-01-11 12:29:34.217
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-01-11 12:29:34.217
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.core 4 4 2012-01-11 12:32:40.577
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:62)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:158)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:125)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:94)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2012-01-13 13:57:40.999 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2012-01-13 13:57:53.781
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-01-13 13:57:53.781
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.core 4 4 2012-01-13 15:47:29.522
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:62)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:158)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:125)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:94)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2012-01-16 10:08:40.306 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-01-16 10:08:43.826
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2012-01-16 10:08:54.444
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-01-16 10:08:54.444
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

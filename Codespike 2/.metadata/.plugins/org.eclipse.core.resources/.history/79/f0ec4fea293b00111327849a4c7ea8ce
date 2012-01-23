@@ -1,0 +1,14 @@
+package LizaCraft;
+
+import org.bukkit.event.player.PlayerListener;
+
+public class LizaPlayerListener extends PlayerListener {
+	
+	public LizaPlayerListener() {
+		
+	}
+
+	public void onPlayerJoin(PlayerJoinEvent e) {
+		
+	}
+}

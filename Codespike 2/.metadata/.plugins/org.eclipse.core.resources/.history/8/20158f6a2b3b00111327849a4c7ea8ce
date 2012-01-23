@@ -1,0 +1,125 @@
+package LizaCraft;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.List;
+
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.ThreadServerApplication;
+
+import org.bukkit.craftbukkit.CraftServer;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.SimplePluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class LizaCraftServer {
+	private static final String MINECRAFT_SERVER_THREAD_NAME = "Server thread";
+	private static final String MINECRAFT_SERVER_FIELD_NAME = "a";
+	
+	private final CraftServer cs;
+	private final LizaServerThread lst;
+	private final LizaPlugin spoof;
+	
+	public LizaCraftServer() {
+		this.lst = new LizaServerThread("Liza Server Thread");
+		this.lst.start();
+		
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			
+		}
+		
+		this.cs = getCraftServer();
+		
+		this.spoof = new LizaPlugin();
+	}
+	
+	private CraftServer getCraftServer() {
+		ThreadGroup rootGroup = Thread.currentThread().getThreadGroup();
+		
+		while (rootGroup.getParent() != null) {
+			rootGroup = rootGroup.getParent();
+		}
+		
+		Thread threads[] = new Thread[rootGroup.activeCount()];
+		
+		// activeCount() only provides an estimate for the number of
+		// running threads, so this loop ensures that all threads are
+		// captured.
+		while ( rootGroup.enumerate(threads, true) >= threads.length) {
+			threads = new Thread[threads.length * 2];
+		}
+		
+		// This is the Minecraft thread that is running the server
+		ThreadServerApplication tsa = null;
+		
+		for (Thread t : threads) {
+			if (t != null && t.getName() != null && t.getName().equals(MINECRAFT_SERVER_THREAD_NAME)) {
+				tsa = (ThreadServerApplication)t;
+				break;
+			}
+		}
+		
+		Class<? extends ThreadServerApplication> c = tsa.getClass();
+		Field f;
+		MinecraftServer ms = null;
+		try {
+			f = c.getDeclaredField(MINECRAFT_SERVER_FIELD_NAME);
+			f.setAccessible(true);
+			ms = (MinecraftServer)f.get(tsa);
+		} catch (Exception e) { //lol
+			
+		}
+		
+		return ms.server;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void enableLizaPlugin() {
+		Class<? extends PluginManager> c = ((SimplePluginManager)cs.getPluginManager()).getClass();
+		Field f;
+		List<Plugin> plugs;
+		try {
+			f = c.getDeclaredField("plugins");
+			f.setAccessible(true);
+			plugs = (List<Plugin>)f.get(cs.getPluginManager());
+			plugs.add(this.spoof);
+			f.set(cs.getPluginManager(), plugs);
+		} catch (Exception e) { // lol again
+			System.out.println("Ooops!");
+			e.printStackTrace();
+		}
+		
+		Class<? extends JavaPlugin>cp = this.spoof.getClass();
+		try {
+			f = cp.getDeclaredField("isEnabled");
+			f.setAccessible(true);
+			f.set(this.spoof, true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(this.spoof.isEnabled());
+	}
+	
+	public void stop() {
+		cs.shutdown();
+		lst.interrupt();
+	}
+	
+	public int broadcastMessage(String message) {
+		return cs.broadcastMessage(message);
+	}
+	
+	public Player[] getOnlinePlayers() {
+		return (cs.getOnlinePlayers());
+	}
+	
+	public PluginManager getPluginManager() {
+		return cs.getPluginManager();
+	}
+	
+}

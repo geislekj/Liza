@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="1033" maximized="true" width="960" x="3153" y="-17">
+<window height="1032" maximized="true" width="960" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -33,17 +34,27 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" partName="Demo.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/DemoTest/Demo.java" title="Demo.java" tooltip="Prototype 1/src/DemoTest/Demo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/DemoTest/Demo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1873" selectionTopPixel="21"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" partName="LizaBlock.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaBlock.java" title="LizaBlock.java" tooltip="Prototype 1/src/Liza/LizaBlock.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaBlock.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftBlock.java" partName="LizaCraftBlock.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaCraftBlock.java" title="LizaCraftBlock.java" tooltip="Prototype 1/src/Liza/LizaCraftBlock.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaCraftBlock.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="468" selectionTopPixel="0"/>
+</editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" partName="LizaServer.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaServer.java" title="LizaServer.java" tooltip="Prototype 1/src/Liza/LizaServer.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaServer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="583" selectionTopPixel="845"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServerThread.java" partName="LizaServerThread.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaServerThread.java" title="LizaServerThread.java" tooltip="Prototype 1/src/Liza/LizaServerThread.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaServerThread.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="611" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1349" selectionTopPixel="813"/>
 </editor>
 </editors>
 <views>
@@ -52,15 +63,17 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="124" org.eclipse.ui.ide.pathField="164" org.eclipse.ui.ide.resourceField="124" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -90,9 +103,6 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
 <sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
@@ -113,7 +123,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -167,12 +177,12 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@dc420b" orientation="512" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="0">
 <fastViews>
@@ -251,161 +261,137 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Codespike 1/src/CodeSpike1.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Codespike 1/src/MockServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/DemoTest/Demo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Prototype 1/ops.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaBlock.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaCraftBlock.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServerThread.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/MockModule1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Prototype 1/liza-out.txt"/>
 </editors>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="323" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="261" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="455" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="455" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="255" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="290" y="136"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="607" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="290" y="136"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="548" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="514" y="48"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="583" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="578" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
+<item historyLabel="LizaServer.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="269" y="0"/>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="275" y="0"/>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="1946" y="0"/>
 </item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
+<item historyLabel="ops.txt" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="631" y="0"/>
+<item historyLabel="ops.txt" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="1946" y="0"/>
 </item>
-<item historyLabel="CodeSpike1.java" index="0">
-<position info="not_deleted" x="1031" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="631" y="0"/>
-</item>
-<item historyLabel="CodeSpike1.java" index="0">
-<position info="not_deleted" x="1031" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="631" y="0"/>
-</item>
-<item historyLabel="MockServer.java" index="2">
-<position info="not_deleted" x="426" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="631" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="581" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="1861" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="670" y="0"/>
-</item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="581" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="534" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="1911" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
-<position info="not_deleted" x="1911" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
+<item historyLabel="Demo.java" index="1">
 <position/>
 </item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="LizaServer.java" index="1">
+<item historyLabel="Demo.java" index="1">
 <position/>
 </item>
-<item historyLabel="LizaServerThread.java" index="3">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="MockModule1.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
-</item>
-<item active="true" historyLabel="LizaServer.java" index="1">
+<item historyLabel="Demo.java" index="1">
 <position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position/>
+</item>
+<item historyLabel="LizaBlock.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaCraftBlock.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="473" y="0"/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="2808" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1912" y="0"/>
+</item>
+<item historyLabel="LizaServerThread.java" index="6">
+<position info="not_deleted" x="475" y="0"/>
+</item>
+<item historyLabel="liza-out.txt" index="7">
+<position info="not_deleted" x="924615" y="0"/>
+</item>
+<item historyLabel="LizaServerThread.java" index="6">
+<position info="not_deleted" x="583" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1677" y="0"/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="1873" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1783" y="0"/>
+</item>
+<item historyLabel="Demo.java" index="1">
+<position info="not_deleted" x="1873" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1883" y="0"/>
+</item>
+<item historyLabel="LizaCraftBlock.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="LizaBlock.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaCraftBlock.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1883" y="0"/>
+</item>
+<item historyLabel="LizaCraftBlock.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item active="true" historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="1883" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -413,6 +399,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@dc420b"/>
 <trimItem IMemento.internal.id="right"/>
@@ -424,18 +413,37 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d1f1d6"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MockModule1.java" tooltip="Prototype 1/src/Liza/MockModule1.java">
-<persistable path="/Prototype 1/src/Liza/MockModule1.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="liza-out.txt" tooltip="Prototype 1/liza-out.txt">
+<persistable path="/Prototype 1/liza-out.txt"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServerThread.java" tooltip="Prototype 1/src/Liza/LizaServerThread.java">
 <persistable path="/Prototype 1/src/Liza/LizaServerThread.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Prototype 1/src/Liza/LizaServer.java">
 <persistable path="/Prototype 1/src/Liza/LizaServer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftBlock.java" tooltip="Prototype 1/src/Liza/LizaCraftBlock.java">
+<persistable path="/Prototype 1/src/Liza/LizaCraftBlock.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" tooltip="Prototype 1/src/Liza/LizaBlock.java">
+<persistable path="/Prototype 1/src/Liza/LizaBlock.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ops.txt" tooltip="Prototype 1/ops.txt">
+<persistable path="/Prototype 1/ops.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" tooltip="Prototype 1/src/DemoTest/Demo.java">
+<persistable path="/Prototype 1/src/DemoTest/Demo.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="CraftServer.class" tooltip="org.bukkit.craftbukkit.CraftServer">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Codespike 1/C:\/Users\/kimsj\/Documents\/Liza\/Codespike 1\/craftbukkit-1.0.1-R1.jar&lt;org.bukkit.craftbukkit(CraftServer.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MockModule1.java" tooltip="Prototype 1/src/Liza/MockModule1.java">
+<persistable path="/Prototype 1/src/Liza/MockModule1.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="errors.txt" tooltip="Codespike 1/errors.txt">
 <persistable path="/Codespike 1/errors.txt"/>

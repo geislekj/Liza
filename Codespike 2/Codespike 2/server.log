@@ -1,0 +1,994 @@
+2012-01-09 19:34:31 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:34:31 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:34:31 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:34:31 [INFO] Loading properties
+2012-01-09 19:34:31 [WARNING] server.properties does not exist
+2012-01-09 19:34:31 [INFO] Generating new properties file
+2012-01-09 19:34:31 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:34:32 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:34:32 [WARNING] Failed to load ban list: java.io.FileNotFoundException: banned-players.txt (The system cannot find the file specified)
+2012-01-09 19:34:32 [WARNING] Failed to load ip ban list: java.io.FileNotFoundException: banned-ips.txt (The system cannot find the file specified)
+2012-01-09 19:34:32 [WARNING] Failed to load operators list: java.io.FileNotFoundException: ops.txt (The system cannot find the file specified)
+2012-01-09 19:34:32 [WARNING] Failed to load white-list: java.io.FileNotFoundException: white-list.txt (The system cannot find the file specified)
+2012-01-09 19:34:32 [INFO] Preparing level "world"
+2012-01-09 19:34:32 [INFO] Default game type: 0
+2012-01-09 19:34:32 [INFO] Unable to find spawn biome
+2012-01-09 19:34:33 [INFO] Unable to find spawn biome
+2012-01-09 19:34:37 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:34:38 [INFO] Preparing spawn area: 8%
+2012-01-09 19:34:39 [INFO] Preparing spawn area: 12%
+2012-01-09 19:34:39 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:34:39 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:34:39 [INFO] Done (0.724s)! For help, type "help" or "?"
+2012-01-09 19:34:39 [INFO] Stopping server
+2012-01-09 19:34:39 [INFO] Saving chunks
+2012-01-09 19:34:44 [INFO] Stopping server
+2012-01-09 19:37:17 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:37:17 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:37:17 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:37:17 [INFO] Loading properties
+2012-01-09 19:37:17 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:37:17 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:37:17 [INFO] Preparing level "world"
+2012-01-09 19:37:17 [INFO] Default game type: 0
+2012-01-09 19:37:17 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:37:18 [INFO] Preparing spawn area: 16%
+2012-01-09 19:37:19 [INFO] Preparing spawn area: 24%
+2012-01-09 19:37:20 [INFO] Preparing spawn area: 28%
+2012-01-09 19:37:21 [INFO] Preparing spawn area: 36%
+2012-01-09 19:37:22 [INFO] Preparing spawn area: 44%
+2012-01-09 19:37:24 [INFO] Preparing spawn area: 52%
+2012-01-09 19:37:24 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:37:24 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:37:24 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:37:24 [INFO] Done (0.729s)! For help, type "help" or "?"
+2012-01-09 19:37:24 [INFO] Stopping server
+2012-01-09 19:37:24 [INFO] Saving chunks
+2012-01-09 19:37:57 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:37:57 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:37:57 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:37:57 [INFO] Loading properties
+2012-01-09 19:37:57 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:37:57 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:37:57 [INFO] Preparing level "world"
+2012-01-09 19:37:57 [INFO] Default game type: 0
+2012-01-09 19:37:57 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:37:58 [INFO] Preparing spawn area: 24%
+2012-01-09 19:37:59 [INFO] Preparing spawn area: 57%
+2012-01-09 19:38:00 [INFO] Preparing spawn area: 65%
+2012-01-09 19:38:01 [INFO] Preparing spawn area: 73%
+2012-01-09 19:38:02 [INFO] Preparing spawn area: 77%
+2012-01-09 19:38:03 [INFO] Preparing spawn area: 85%
+2012-01-09 19:38:04 [INFO] Before
+2012-01-09 19:38:04 [INFO] After
+2012-01-09 19:38:04 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:38:04 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:38:04 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:38:04 [INFO] Done (0.722s)! For help, type "help" or "?"
+2012-01-09 19:38:04 [INFO] Stopping server
+2012-01-09 19:38:04 [INFO] Saving chunks
+2012-01-09 19:38:32 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:38:32 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:38:32 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:38:32 [INFO] Loading properties
+2012-01-09 19:38:32 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:38:32 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:38:32 [INFO] Preparing level "world"
+2012-01-09 19:38:32 [INFO] Default game type: 0
+2012-01-09 19:38:32 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:38:33 [INFO] Preparing spawn area: 24%
+2012-01-09 19:38:34 [INFO] Preparing spawn area: 65%
+2012-01-09 19:38:35 [INFO] Preparing spawn area: 93%
+2012-01-09 19:38:36 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:38:36 [INFO] Preparing spawn area: 0%
+2012-01-09 19:38:37 [INFO] Preparing spawn area: 8%
+2012-01-09 19:38:38 [INFO] Preparing spawn area: 16%
+2012-01-09 19:38:39 [INFO] Preparing spawn area: 28%
+2012-01-09 19:38:40 [INFO] Preparing spawn area: 36%
+2012-01-09 19:38:41 [INFO] Preparing spawn area: 44%
+2012-01-09 19:38:43 [INFO] Preparing spawn area: 56%
+2012-01-09 19:38:43 [INFO] Before
+2012-01-09 19:38:43 [INFO] After
+2012-01-09 19:38:44 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:38:44 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:38:44 [INFO] Done (1.183s)! For help, type "help" or "?"
+2012-01-09 19:38:44 [INFO] Stopping server
+2012-01-09 19:38:44 [INFO] Saving chunks
+2012-01-09 19:38:48 [INFO] Stopping server
+2012-01-09 19:38:48 [INFO] Saving chunks
+2012-01-09 19:40:00 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:40:00 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:40:00 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:40:00 [INFO] Loading properties
+2012-01-09 19:40:00 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:40:00 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:40:00 [INFO] Preparing level "world"
+2012-01-09 19:40:00 [INFO] Default game type: 0
+2012-01-09 19:40:01 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:40:02 [INFO] Preparing spawn area: 28%
+2012-01-09 19:40:03 [INFO] Preparing spawn area: 69%
+2012-01-09 19:40:03 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:40:04 [INFO] Preparing spawn area: 3%
+2012-01-09 19:40:05 [INFO] Preparing spawn area: 65%
+2012-01-09 19:40:06 [INFO] Preparing spawn area: 73%
+2012-01-09 19:40:07 [INFO] Preparing spawn area: 81%
+2012-01-09 19:40:08 [INFO] Preparing spawn area: 89%
+2012-01-09 19:40:09 [INFO] Preparing spawn area: 97%
+2012-01-09 19:40:09 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:40:10 [INFO] Preparing spawn area: 20%
+2012-01-09 19:40:11 [INFO] Preparing spawn area: 57%
+2012-01-09 19:40:12 [INFO] Preparing spawn area: 89%
+2012-01-09 19:40:12 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:40:12 [INFO] Done (1.179s)! For help, type "help" or "?"
+2012-01-09 19:40:14 [INFO] Before
+2012-01-09 19:40:14 [INFO] Ooops!
+2012-01-09 19:40:14 [INFO] After
+2012-01-09 19:40:14 [INFO] Stopping server
+2012-01-09 19:40:14 [INFO] Saving chunks
+2012-01-09 19:40:19 [INFO] Stopping server
+2012-01-09 19:40:45 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:40:45 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:40:45 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:40:45 [INFO] Loading properties
+2012-01-09 19:40:45 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:40:46 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:40:46 [INFO] Preparing level "world"
+2012-01-09 19:40:46 [INFO] Default game type: 0
+2012-01-09 19:40:46 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:40:47 [INFO] Preparing spawn area: 32%
+2012-01-09 19:40:48 [INFO] Preparing spawn area: 73%
+2012-01-09 19:40:49 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:40:49 [INFO] Preparing spawn area: 12%
+2012-01-09 19:40:50 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:40:50 [INFO] Preparing spawn area: 0%
+2012-01-09 19:40:51 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:40:51 [INFO] Done (0.498s)! For help, type "help" or "?"
+2012-01-09 19:40:59 [INFO] Before
+2012-01-09 19:40:59 [INFO] Ooops!
+2012-01-09 19:40:59 [INFO] After
+2012-01-09 19:40:59 [INFO] Stopping server
+2012-01-09 19:40:59 [INFO] Saving chunks
+2012-01-09 19:42:05 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:42:05 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:42:05 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:42:05 [INFO] Loading properties
+2012-01-09 19:42:05 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:42:06 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:42:06 [INFO] Preparing level "world"
+2012-01-09 19:42:06 [INFO] Default game type: 0
+2012-01-09 19:42:06 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:42:07 [INFO] Preparing spawn area: 40%
+2012-01-09 19:42:08 [INFO] Preparing spawn area: 97%
+2012-01-09 19:42:08 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:42:09 [INFO] Preparing spawn area: 69%
+2012-01-09 19:42:09 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:42:10 [INFO] Preparing spawn area: 69%
+2012-01-09 19:42:10 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:42:10 [INFO] Done (0.441s)! For help, type "help" or "?"
+2012-01-09 19:42:19 [INFO] Before
+2012-01-09 19:42:19 [INFO] public void LizaCraft.LizaPlugin.onDisable()
+2012-01-09 19:42:19 [INFO] public void LizaCraft.LizaPlugin.onEnable()
+2012-01-09 19:42:19 [INFO] After
+2012-01-09 19:42:19 [INFO] Stopping server
+2012-01-09 19:42:19 [INFO] Saving chunks
+2012-01-09 19:44:31 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:44:31 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:44:31 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:44:31 [INFO] Loading properties
+2012-01-09 19:44:31 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:44:31 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:44:31 [INFO] Preparing level "world"
+2012-01-09 19:44:31 [INFO] Default game type: 0
+2012-01-09 19:44:31 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:44:32 [INFO] Preparing spawn area: 48%
+2012-01-09 19:44:33 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:44:33 [INFO] Preparing spawn area: 16%
+2012-01-09 19:44:34 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:44:34 [INFO] Preparing spawn area: 0%
+2012-01-09 19:44:35 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:44:35 [INFO] Done (0.400s)! For help, type "help" or "?"
+2012-01-09 19:44:44 [INFO] Before
+2012-01-09 19:44:44 [INFO] public org.bukkit.command.PluginCommand org.bukkit.plugin.java.JavaPlugin.getCommand(java.lang.String)
+2012-01-09 19:44:44 [INFO] public final org.bukkit.Server org.bukkit.plugin.java.JavaPlugin.getServer()
+2012-01-09 19:44:44 [INFO] public void org.bukkit.plugin.java.JavaPlugin.saveConfig()
+2012-01-09 19:44:44 [INFO] public void org.bukkit.plugin.java.JavaPlugin.onLoad()
+2012-01-09 19:44:44 [INFO] public org.bukkit.generator.ChunkGenerator org.bukkit.plugin.java.JavaPlugin.getDefaultWorldGenerator(java.lang.String,java.lang.String)
+2012-01-09 19:44:44 [INFO] public final org.bukkit.plugin.PluginLoader org.bukkit.plugin.java.JavaPlugin.getPluginLoader()
+2012-01-09 19:44:44 [INFO] public final boolean org.bukkit.plugin.java.JavaPlugin.isNaggable()
+2012-01-09 19:44:44 [INFO] public final void org.bukkit.plugin.java.JavaPlugin.setNaggable(boolean)
+2012-01-09 19:44:44 [INFO] public java.io.File org.bukkit.plugin.java.JavaPlugin.getDataFolder()
+2012-01-09 19:44:44 [INFO] public org.bukkit.util.config.Configuration org.bukkit.plugin.java.JavaPlugin.getConfiguration()
+2012-01-09 19:44:44 [INFO] public void org.bukkit.plugin.java.JavaPlugin.reloadConfig()
+2012-01-09 19:44:44 [INFO] public com.avaje.ebean.EbeanServer org.bukkit.plugin.java.JavaPlugin.getDatabase()
+2012-01-09 19:44:44 [INFO] public boolean org.bukkit.plugin.java.JavaPlugin.onCommand(org.bukkit.command.CommandSender,org.bukkit.command.Command,java.lang.String,java.lang.String[])
+2012-01-09 19:44:44 [INFO] public java.util.List org.bukkit.plugin.java.JavaPlugin.getDatabaseClasses()
+2012-01-09 19:44:44 [INFO] private java.lang.String org.bukkit.plugin.java.JavaPlugin.replaceDatabaseString(java.lang.String)
+2012-01-09 19:44:44 [INFO] public boolean org.bukkit.plugin.java.JavaPlugin.isInitialized()
+2012-01-09 19:44:44 [INFO] protected void org.bukkit.plugin.java.JavaPlugin.installDDL()
+2012-01-09 19:44:44 [INFO] protected void org.bukkit.plugin.java.JavaPlugin.removeDDL()
+2012-01-09 19:44:44 [INFO] public java.lang.String org.bukkit.plugin.java.JavaPlugin.toString()
+2012-01-09 19:44:44 [INFO] protected java.lang.ClassLoader org.bukkit.plugin.java.JavaPlugin.getClassLoader()
+2012-01-09 19:44:44 [INFO] public java.io.InputStream org.bukkit.plugin.java.JavaPlugin.getResource(java.lang.String)
+2012-01-09 19:44:44 [INFO] protected final void org.bukkit.plugin.java.JavaPlugin.initialize(org.bukkit.plugin.PluginLoader,org.bukkit.Server,org.bukkit.plugin.PluginDescriptionFile,java.io.File,java.io.File,java.lang.ClassLoader)
+2012-01-09 19:44:44 [INFO] protected java.io.File org.bukkit.plugin.java.JavaPlugin.getFile()
+2012-01-09 19:44:44 [INFO] public final boolean org.bukkit.plugin.java.JavaPlugin.isEnabled()
+2012-01-09 19:44:44 [INFO] protected void org.bukkit.plugin.java.JavaPlugin.setEnabled(boolean)
+2012-01-09 19:44:44 [INFO] public org.bukkit.configuration.file.FileConfiguration org.bukkit.plugin.java.JavaPlugin.getConfig()
+2012-01-09 19:44:44 [INFO] public org.bukkit.plugin.PluginDescriptionFile org.bukkit.plugin.java.JavaPlugin.getDescription()
+2012-01-09 19:44:44 [INFO] After
+2012-01-09 19:44:44 [INFO] Stopping server
+2012-01-09 19:44:44 [INFO] Saving chunks
+2012-01-09 19:45:10 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:45:10 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:45:10 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:45:10 [INFO] Loading properties
+2012-01-09 19:45:11 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:45:11 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:45:11 [INFO] Preparing level "world"
+2012-01-09 19:45:11 [INFO] Default game type: 0
+2012-01-09 19:45:11 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:45:12 [INFO] Preparing spawn area: 53%
+2012-01-09 19:45:13 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:45:13 [INFO] Preparing spawn area: 36%
+2012-01-09 19:45:14 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:45:14 [INFO] Preparing spawn area: 24%
+2012-01-09 19:45:14 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:45:14 [INFO] Done (0.363s)! For help, type "help" or "?"
+2012-01-09 19:45:24 [INFO] Before
+2012-01-09 19:45:24 [INFO] protected void org.bukkit.plugin.java.JavaPlugin.setEnabled(boolean)
+2012-01-09 19:45:24 [INFO] Ooops!
+2012-01-09 19:45:24 [INFO] After
+2012-01-09 19:45:24 [INFO] Stopping server
+2012-01-09 19:45:24 [INFO] Saving chunks
+2012-01-09 19:45:58 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:45:58 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:45:58 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:45:58 [INFO] Loading properties
+2012-01-09 19:45:58 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:45:58 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:45:58 [INFO] Preparing level "world"
+2012-01-09 19:45:58 [INFO] Default game type: 0
+2012-01-09 19:45:58 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:45:59 [INFO] Preparing spawn area: 48%
+2012-01-09 19:46:00 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:46:00 [INFO] Preparing spawn area: 24%
+2012-01-09 19:46:01 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:46:01 [INFO] Preparing spawn area: 4%
+2012-01-09 19:46:02 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:46:02 [INFO] Done (0.377s)! For help, type "help" or "?"
+2012-01-09 19:46:11 [INFO] Before
+2012-01-09 19:46:11 [INFO] protected void org.bukkit.plugin.java.JavaPlugin.setEnabled(boolean)
+2012-01-09 19:46:11 [INFO] Ooops!
+2012-01-09 19:46:11 [INFO] After
+2012-01-09 19:46:11 [INFO] Stopping server
+2012-01-09 19:46:11 [INFO] Saving chunks
+2012-01-09 19:46:13 [INFO] Stopping server
+2012-01-09 19:46:47 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:46:47 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:46:47 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:46:47 [INFO] Loading properties
+2012-01-09 19:46:47 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:46:47 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:46:47 [INFO] Preparing level "world"
+2012-01-09 19:46:47 [INFO] Default game type: 0
+2012-01-09 19:46:47 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:46:48 [INFO] Preparing spawn area: 56%
+2012-01-09 19:46:49 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:46:49 [INFO] Preparing spawn area: 32%
+2012-01-09 19:46:50 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:46:50 [INFO] Preparing spawn area: 40%
+2012-01-09 19:46:51 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:46:51 [INFO] Done (0.364s)! For help, type "help" or "?"
+2012-01-09 19:47:00 [INFO] Before
+2012-01-09 19:47:00 [INFO] Ooops!
+2012-01-09 19:47:00 [SEVERE] java.lang.reflect.InvocationTargetException
+2012-01-09 19:47:00 [SEVERE] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2012-01-09 19:47:00 [SEVERE] 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2012-01-09 19:47:00 [SEVERE] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2012-01-09 19:47:00 [SEVERE] 	at java.lang.reflect.Method.invoke(Unknown Source)
+2012-01-09 19:47:00 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:83)
+2012-01-09 19:47:00 [SEVERE] 	at Test.test.main(test.java:19)
+2012-01-09 19:47:00 [SEVERE] Caused by: java.lang.NullPointerException
+2012-01-09 19:47:00 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:21)
+2012-01-09 19:47:00 [SEVERE] 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:188)
+2012-01-09 19:47:00 [SEVERE] 	... 6 more
+2012-01-09 19:47:00 [INFO] After
+2012-01-09 19:47:00 [INFO] Stopping server
+2012-01-09 19:47:00 [INFO] Saving chunks
+2012-01-09 19:51:45 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:51:45 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:51:45 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:51:45 [INFO] Loading properties
+2012-01-09 19:51:45 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:51:45 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:51:45 [INFO] Preparing level "world"
+2012-01-09 19:51:45 [INFO] Default game type: 0
+2012-01-09 19:51:45 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:51:46 [INFO] Preparing spawn area: 52%
+2012-01-09 19:51:47 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:51:47 [INFO] Preparing spawn area: 28%
+2012-01-09 19:51:48 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:51:48 [INFO] Preparing spawn area: 8%
+2012-01-09 19:51:49 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:51:49 [INFO] Done (0.385s)! For help, type "help" or "?"
+2012-01-09 19:51:52 [INFO] Before
+2012-01-09 19:51:52 [INFO] private static final java.util.logging.Logger LizaCraft.LizaPlugin.log
+2012-01-09 19:51:52 [INFO] After
+2012-01-09 19:51:52 [INFO] Stopping server
+2012-01-09 19:51:52 [INFO] Saving chunks
+2012-01-09 19:52:30 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:52:30 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:52:30 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:52:30 [INFO] Loading properties
+2012-01-09 19:52:30 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:52:31 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:52:31 [INFO] Preparing level "world"
+2012-01-09 19:52:31 [INFO] Default game type: 0
+2012-01-09 19:52:31 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:52:32 [INFO] Preparing spawn area: 48%
+2012-01-09 19:52:32 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:52:33 [INFO] Preparing spawn area: 20%
+2012-01-09 19:52:34 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:52:34 [INFO] Preparing spawn area: 4%
+2012-01-09 19:52:34 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:52:34 [INFO] Done (0.375s)! For help, type "help" or "?"
+2012-01-09 19:52:38 [INFO] Before
+2012-01-09 19:52:38 [INFO] private boolean org.bukkit.plugin.java.JavaPlugin.isEnabled
+2012-01-09 19:52:38 [INFO] private boolean org.bukkit.plugin.java.JavaPlugin.initialized
+2012-01-09 19:52:38 [INFO] private org.bukkit.plugin.PluginLoader org.bukkit.plugin.java.JavaPlugin.loader
+2012-01-09 19:52:38 [INFO] private org.bukkit.Server org.bukkit.plugin.java.JavaPlugin.server
+2012-01-09 19:52:38 [INFO] private java.io.File org.bukkit.plugin.java.JavaPlugin.file
+2012-01-09 19:52:38 [INFO] private org.bukkit.plugin.PluginDescriptionFile org.bukkit.plugin.java.JavaPlugin.description
+2012-01-09 19:52:38 [INFO] private java.io.File org.bukkit.plugin.java.JavaPlugin.dataFolder
+2012-01-09 19:52:38 [INFO] private java.lang.ClassLoader org.bukkit.plugin.java.JavaPlugin.classLoader
+2012-01-09 19:52:38 [INFO] private org.bukkit.util.config.Configuration org.bukkit.plugin.java.JavaPlugin.config
+2012-01-09 19:52:38 [INFO] private boolean org.bukkit.plugin.java.JavaPlugin.naggable
+2012-01-09 19:52:38 [INFO] private com.avaje.ebean.EbeanServer org.bukkit.plugin.java.JavaPlugin.ebean
+2012-01-09 19:52:38 [INFO] private org.bukkit.configuration.file.FileConfiguration org.bukkit.plugin.java.JavaPlugin.newConfig
+2012-01-09 19:52:38 [INFO] private java.io.File org.bukkit.plugin.java.JavaPlugin.configFile
+2012-01-09 19:52:38 [INFO] After
+2012-01-09 19:52:38 [INFO] Stopping server
+2012-01-09 19:52:38 [INFO] Saving chunks
+2012-01-09 19:54:02 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:54:02 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:54:02 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:54:02 [INFO] Loading properties
+2012-01-09 19:54:02 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:54:02 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:54:02 [INFO] Preparing level "world"
+2012-01-09 19:54:02 [INFO] Default game type: 0
+2012-01-09 19:54:02 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:54:03 [INFO] Preparing spawn area: 48%
+2012-01-09 19:54:04 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:54:04 [INFO] Preparing spawn area: 24%
+2012-01-09 19:54:05 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:54:05 [INFO] Preparing spawn area: 4%
+2012-01-09 19:54:06 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:54:06 [INFO] Done (0.377s)! For help, type "help" or "?"
+2012-01-09 19:54:09 [INFO] Before
+2012-01-09 19:54:09 [INFO] After
+2012-01-09 19:54:09 [INFO] Stopping server
+2012-01-09 19:54:09 [INFO] Saving chunks
+2012-01-09 19:56:34 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:56:34 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:56:34 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:56:34 [INFO] Loading properties
+2012-01-09 19:56:34 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:56:34 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:56:34 [INFO] Preparing level "world"
+2012-01-09 19:56:34 [INFO] Default game type: 0
+2012-01-09 19:56:34 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:56:35 [INFO] Preparing spawn area: 56%
+2012-01-09 19:56:36 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:56:36 [INFO] Preparing spawn area: 28%
+2012-01-09 19:56:37 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:56:37 [INFO] Preparing spawn area: 8%
+2012-01-09 19:56:38 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:56:38 [INFO] Done (0.376s)! For help, type "help" or "?"
+2012-01-09 19:56:41 [INFO] Before
+2012-01-09 19:56:41 [INFO] After
+2012-01-09 19:56:41 [INFO] Stopping server
+2012-01-09 19:56:41 [INFO] Saving chunks
+2012-01-09 19:57:40 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 19:57:40 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 19:57:40 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 19:57:40 [INFO] Loading properties
+2012-01-09 19:57:40 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 19:57:40 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 19:57:40 [INFO] Preparing level "world"
+2012-01-09 19:57:40 [INFO] Default game type: 0
+2012-01-09 19:57:41 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 19:57:42 [INFO] Preparing spawn area: 52%
+2012-01-09 19:57:42 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 19:57:43 [INFO] Preparing spawn area: 28%
+2012-01-09 19:57:43 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 19:57:44 [INFO] Preparing spawn area: 16%
+2012-01-09 19:57:44 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 19:57:44 [INFO] Done (0.368s)! For help, type "help" or "?"
+2012-01-09 19:57:48 [INFO] Before
+2012-01-09 19:57:48 [INFO] After
+2012-01-09 19:57:48 [INFO] Stopping server
+2012-01-09 19:57:48 [INFO] Saving chunks
+2012-01-09 19:57:50 [INFO] Stopping server
+2012-01-09 20:17:54 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:17:54 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:17:54 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:17:54 [INFO] Loading properties
+2012-01-09 20:17:54 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:17:54 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:17:54 [INFO] Preparing level "world"
+2012-01-09 20:17:54 [INFO] Default game type: 0
+2012-01-09 20:17:54 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:17:55 [INFO] Preparing spawn area: 61%
+2012-01-09 20:17:55 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:17:56 [INFO] Preparing spawn area: 56%
+2012-01-09 20:17:56 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:17:57 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:17:57 [INFO] Done (0.310s)! For help, type "help" or "?"
+2012-01-09 20:18:01 [INFO] Before
+2012-01-09 20:18:01 [INFO] Ooops!
+2012-01-09 20:18:01 [SEVERE] java.lang.NoSuchFieldException: plugins
+2012-01-09 20:18:01 [SEVERE] 	at java.lang.Class.getDeclaredField(Unknown Source)
+2012-01-09 20:18:01 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:86)
+2012-01-09 20:18:01 [SEVERE] 	at Test.test.main(test.java:22)
+2012-01-09 20:18:01 [INFO] After
+2012-01-09 20:18:01 [INFO] Stopping server
+2012-01-09 20:18:01 [INFO] Saving chunks
+2012-01-09 20:18:03 [INFO] Stopping server
+2012-01-09 20:18:03 [INFO] Saving chunks
+2012-01-09 20:18:45 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:18:45 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:18:45 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:18:45 [INFO] Loading properties
+2012-01-09 20:18:45 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:18:45 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:18:45 [INFO] Preparing level "world"
+2012-01-09 20:18:45 [INFO] Default game type: 0
+2012-01-09 20:18:45 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:18:46 [INFO] Preparing spawn area: 60%
+2012-01-09 20:18:47 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:18:48 [INFO] Preparing spawn area: 56%
+2012-01-09 20:18:48 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:18:48 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:18:48 [INFO] Done (0.314s)! For help, type "help" or "?"
+2012-01-09 20:18:53 [INFO] Before
+2012-01-09 20:18:53 [INFO] Ooops!
+2012-01-09 20:18:53 [SEVERE] java.lang.NoSuchFieldException: plugins
+2012-01-09 20:18:53 [SEVERE] 	at java.lang.Class.getDeclaredField(Unknown Source)
+2012-01-09 20:18:53 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:86)
+2012-01-09 20:18:53 [SEVERE] 	at Test.test.main(test.java:22)
+2012-01-09 20:18:53 [INFO] After
+2012-01-09 20:18:53 [INFO] Stopping server
+2012-01-09 20:18:53 [INFO] Saving chunks
+2012-01-09 20:20:13 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:20:13 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:20:13 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:20:13 [INFO] Loading properties
+2012-01-09 20:20:13 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:20:13 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:20:13 [INFO] Preparing level "world"
+2012-01-09 20:20:13 [INFO] Default game type: 0
+2012-01-09 20:20:13 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:20:14 [INFO] Preparing spawn area: 57%
+2012-01-09 20:20:15 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:20:15 [INFO] Preparing spawn area: 56%
+2012-01-09 20:20:16 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:20:16 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:20:16 [INFO] Done (0.322s)! For help, type "help" or "?"
+2012-01-09 20:20:21 [INFO] Before
+2012-01-09 20:20:21 [INFO] After
+2012-01-09 20:20:21 [SEVERE] Exception in thread "main" 
+2012-01-09 20:20:21 [SEVERE] java.lang.NullPointerException
+2012-01-09 20:20:21 [SEVERE] 	at org.bukkit.plugin.java.JavaPlugin.toString(JavaPlugin.java:330)
+2012-01-09 20:20:21 [SEVERE] 	at java.lang.String.valueOf(Unknown Source)
+2012-01-09 20:20:21 [SEVERE] 	at java.lang.StringBuilder.append(Unknown Source)
+2012-01-09 20:20:21 [SEVERE] 	at Test.test.main(test.java:30)
+2012-01-09 20:20:51 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:20:51 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:20:51 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:20:51 [INFO] Loading properties
+2012-01-09 20:20:51 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:20:51 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:20:51 [INFO] Preparing level "world"
+2012-01-09 20:20:51 [INFO] Default game type: 0
+2012-01-09 20:20:52 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:20:53 [INFO] Preparing spawn area: 57%
+2012-01-09 20:20:53 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:20:54 [INFO] Preparing spawn area: 56%
+2012-01-09 20:20:54 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:20:55 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:20:55 [INFO] Done (0.318s)! For help, type "help" or "?"
+2012-01-09 20:20:59 [INFO] Before
+2012-01-09 20:20:59 [INFO] After
+2012-01-09 20:20:59 [SEVERE] Exception in thread "main" 
+2012-01-09 20:20:59 [SEVERE] java.lang.NullPointerException
+2012-01-09 20:20:59 [SEVERE] 	at org.bukkit.plugin.java.JavaPlugin.toString(JavaPlugin.java:330)
+2012-01-09 20:20:59 [SEVERE] 	at java.lang.String.valueOf(Unknown Source)
+2012-01-09 20:20:59 [SEVERE] 	at java.io.PrintStream.println(Unknown Source)
+2012-01-09 20:20:59 [SEVERE] 	at Test.test.main(test.java:30)
+2012-01-09 20:21:38 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:21:38 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:21:38 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:21:38 [INFO] Loading properties
+2012-01-09 20:21:38 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:21:38 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:21:38 [INFO] Preparing level "world"
+2012-01-09 20:21:38 [INFO] Default game type: 0
+2012-01-09 20:21:38 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:21:39 [INFO] Preparing spawn area: 60%
+2012-01-09 20:21:40 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:21:40 [INFO] Preparing spawn area: 56%
+2012-01-09 20:21:41 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:21:41 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:21:41 [INFO] Done (0.311s)! For help, type "help" or "?"
+2012-01-09 20:21:45 [INFO] Before
+2012-01-09 20:21:45 [INFO] After
+2012-01-09 20:21:45 [INFO] 1
+2012-01-09 20:21:45 [INFO] Stopping server
+2012-01-09 20:21:45 [INFO] Saving chunks
+2012-01-09 20:25:44 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:25:44 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:25:44 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:25:44 [INFO] Loading properties
+2012-01-09 20:25:44 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:25:44 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:25:44 [INFO] Preparing level "world"
+2012-01-09 20:25:44 [INFO] Default game type: 0
+2012-01-09 20:25:44 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:25:45 [INFO] Preparing spawn area: 60%
+2012-01-09 20:25:46 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:25:46 [INFO] Preparing spawn area: 44%
+2012-01-09 20:25:47 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:25:47 [INFO] Preparing spawn area: 40%
+2012-01-09 20:25:47 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:25:47 [INFO] Done (0.355s)! For help, type "help" or "?"
+2012-01-09 20:25:51 [INFO] Before
+2012-01-09 20:25:51 [INFO] After
+2012-01-09 20:25:51 [INFO] 1
+2012-01-09 20:26:08 [INFO] SoggyNoose [/127.0.0.1:49280] logged in with entity id 245 at ([world] 227.5, 69.62000000476837, 251.5)
+2012-01-09 20:26:43 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-09 20:26:43 [INFO] Connection reset
+2012-01-09 20:28:24 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:28:24 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:28:24 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:28:24 [INFO] Loading properties
+2012-01-09 20:28:24 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:28:24 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:28:24 [INFO] Preparing level "world"
+2012-01-09 20:28:24 [INFO] Default game type: 0
+2012-01-09 20:28:24 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:28:25 [INFO] Preparing spawn area: 73%
+2012-01-09 20:28:26 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:28:26 [INFO] Preparing spawn area: 56%
+2012-01-09 20:28:27 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:28:27 [INFO] Preparing spawn area: 36%
+2012-01-09 20:28:28 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:28:28 [INFO] Done (0.365s)! For help, type "help" or "?"
+2012-01-09 20:28:31 [INFO] Before
+2012-01-09 20:28:31 [INFO] 0
+2012-01-09 20:28:31 [INFO] After
+2012-01-09 20:28:31 [SEVERE] Exception in thread "main" 
+2012-01-09 20:28:31 [SEVERE] java.lang.NullPointerException
+2012-01-09 20:28:31 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:23)
+2012-01-09 20:28:31 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:96)
+2012-01-09 20:28:31 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-09 20:30:42 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:30:42 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:30:42 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:30:42 [INFO] Loading properties
+2012-01-09 20:30:42 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:30:42 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:30:42 [INFO] Preparing level "world"
+2012-01-09 20:30:42 [INFO] Default game type: 0
+2012-01-09 20:30:43 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:30:44 [INFO] Preparing spawn area: 69%
+2012-01-09 20:30:44 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:30:45 [INFO] Preparing spawn area: 56%
+2012-01-09 20:30:45 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:30:46 [INFO] Preparing spawn area: 44%
+2012-01-09 20:30:46 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:30:46 [INFO] Done (0.361s)! For help, type "help" or "?"
+2012-01-09 20:30:50 [INFO] Before
+2012-01-09 20:30:50 [INFO] 0
+2012-01-09 20:30:50 [INFO] After
+2012-01-09 20:30:50 [INFO] false
+2012-01-09 20:30:50 [INFO] 1
+2012-01-09 20:35:26 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:35:26 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:35:26 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:35:26 [INFO] Loading properties
+2012-01-09 20:35:26 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:35:26 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:35:27 [INFO] Preparing level "world"
+2012-01-09 20:35:27 [INFO] Default game type: 0
+2012-01-09 20:35:27 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:35:28 [INFO] Preparing spawn area: 69%
+2012-01-09 20:35:28 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:35:29 [INFO] Preparing spawn area: 56%
+2012-01-09 20:35:29 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:35:30 [INFO] Preparing spawn area: 77%
+2012-01-09 20:35:30 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:35:30 [INFO] Done (0.333s)! For help, type "help" or "?"
+2012-01-09 20:35:34 [INFO] Before
+2012-01-09 20:35:34 [INFO] 0
+2012-01-09 20:35:34 [INFO] After
+2012-01-09 20:35:34 [SEVERE] java.lang.NoSuchFieldException: isEnabled
+2012-01-09 20:35:34 [SEVERE] 	at java.lang.Class.getDeclaredField(Unknown Source)
+2012-01-09 20:35:34 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:98)
+2012-01-09 20:35:34 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-09 20:35:34 [INFO] false
+2012-01-09 20:35:34 [INFO] 1
+2012-01-09 20:35:49 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:35:49 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:35:49 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:35:49 [INFO] Loading properties
+2012-01-09 20:35:49 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:35:50 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:35:50 [INFO] Preparing level "world"
+2012-01-09 20:35:50 [INFO] Default game type: 0
+2012-01-09 20:35:50 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:35:51 [INFO] Preparing spawn area: 69%
+2012-01-09 20:35:51 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:35:52 [INFO] Preparing spawn area: 56%
+2012-01-09 20:35:52 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:35:53 [INFO] Preparing spawn area: 65%
+2012-01-09 20:35:53 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:35:53 [INFO] Done (0.347s)! For help, type "help" or "?"
+2012-01-09 20:35:57 [INFO] Before
+2012-01-09 20:35:57 [INFO] 0
+2012-01-09 20:35:57 [INFO] After
+2012-01-09 20:35:57 [INFO] true
+2012-01-09 20:35:57 [INFO] 1
+2012-01-09 20:37:28 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:37:28 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:37:28 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:37:28 [INFO] Loading properties
+2012-01-09 20:37:28 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:37:28 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:37:29 [INFO] Preparing level "world"
+2012-01-09 20:37:29 [INFO] Default game type: 0
+2012-01-09 20:37:29 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:37:30 [INFO] Preparing spawn area: 77%
+2012-01-09 20:37:30 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:37:31 [INFO] Preparing spawn area: 56%
+2012-01-09 20:37:31 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:37:32 [INFO] Preparing spawn area: 60%
+2012-01-09 20:37:32 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:37:32 [INFO] Done (0.354s)! For help, type "help" or "?"
+2012-01-09 20:37:36 [INFO] Before
+2012-01-09 20:37:36 [INFO] 0
+2012-01-09 20:37:36 [INFO] After
+2012-01-09 20:37:36 [INFO] true
+2012-01-09 20:37:36 [INFO] 1
+2012-01-09 20:37:52 [INFO] Starting minecraft server version 1.0.1
+2012-01-09 20:37:52 [WARNING] **** NOT ENOUGH RAM!
+2012-01-09 20:37:52 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-09 20:37:52 [INFO] Loading properties
+2012-01-09 20:37:52 [INFO] Starting Minecraft server on localhost:25565
+2012-01-09 20:37:52 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-09 20:37:52 [INFO] Preparing level "world"
+2012-01-09 20:37:52 [INFO] Default game type: 0
+2012-01-09 20:37:52 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-09 20:37:53 [INFO] Preparing spawn area: 69%
+2012-01-09 20:37:54 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-09 20:37:54 [INFO] Preparing spawn area: 56%
+2012-01-09 20:37:55 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-09 20:37:55 [INFO] Preparing spawn area: 44%
+2012-01-09 20:37:56 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-09 20:37:56 [INFO] Done (0.357s)! For help, type "help" or "?"
+2012-01-09 20:37:59 [INFO] Before
+2012-01-09 20:37:59 [INFO] 0
+2012-01-09 20:37:59 [INFO] After
+2012-01-09 20:37:59 [INFO] true
+2012-01-09 20:37:59 [SEVERE] Exception in thread "main" 
+2012-01-09 20:37:59 [SEVERE] java.lang.NullPointerException
+2012-01-09 20:37:59 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-09 20:37:59 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-09 20:37:59 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-09 20:37:59 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:110)
+2012-01-09 20:37:59 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-09 20:45:08 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-10 09:03:22 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-10 09:03:25 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-10 09:03:38 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2012-01-16 13:26:37 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:26:37 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:26:37 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:26:37 [INFO] Loading properties
+2012-01-16 13:26:37 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:26:37 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:26:37 [INFO] Preparing level "world"
+2012-01-16 13:26:37 [INFO] Default game type: 0
+2012-01-16 13:26:38 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:26:39 [INFO] Preparing spawn area: 85%
+2012-01-16 13:26:39 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:26:40 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:26:40 [INFO] Preparing spawn area: 0%
+2012-01-16 13:26:40 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:26:40 [INFO] Done (0.278s)! For help, type "help" or "?"
+2012-01-16 13:26:45 [INFO] Before
+2012-01-16 13:26:45 [INFO] 0
+2012-01-16 13:26:45 [INFO] After
+2012-01-16 13:26:45 [INFO] true
+2012-01-16 13:26:45 [SEVERE] Exception in thread "main" 
+2012-01-16 13:26:45 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:26:45 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:26:45 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:26:45 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:26:45 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:110)
+2012-01-16 13:26:45 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:32:33 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:32:33 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:32:33 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:32:33 [INFO] Loading properties
+2012-01-16 13:32:33 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:32:33 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:32:33 [INFO] Preparing level "world"
+2012-01-16 13:32:33 [INFO] Default game type: 0
+2012-01-16 13:32:33 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:32:34 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:32:34 [INFO] Preparing spawn area: 0%
+2012-01-16 13:32:35 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:32:35 [INFO] Preparing spawn area: 40%
+2012-01-16 13:32:36 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:32:36 [INFO] Done (0.251s)! For help, type "help" or "?"
+2012-01-16 13:32:41 [INFO] Before
+2012-01-16 13:32:41 [INFO] 0
+2012-01-16 13:32:41 [INFO] After
+2012-01-16 13:32:41 [INFO] [\.jar$=org.bukkit.plugin.java.JavaPluginLoader@1cef4f7]
+2012-01-16 13:32:41 [INFO] true
+2012-01-16 13:32:41 [SEVERE] Exception in thread "main" 
+2012-01-16 13:32:41 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:32:41 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:32:41 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:32:41 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:32:41 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:115)
+2012-01-16 13:32:41 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:33:13 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:33:13 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:33:13 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:33:13 [INFO] Loading properties
+2012-01-16 13:33:13 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:33:13 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:33:13 [INFO] Preparing level "world"
+2012-01-16 13:33:13 [INFO] Default game type: 0
+2012-01-16 13:33:13 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:33:14 [INFO] Preparing spawn area: 97%
+2012-01-16 13:33:14 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:33:15 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:33:15 [INFO] Preparing spawn area: 8%
+2012-01-16 13:33:16 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:33:16 [INFO] Done (0.261s)! For help, type "help" or "?"
+2012-01-16 13:33:20 [INFO] Before
+2012-01-16 13:33:20 [INFO] 0
+2012-01-16 13:33:20 [INFO] After
+2012-01-16 13:33:20 [INFO] [\.jar$=org.bukkit.plugin.java.JavaPluginLoader@d56b37]
+2012-01-16 13:33:20 [INFO] true
+2012-01-16 13:33:20 [SEVERE] Exception in thread "main" 
+2012-01-16 13:33:20 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:33:20 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:33:20 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:33:20 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:33:20 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:115)
+2012-01-16 13:33:20 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:33:54 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:33:54 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:33:54 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:33:54 [INFO] Loading properties
+2012-01-16 13:33:54 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:33:54 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:33:54 [INFO] Preparing level "world"
+2012-01-16 13:33:54 [INFO] Default game type: 0
+2012-01-16 13:33:54 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:33:55 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:33:55 [INFO] Preparing spawn area: 0%
+2012-01-16 13:33:56 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:33:56 [INFO] Preparing spawn area: 32%
+2012-01-16 13:33:57 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:33:57 [INFO] Done (0.252s)! For help, type "help" or "?"
+2012-01-16 13:34:01 [INFO] Before
+2012-01-16 13:34:01 [INFO] 0
+2012-01-16 13:34:01 [INFO] After
+2012-01-16 13:34:01 [INFO] [org.bukkit.plugin.java.JavaPluginLoader@6e4365]
+2012-01-16 13:34:01 [INFO] true
+2012-01-16 13:34:01 [SEVERE] Exception in thread "main" 
+2012-01-16 13:34:02 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:34:02 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:34:02 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:34:02 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:34:02 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:115)
+2012-01-16 13:34:02 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:34:26 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:34:26 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:34:26 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:34:26 [INFO] Loading properties
+2012-01-16 13:34:26 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:34:26 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:34:27 [INFO] Preparing level "world"
+2012-01-16 13:34:27 [INFO] Default game type: 0
+2012-01-16 13:34:27 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:34:28 [INFO] Preparing spawn area: 97%
+2012-01-16 13:34:28 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:34:29 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:34:29 [INFO] Preparing spawn area: 8%
+2012-01-16 13:34:29 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:34:29 [INFO] Done (0.265s)! For help, type "help" or "?"
+2012-01-16 13:34:34 [INFO] Before
+2012-01-16 13:34:34 [INFO] 0
+2012-01-16 13:34:34 [INFO] After
+2012-01-16 13:34:34 [INFO] [\.jar$]
+2012-01-16 13:34:34 [INFO] true
+2012-01-16 13:34:34 [SEVERE] Exception in thread "main" 
+2012-01-16 13:34:34 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:34:34 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:34:34 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:34:34 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:34:34 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:115)
+2012-01-16 13:34:34 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:38:25 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:38:25 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:38:25 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:38:25 [INFO] Loading properties
+2012-01-16 13:38:25 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:38:26 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:38:26 [INFO] Preparing level "world"
+2012-01-16 13:38:26 [INFO] Default game type: 0
+2012-01-16 13:38:26 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:38:27 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:38:27 [INFO] Preparing spawn area: 0%
+2012-01-16 13:38:28 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:38:28 [INFO] Preparing spawn area: 20%
+2012-01-16 13:38:28 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:38:28 [INFO] Done (0.262s)! For help, type "help" or "?"
+2012-01-16 13:38:33 [INFO] Before
+2012-01-16 13:38:33 [INFO] 0
+2012-01-16 13:38:33 [INFO] After
+2012-01-16 13:38:33 [INFO] null
+2012-01-16 13:38:33 [INFO] true
+2012-01-16 13:38:33 [SEVERE] Exception in thread "main" 
+2012-01-16 13:38:33 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:38:33 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:38:33 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:38:33 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:38:33 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:119)
+2012-01-16 13:38:33 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:38:55 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:38:55 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:38:55 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:38:55 [INFO] Loading properties
+2012-01-16 13:38:55 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:38:55 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:38:55 [INFO] Preparing level "world"
+2012-01-16 13:38:55 [INFO] Default game type: 0
+2012-01-16 13:38:55 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:38:56 [INFO] Preparing spawn area: 97%
+2012-01-16 13:38:56 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:38:57 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:38:57 [INFO] Preparing spawn area: 16%
+2012-01-16 13:38:58 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:38:58 [INFO] Done (0.259s)! For help, type "help" or "?"
+2012-01-16 13:39:02 [INFO] Before
+2012-01-16 13:39:02 [INFO] 0
+2012-01-16 13:39:03 [INFO] After
+2012-01-16 13:39:03 [INFO] null
+2012-01-16 13:39:03 [INFO] true
+2012-01-16 13:39:03 [SEVERE] Exception in thread "main" 
+2012-01-16 13:39:03 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:39:03 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:39:03 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:39:03 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:39:03 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:119)
+2012-01-16 13:39:03 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:39:21 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:39:21 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:39:21 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:39:21 [INFO] Loading properties
+2012-01-16 13:39:21 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:39:21 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:39:21 [INFO] Preparing level "world"
+2012-01-16 13:39:21 [INFO] Default game type: 0
+2012-01-16 13:39:22 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:39:22 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:39:23 [INFO] Preparing spawn area: 0%
+2012-01-16 13:39:23 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:39:24 [INFO] Preparing spawn area: 28%
+2012-01-16 13:39:24 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:39:24 [INFO] Done (0.252s)! For help, type "help" or "?"
+2012-01-16 13:39:29 [INFO] Before
+2012-01-16 13:39:29 [INFO] 0
+2012-01-16 13:39:29 [INFO] After
+2012-01-16 13:39:29 [INFO] null
+2012-01-16 13:39:29 [INFO] true
+2012-01-16 13:39:29 [SEVERE] Exception in thread "main" 
+2012-01-16 13:39:29 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:39:29 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:39:29 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:39:29 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:39:29 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:119)
+2012-01-16 13:39:29 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:45:29 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:45:29 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:45:29 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:45:29 [INFO] Loading properties
+2012-01-16 13:45:29 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:45:29 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:45:29 [INFO] Preparing level "world"
+2012-01-16 13:45:29 [INFO] Default game type: 0
+2012-01-16 13:45:29 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:45:30 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:45:30 [INFO] Preparing spawn area: 0%
+2012-01-16 13:45:31 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:45:31 [INFO] Preparing spawn area: 36%
+2012-01-16 13:45:32 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:45:32 [INFO] Done (0.249s)! For help, type "help" or "?"
+2012-01-16 13:45:37 [INFO] Before
+2012-01-16 13:45:37 [INFO] 0
+2012-01-16 13:45:37 [INFO] After
+2012-01-16 13:45:37 [INFO] [\.jar$]
+2012-01-16 13:45:37 [INFO] org.bukkit.plugin.java.JavaPluginLoader@59a34
+2012-01-16 13:45:37 [INFO] true
+2012-01-16 13:45:37 [SEVERE] Exception in thread "main" 
+2012-01-16 13:45:37 [SEVERE] java.lang.NullPointerException
+2012-01-16 13:45:37 [SEVERE] 	at org.bukkit.plugin.RegisteredListener.<init>(RegisteredListener.java:26)
+2012-01-16 13:45:37 [SEVERE] 	at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:378)
+2012-01-16 13:45:37 [SEVERE] 	at LizaCraft.LizaPlugin.onEnable(LizaPlugin.java:24)
+2012-01-16 13:45:37 [SEVERE] 	at LizaCraft.LizaCraftServer.enableLizaPlugin(LizaCraftServer.java:133)
+2012-01-16 13:45:37 [SEVERE] 	at Test.test.main(test.java:27)
+2012-01-16 13:47:40 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 13:47:40 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 13:47:40 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 13:47:40 [INFO] Loading properties
+2012-01-16 13:47:40 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 13:47:40 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 13:47:40 [INFO] Preparing level "world"
+2012-01-16 13:47:40 [INFO] Default game type: 0
+2012-01-16 13:47:41 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-16 13:47:42 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-16 13:47:42 [INFO] Preparing spawn area: 0%
+2012-01-16 13:47:42 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-16 13:47:43 [INFO] Preparing spawn area: 32%
+2012-01-16 13:47:43 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 13:47:43 [INFO] Done (0.249s)! For help, type "help" or "?"
+2012-01-16 13:47:48 [INFO] Before
+2012-01-16 13:47:48 [INFO] 0
+2012-01-16 13:47:48 [INFO] After
+2012-01-16 13:47:48 [INFO] [\.jar$]
+2012-01-16 13:47:48 [INFO] org.bukkit.plugin.java.JavaPluginLoader@19eda2c
+2012-01-16 13:47:48 [INFO] true
+2012-01-16 13:47:48 [INFO] Hello, this is the spoof plugin
+2012-01-16 13:47:48 [INFO] 1
+2012-01-16 13:48:21 [INFO] SoggyNoose [/127.0.0.1:50732] logged in with entity id 295 at ([world] 191.37899808314188, 69.0, 271.33427299866224)
+2012-01-16 13:48:21 [INFO] OMGWTFBBQ
+2012-01-16 13:49:07 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-16 13:49:07 [INFO] Connection reset
+2012-01-17 10:34:49 [INFO] Starting minecraft server version 1.0.1
+2012-01-17 10:34:49 [WARNING] **** NOT ENOUGH RAM!
+2012-01-17 10:34:49 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-17 10:34:49 [INFO] Loading properties
+2012-01-17 10:34:49 [INFO] Starting Minecraft server on localhost:25565
+2012-01-17 10:34:50 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-17 10:34:51 [INFO] Preparing level "world"
+2012-01-17 10:34:51 [INFO] Default game type: 0
+2012-01-17 10:34:51 [INFO] Preparing start region for level 0 (Seed: 1296142587393758186)
+2012-01-17 10:34:52 [INFO] Preparing spawn area: 24%
+2012-01-17 10:34:53 [INFO] Preparing start region for level 1 (Seed: 1296142587393758186)
+2012-01-17 10:34:53 [INFO] Preparing spawn area: 0%
+2012-01-17 10:34:54 [INFO] Preparing spawn area: 77%
+2012-01-17 10:34:54 [INFO] Preparing start region for level 2 (Seed: 1296142587393758186)
+2012-01-17 10:34:55 [INFO] Preparing spawn area: 57%
+2012-01-17 10:34:55 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-17 10:34:56 [INFO] Done (0.496s)! For help, type "help" or "?"
+2012-01-17 10:34:56 [INFO] Before
+2012-01-17 10:34:56 [INFO] 0
+2012-01-17 10:34:56 [INFO] After
+2012-01-17 10:34:56 [INFO] [\.jar$]
+2012-01-17 10:34:56 [INFO] org.bukkit.plugin.java.JavaPluginLoader@1bbd7b2
+2012-01-17 10:34:56 [INFO] true
+2012-01-17 10:34:56 [INFO] LizaPlugin enabled
+2012-01-17 10:34:56 [INFO] 1
+2012-01-17 10:34:56 [INFO] I'm going to wait until you break a block
+2012-01-17 10:35:23 [INFO] SoggyNoose [/127.0.0.1:56325] logged in with entity id 287 at ([world] 127.45357870382739, 72.0, 316.09586007030595)
+2012-01-17 10:35:23 [INFO] OMGWTFBBQ
+2012-01-17 10:35:32 [INFO] Yayyyyaaaaayyy!!!
+2012-01-17 10:35:40 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-17 10:35:40 [INFO] Connection reset

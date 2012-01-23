@@ -12,4 +12,5 @@
 <fullyQualifiedTypeName name="org.bukkit.event.player.PlayerJoinEvent"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
 <fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
+<fullyQualifiedTypeName name="org.bukkit.block.Block"/>
 </qualifiedTypeNameHistroy>

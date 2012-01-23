@@ -1,0 +1,23 @@
+package LizaCraft;
+
+import org.bukkit.event.Event;
+import org.bukkit.event.Event.Type;
+
+import Liza.LizaEventListener;
+
+public class LizaCraftEventListener implements LizaEventListener {
+    private boolean waiting = false;
+    
+	@Override
+	public void waitForEvent(Event.Type type) {
+		// TODO Auto-generated method stub
+		// block until event happens
+	}
+
+	@Override
+	public void waitForEvent(Type type, int time) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
