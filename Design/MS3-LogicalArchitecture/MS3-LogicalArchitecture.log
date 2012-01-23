@@ -1,0 +1,225 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.7)  13 JAN 2012 16:52
+entering extended mode
+ %&-line parsing enabled.
+**MS3-LogicalArchitecture.tex
+(./MS3-LogicalArchitecture.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2009/02/07 v0.4g Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count90
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks15
+\c@AM@survey=\count91
+\AM@templatesizebox=\box27
+)
+(./MS3-LogicalArchitecture.aux)
+\openout1 = `MS3-LogicalArchitecture.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen107
+\scratchbox=\box28
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen108
+\MPnumerator=\count96
+\everyMPtoPDFconversion=\toks17
+) ABD: EveryShipout initializing macros
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./MS3-LogicalArchitecture
+.toc)
+\tf@toc=\write3
+\openout3 = `MS3-LogicalArchitecture.toc'.
+
+ [2]
+<ssd.png, id=13, 322.95656pt x 377.91188pt>
+File: ssd.png Graphic file (type png)
+ <use ssd.png> [3 <./ssd.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+[4]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./LizaClassDiagram.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./LizaClassDiagram.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./LizaClassDiagram.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+<LizaClassDiagram.pdf, id=25, page=1, 597.50786pt x 845.04686pt>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+
+<use LizaClassDiagram.pdf, page 1>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+ <use LizaClassDiagram.pdf, page 1>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+
+<use LizaClassDiagram.pdf, page 1>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+ <use LizaClassDiagram.pdf, page 1>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+
+<use LizaClassDiagram.pdf, page 1> [5 <./LizaClassDiagram.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./LizaClassDiagram.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+<LizaClassDiagram.pdf, id=52, page=2, 597.50786pt x 845.04686pt>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+
+<use LizaClassDiagram.pdf, page 2>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+ <use LizaClassDiagram.pdf, page 2>
+File: LizaClassDiagram.pdf Graphic file (type pdf)
+
+<use LizaClassDiagram.pdf, page 2> [6 <./LizaClassDiagram.pdf>]
+Overfull \hbox (107.47313pt too wide) in paragraph at lines 74--76
+\OT1/cmr/m/n/10 The pro-to-type for this mile-stone is cur-rently avail-ble on 
+github on-line at https://github.com/geislekj/Liza 
+ []
+
+[7] (./MS3-LogicalArchitecture.aux) ) 
+Here is how much of TeX's memory you used:
+ 1660 strings out of 493848
+ 23137 string characters out of 1152823
+ 77646 words of memory out of 3000000
+ 4951 multiletter control sequences out of 15000+50000
+ 7588 words of font info for 27 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 32i,16n,37p,240b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on MS3-LogicalArchitecture.pdf (7 pages, 121949 bytes).
+PDF statistics:
+ 78 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
