@@ -19,7 +19,8 @@
 There are many SSDs that will apply to this project -- one for each assertion. 
 However, each of these will follow the exact same format. Instead, we
 produced a single SSD that details the flow of a test case that a developer may
-write.
+write.  This includes general exception cases and alternate paths which could be
+produced.
 
 \includegraphics{ssd}
 
@@ -34,7 +35,12 @@ There exists a degree of separation between our system and Bukkit, in the
 sense that our system interacts with Bukkit, yet Bukkit is not aware of our
 system. However, all of the classes in our system will all belong to the same
 package, due to the high amount of interaction between classes. Because
-of this, a package diagram is not applicable.
+of this, a package diagram is not applicable.  However, we have included a 
+diagram which depicts the relationship between Liza and Bukkit in general.
+For each Bukkit class that is relavent, Liza will extend a new interface and 
+create a new LizaCraft class that will implement it.
+
+\includepdf[pages={-}]{Bukkit-Liza-Relationship.pdf}
 
 \section{Class Diagram}
 
