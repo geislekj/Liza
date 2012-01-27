@@ -28,6 +28,7 @@ import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
+import Liza.LizaBlock;
 import Liza.LizaHumanEntity;
 import LizaCraft.Block.LizaCraftBlock;
 import LizaCraft.Entity.LizaCraftEntity;
@@ -37,6 +38,10 @@ import LizaCraft.Entity.LizaCraftEntity;
  *
  *  LizaCraftHumanEntity is the Liza HumanEntity representation of
  *  the Bukkit HumanEntity class.
+ *  
+ *  TODO: Methods that return Bukkit classes that may later be implemented
+ *  in Liza should be changed to use those interfaces and classes after
+ *  they are created.
  */
 public class LizaCraftHumanEntity implements LizaHumanEntity {
 	private HumanEntity humanEntity;
@@ -167,7 +172,7 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public Block getTargetBlock(HashSet<Byte> arg0, int arg1) {
+	public LizaBlock getTargetBlock(HashSet<Byte> arg0, int arg1) {
 		return new LizaCraftBlock(this.humanEntity.getTargetBlock(arg0, arg1));
 	}
 

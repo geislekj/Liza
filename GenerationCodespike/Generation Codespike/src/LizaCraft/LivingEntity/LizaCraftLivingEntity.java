@@ -1,5 +1,6 @@
 package LizaCraft.LivingEntity;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.UUID;
@@ -20,13 +21,21 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
+import Liza.LizaBlock;
+import Liza.LizaEntity;
 import Liza.LizaLivingEntity;
+import LizaCraft.Block.LizaCraftBlock;
+import LizaCraft.Entity.LizaCraftEntity;
 
 /**
  * @author collinbc
  *
  *  LizaCraftLivingEntity is the Liza LivingEntity representation of
  *  the Bukkit LivingEntity class.
+ *  
+ *  TODO: Methods that return Bukkit classes that may later be implemented
+ *  in Liza should be changed to use those interfaces and classes after
+ *  they are created.
  */
 public class LizaCraftLivingEntity implements LizaLivingEntity {
 	private LivingEntity livingEntity;
@@ -82,9 +91,42 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 
 	@Override
 	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> arg0, int arg1) {
-		return this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
+		
+		for(Block b : bl) {
+			b = new LizaCraftBlock(b);
+		}
+		return bl;
+	}
+	
+	/**
+	 * @param arg0
+	 * @param arg1
+	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
+	 * 
+	 * TODO: Review this method. (I'm not sure what I'm doing)
+	 */
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> arg0, int arg1) {
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
+		Class<? extends List> c = bl.getClass();
+		List<LizaBlock> lbl = null;
+		try {
+			lbl = c.newInstance();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		for(Block b : bl) {
+			lbl.add(new LizaCraftBlock(b));
+		}
+		return lbl;
 	}
 
+	// TODO: The method should return List<LizaBlock>, so changes are needed.
 	@Override
 	public List<Block> getLineOfSight(HashSet<Byte> arg0, int arg1) {
 		return this.livingEntity.getLineOfSight(arg0, arg1);
@@ -116,8 +158,8 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public Block getTargetBlock(HashSet<Byte> arg0, int arg1) {
-		return this.livingEntity.getTargetBlock(arg0, arg1);
+	public LizaBlock getTargetBlock(HashSet<Byte> arg0, int arg1) {
+		return new LizaCraftBlock(this.livingEntity.getTargetBlock(arg0, arg1));
 	}
 
 	@Override
@@ -215,14 +257,15 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return this.livingEntity.getFireTicks();
 	}
 
+	// TODO: The method should return List<LizaEntity>, so changes are needed.
 	@Override
 	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
 		return this.livingEntity.getNearbyEntities(arg0, arg1, arg2);
 	}
 
 	@Override
-	public Entity getPassenger() {
-		return this.livingEntity.getPassenger();
+	public LizaEntity getPassenger() {
+		return new LizaCraftEntity(this.livingEntity.getPassenger());
 	}
 
 	@Override
