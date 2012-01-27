@@ -135,15 +135,26 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.getLastDamage();
 	}
 
-	// TODO: The methods should return List<LizaBlock>, so changes are needed.
+	// TODO: A method may be needed that will return type List<LizaBlock>.
 	@Override
 	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> arg0, int arg1) {
-		return this.humanEntity.getLastTwoTargetBlocks(arg0, arg1);
+		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(arg0, arg1);
+		
+		for(Block b : bl) {
+			b = new LizaCraftBlock(b);
+		}
+		return bl;
 	}
 
+	// TODO: A method may be needed that will return type List<LizaBlock>.
 	@Override
 	public List<Block> getLineOfSight(HashSet<Byte> arg0, int arg1) {
-		return this.humanEntity.getLineOfSight(arg0, arg1);
+		List<Block> bl = this.humanEntity.getLineOfSight(arg0, arg1);
+		
+		for(Block b : bl) {
+			b = new LizaCraftBlock(b);
+		}
+		return bl;
 	}
 
 	@Override

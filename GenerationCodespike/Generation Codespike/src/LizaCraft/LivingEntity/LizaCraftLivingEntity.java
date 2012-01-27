@@ -1,6 +1,5 @@
 package LizaCraft.LivingEntity;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.UUID;
@@ -104,8 +103,9 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	 * @param arg1
 	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
 	 * 
-	 * TODO: Review this method. (I'm not sure what I'm doing)
+	 * TODO: Review this method.
 	 */
+	@Deprecated
 	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> arg0, int arg1) {
 		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
 		Class<? extends List> c = bl.getClass();
@@ -126,10 +126,15 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return lbl;
 	}
 
-	// TODO: The method should return List<LizaBlock>, so changes are needed.
+	// TODO: A method may be needed that will return type List<LizaBlock>.
 	@Override
 	public List<Block> getLineOfSight(HashSet<Byte> arg0, int arg1) {
-		return this.livingEntity.getLineOfSight(arg0, arg1);
+		List<Block> bl = this.livingEntity.getLineOfSight(arg0, arg1);
+		
+		for(Block b : bl) {
+			b = new LizaCraftBlock(b);
+		}
+		return bl;
 	}
 
 	@Override
@@ -257,10 +262,15 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return this.livingEntity.getFireTicks();
 	}
 
-	// TODO: The method should return List<LizaEntity>, so changes are needed.
+	// TODO: A method may be needed that will return type List<LizaEntity>.
 	@Override
 	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.livingEntity.getNearbyEntities(arg0, arg1, arg2);
+		List<Entity> el = this.livingEntity.getNearbyEntities(arg0, arg1, arg2);
+		
+		for(Entity e : el) {
+			e = new LizaCraftEntity(e);
+		}
+		return el;
 	}
 
 	@Override
