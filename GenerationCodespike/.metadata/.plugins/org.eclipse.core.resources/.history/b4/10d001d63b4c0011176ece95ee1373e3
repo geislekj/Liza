@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package LizaCraft.Entity;
+
+/**
+ * @author geislekj
+ *
+ */
+public class LizaCraftProjectile {
+
+}

@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package LizaCraft.Entity;
+
+import org.bukkit.entity.Projectile;
+
+/**
+ * @author geislekj
+ *
+ *  LizeCraftProjectile is the Liza entity representation of
+ *  the Bukkit Projectile class.
+ */
+public class LizaCraftProjectile {
+	private Projectile projectile;
+	
+	/**
+	 * LizaCraftProjectile Constructor
+	 * 
+	 * @param Projectile This is a Bukkit Projectile 
+	 * @param projectile 
+	 */
+	public LizaCraftProjectile(Projectile projectile){
+		this.projectile = projectile;
+	}
+	
+	
+}
