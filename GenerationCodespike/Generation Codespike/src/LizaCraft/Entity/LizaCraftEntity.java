@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 //Bukkit Imports
+import org.bukkit.EntityEffect;
 import org.bukkit.Location;
 import org.bukkit.Server;
 import org.bukkit.World;
@@ -168,6 +169,11 @@ public class LizaCraftEntity implements LizaEntity{
 	@Override
 	public boolean teleport(Entity arg0, TeleportCause arg1) {
 		return this.entity.teleport(arg0, arg1); 
+	}
+
+	@Override
+	public void playEffect(EntityEffect arg0) {
+		this.entity.playEffect(arg0);		
 	}
 
 }

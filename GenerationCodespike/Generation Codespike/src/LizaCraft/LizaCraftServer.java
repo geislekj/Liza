@@ -26,8 +26,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.map.MapView;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.ServicesManager;
+import org.bukkit.plugin.messaging.Messenger;
 import org.bukkit.scheduler.BukkitScheduler;
 
 //Misc Imports
@@ -365,6 +367,18 @@ public class LizaCraftServer implements LizaServer{
 	@Override
 	public boolean unloadWorld(World arg0, boolean arg1) {
 		return this.server.unloadWorld(arg0, arg1); 
+	}
+	@Override
+	public Messenger getMessenger() {
+		return this.server.getMessenger();
+	}
+	@Override
+	public Set<String> getListeningPluginChannels() {
+		return this.server.getListeningPluginChannels();
+	}
+	@Override
+	public void sendPluginMessage(Plugin arg0, String arg1, byte[] arg2) {
+		this.server.sendPluginMessage(arg0, arg1, arg2);
 	}
 
 }

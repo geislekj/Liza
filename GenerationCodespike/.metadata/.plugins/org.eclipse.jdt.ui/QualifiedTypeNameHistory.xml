@@ -5,4 +5,7 @@
 <fullyQualifiedTypeName name="org.bukkit.Server"/>
 <fullyQualifiedTypeName name="Liza.LizaWorld"/>
 <fullyQualifiedTypeName name="org.bukkit.World"/>
+<fullyQualifiedTypeName name="org.bukkit.Effect"/>
+<fullyQualifiedTypeName name="Liza.LizaCreature"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Creature"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,9 @@
 package LizaCraft;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import org.bukkit.BlockChangeDelegate;
@@ -12,6 +14,7 @@ import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.TreeType;
 import org.bukkit.World;
+import org.bukkit.WorldType;
 import org.bukkit.block.Biome;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Arrow;
@@ -24,6 +27,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 import Liza.LizaWorld;
@@ -465,6 +469,26 @@ public class LizaCraftWorld implements LizaWorld{
 	@Override
 	public boolean unloadChunkRequest(int arg0, int arg1, boolean arg2) {
 		return this.world.unloadChunkRequest(arg0, arg1, arg2); 
+	}
+
+	@Override
+	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T>... arg0) {
+		return this.world.getEntitiesByClass(arg0);	
+	}
+
+	@Override
+	public WorldType getWorldType() {
+		return this.world.getWorldType();
+	}
+
+	@Override
+	public Set<String> getListeningPluginChannels() {
+		return this.world.getListeningPluginChannels();	
+	}
+
+	@Override
+	public void sendPluginMessage(Plugin arg0, String arg1, byte[] arg2) {
+		this.world.sendPluginMessage(arg0, arg1, arg2);
 	}
 
 }

@@ -1,6 +1,8 @@
 package LizaCraft.Block;
 
 //Bukkit Imports
+import java.util.Collection;
+
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -10,6 +12,7 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.PistonMoveReaction;
+import org.bukkit.inventory.ItemStack;
 
 //Liza Imports
 import Liza.LizaBlock;
@@ -210,6 +213,36 @@ public class LizaCraftBlock implements LizaBlock {
 	@Override
 	public boolean setTypeIdAndData(int arg0, byte arg1, boolean arg2) {
 		return this.block.setTypeIdAndData(arg0, arg1, arg2); 
+	}
+
+	@Override
+	public boolean breakNaturally() {
+		return this.block.breakNaturally();
+	}
+
+	@Override
+	public boolean breakNaturally(ItemStack arg0) {
+		return this.block.breakNaturally(arg0);
+	}
+
+	@Override
+	public Collection<ItemStack> getDrops() {
+		return this.block.getDrops();
+	}
+
+	@Override
+	public Collection<ItemStack> getDrops(ItemStack arg0) {
+		return this.block.getDrops(arg0);
+	}
+
+	@Override
+	public byte getLightFromBlocks() {
+		return this.block.getLightFromBlocks();
+	}
+
+	@Override
+	public byte getLightFromSky() {
+		return this.block.getLightFromSky();
 	}
 
 }
