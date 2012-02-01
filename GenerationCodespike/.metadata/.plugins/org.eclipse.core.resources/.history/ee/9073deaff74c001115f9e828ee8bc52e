@@ -1,0 +1,9 @@
+package LizaCraft.Entity;
+
+public class LizaCraftFallingSand {
+
+	public LizaCraftFallingSand() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,25 @@
+package LizaCraft.Entity;
+
+import org.bukkit.entity.Item;
+
+
+/**
+ * @author geislekj
+ *
+ *  LizeCraftItem is the Liza entity representation of
+ *  the Bukkit Item class.
+ */
+public class LizaCraftItem {
+
+	private Item item;
+	
+	/**
+	 * LizaCraftItem Constructor
+	 * 
+	 * @param entity This is a Bukkit entity 
+	 */
+	public LizaCraftItem(Item item) {
+		this.item = item;
+	}
+
+}

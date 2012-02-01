@@ -1,0 +1,15 @@
+package LizaCraft.Entity;
+
+import org.bukkit.entity.FallingSand;
+
+import Liza.LizaFallingSand;
+
+public class LizaCraftFallingSand implements LizaFallingSand{
+
+	private FallingSand fallingSand;
+
+	public LizaCraftFallingSand(FallingSand fallingSand) {
+		this.fallingSand = fallingSand;
+	}
+
+}
