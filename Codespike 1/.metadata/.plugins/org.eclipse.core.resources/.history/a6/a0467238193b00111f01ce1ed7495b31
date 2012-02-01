@@ -1,9 +1,0 @@
-package Liza;
-
-import org.bukkit.Material;
-import org.bukkit.block.Block;
-
-public interface LizaBlock extends Block {
-
-	public void assertBlockType(Material type);
-}
