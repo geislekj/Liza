@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package LizaCraft.Entity;
+
+/**
+ * @author geislekj
+ *
+ */
+public class LizaCraftExplosive {
+
+	/**
+	 * 
+	 */
+	public LizaCraftExplosive() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

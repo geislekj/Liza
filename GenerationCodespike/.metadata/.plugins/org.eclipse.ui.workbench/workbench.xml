@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="0" y="0">
+<window height="768" maximized="true" width="1024" x="339" y="-18">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -19,7 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -28,15 +28,27 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftProjectile.java" partName="LizaCraftProjectile.java" path="C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/Liza/Liza/GenerationCodespike/Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java" title="LizaCraftProjectile.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4104" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftEntity.java" partName="LizaCraftEntity.java" path="C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/Liza/Liza/GenerationCodespike/Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java" title="LizaCraftEntity.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="191" selectionOffset="635" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (5 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="961"/>
@@ -232,7 +244,80 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/Liza/LizaProjectile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/Liza/LizaBlock.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/Liza/LizaLivingEntity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/Liza/LizaHumanEntity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/Liza/LizaEntity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java"/>
+</editors>
+<item historyLabel="LizaProjectile.java" index="0">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="LizaBlock.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaProjectile.java" index="0">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="LizaLivingEntity.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaProjectile.java" index="0">
+<position info="not_deleted" x="250" y="0"/>
+</item>
+<item historyLabel="LizaHumanEntity.java" index="3">
+<position info="not_deleted" x="63" y="123"/>
+</item>
+<item historyLabel="LizaEntity.java" index="4">
+<position info="not_deleted" x="53" y="123"/>
+</item>
+<item historyLabel="LizaProjectile.java" index="0">
+<position info="not_deleted" x="245" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LizaCraftEntity.java" index="6">
+<position info="not_deleted" x="459" y="121"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="4098" y="0"/>
+</item>
+<item historyLabel="LizaCraftEntity.java" index="6">
+<position info="not_deleted" x="635" y="191"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="4098" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="802" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="1201" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="1302" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="2929" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="3105" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="3201" y="0"/>
+</item>
+<item historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="3323" y="0"/>
+</item>
+<item active="true" historyLabel="LizaCraftProjectile.java" index="5">
+<position info="not_deleted" x="3627" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -250,23 +335,35 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftEntity.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java">
+<persistable path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftProjectile.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java">
+<persistable path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftProjectile.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaEntity.java" tooltip="Generation Codespike/src/Liza/LizaEntity.java">
+<persistable path="/Generation Codespike/src/Liza/LizaEntity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaHumanEntity.java" tooltip="Generation Codespike/src/Liza/LizaHumanEntity.java">
+<persistable path="/Generation Codespike/src/Liza/LizaHumanEntity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaLivingEntity.java" tooltip="Generation Codespike/src/Liza/LizaLivingEntity.java">
+<persistable path="/Generation Codespike/src/Liza/LizaLivingEntity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" tooltip="Generation Codespike/src/Liza/LizaBlock.java">
+<persistable path="/Generation Codespike/src/Liza/LizaBlock.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaProjectile.java" tooltip="Generation Codespike/src/Liza/LizaProjectile.java">
+<persistable path="/Generation Codespike/src/Liza/LizaProjectile.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftServer.java" tooltip="Generation Codespike/src/LizaCraft/LizaCraftServer.java">
 <persistable path="/Generation Codespike/src/LizaCraft/LizaCraftServer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftBlock.java" tooltip="Generation Codespike/src/LizaCraft/Block/LizaCraftBlock.java">
 <persistable path="/Generation Codespike/src/LizaCraft/Block/LizaCraftBlock.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftEntity.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java">
-<persistable path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftEntity.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftCreature.java" tooltip="Generation Codespike/src/LizaCraft/Entity/LizaCraftCreature.java">
 <persistable path="/Generation Codespike/src/LizaCraft/Entity/LizaCraftCreature.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaEntity.java" tooltip="Generation Codespike/src/Liza/LizaEntity.java">
-<persistable path="/Generation Codespike/src/Liza/LizaEntity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" tooltip="Generation Codespike/src/Liza/LizaBlock.java">
-<persistable path="/Generation Codespike/src/Liza/LizaBlock.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCreature.java" tooltip="Generation Codespike/src/Liza/LizaCreature.java">
 <persistable path="/Generation Codespike/src/Liza/LizaCreature.java"/>
@@ -277,23 +374,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftWorld.java" tooltip="Generation Codespike/src/LizaCraft/LizaCraftWorld.java">
 <persistable path="/Generation Codespike/src/LizaCraft/LizaCraftWorld.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaHumanEntity.java" tooltip="Generation Codespike/src/Liza/LizaHumanEntity.java">
-<persistable path="/Generation Codespike/src/Liza/LizaHumanEntity.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftWorld.java" tooltip="Entity Codespike/src/LizaCraft/LizaCraftWorld.java">
 <persistable path="/Entity Codespike/src/LizaCraft/LizaCraftWorld.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftEntity.java" tooltip="Entity Codespike/src/LizaCraft/Entity/LizaCraftEntity.java">
 <persistable path="/Entity Codespike/src/LizaCraft/Entity/LizaCraftEntity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftBlock.java" tooltip="Entity Codespike/src/LizaCraft/Block/LizaCraftBlock.java">
-<persistable path="/Entity Codespike/src/LizaCraft/Block/LizaCraftBlock.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Entity Codespike/src/LizaCraft/LizaServer.java">
-<persistable path="/Entity Codespike/src/LizaCraft/LizaServer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Entity Codespike/src/LizaCraft/Block/LizaServer.java">
-<persistable path="/Entity Codespike/src/LizaCraft/Block/LizaServer.java"/>
 </file>
 </mruList>
 </workbench>

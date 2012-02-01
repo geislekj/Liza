@@ -1,0 +1,9 @@
+package LizaCraft.Entity;
+
+public class LizaCraftWeather {
+
+	public LizaCraftWeather() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

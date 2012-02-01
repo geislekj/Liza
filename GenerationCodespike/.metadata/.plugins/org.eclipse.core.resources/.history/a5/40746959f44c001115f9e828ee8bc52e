@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package LizaCraft.Entity;
+
+import org.bukkit.entity.Explosive;
+
+import Liza.LizaExplosive;
+
+/**
+ * @author geislekj
+ *
+ */
+public class LizaCraftExplosive implements LizaExplosive{
+
+	private Explosive explosive;
+	
+	/**
+	 * 
+	 */
+	public LizaCraftExplosive(Explosive explosive) {
+		this.explosive = explosive;
+	}
+
+}

@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LizaCraft.Entity;
+
+import org.bukkit.entity.Explosive;
+
+import Liza.LizaExplosive;
+
+/**
+ * @author geislekj
+ *
+ *  LizeCraftExplosive is the Liza entity representation of
+ *  the Bukkit Explosive class.
+ */
+public class LizaCraftExplosive implements LizaExplosive{
+
+	private Explosive explosive;
+	
+	/**
+	 * LizaCraftExplosive Constructor
+	 * 
+	 * @param entity This is a Bukkit entity 
+	 */
+	public LizaCraftExplosive(Explosive explosive) {
+		this.explosive = explosive;
+	}
+
+}
