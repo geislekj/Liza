@@ -27,7 +27,7 @@ public class LizaCraftServer {
 
     private CraftServer cs;
     private LizaServerThread lst;
-    protected static LizaPlugin spoof;
+    protected LizaPlugin spoof;
     private LizaCraftEventListener lel;
 
     public LizaCraftServer() {
@@ -43,7 +43,7 @@ public class LizaCraftServer {
         this.cs = getCraftServer();
         this.lel = new LizaCraftEventListener(this);
 
-        spoof = new LizaPlugin();
+        this.spoof = new LizaPlugin();
     }
 
     private CraftServer getCraftServer() {
@@ -81,7 +81,7 @@ public class LizaCraftServer {
             f.setAccessible(true);
             ms = (MinecraftServer) f.get(tsa);
         } catch (Exception e) { // lol
-
+         // TODO: do some proper exception handling
         }
 
         return ms.server;
@@ -99,7 +99,7 @@ public class LizaCraftServer {
             f = c.getDeclaredField("plugins");
             f.setAccessible(true);
             plugs = (List<Plugin>) f.get(cs.getPluginManager());
-            plugs.add(spoof);
+            plugs.add(this.spoof);
             f.set(cs.getPluginManager(), plugs);
 
             // get the plugin loader
@@ -119,29 +119,31 @@ public class LizaCraftServer {
             }
 
         } catch (Exception e) { // lol again
+            // TODO: do some proper exception handling
             System.out.println("Ooops!");
             e.printStackTrace();
         }
 
-        Class<? extends JavaPlugin> cp = spoof.getClass();
+        Class<? extends JavaPlugin> cp = this.spoof.getClass();
         try {
             f = cp.getSuperclass().getDeclaredField("isEnabled");
             f.setAccessible(true);
-            f.set(spoof, true);
+            f.set(this.spoof, true);
 
             f = cp.getSuperclass().getDeclaredField("server");
             f.setAccessible(true);
-            f.set(spoof, this.cs);
+            f.set(this.spoof, this.cs);
 
             f = cp.getSuperclass().getDeclaredField("loader");
             f.setAccessible(true);
-            f.set(spoof, loader);
+            f.set(this.spoof, loader);
         } catch (Exception e) {
+         // TODO: do some proper exception handling
             e.printStackTrace();
         }
 
-        System.out.println(spoof.isEnabled());
-        spoof.onEnable();
+        System.out.println(this.spoof.isEnabled());
+        this.spoof.onEnable();
     }
 
     public void stop() {

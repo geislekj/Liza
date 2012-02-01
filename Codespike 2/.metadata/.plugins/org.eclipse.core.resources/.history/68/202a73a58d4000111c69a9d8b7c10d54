@@ -1,8 +1,0 @@
-package Liza;
-
-import org.bukkit.event.type;
-
-public interface LizaEventListener {
-
-	public void waitForEvent(Event.Type);
-}

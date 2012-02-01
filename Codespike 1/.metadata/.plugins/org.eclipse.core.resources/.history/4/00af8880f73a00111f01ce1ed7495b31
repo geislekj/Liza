@@ -1,7 +1,0 @@
-package Liza;
-
-import org.bukkit.craftbukkit.block.CraftBlock;
-
-public class LizaCraftBlock extends CraftBlock implements LizaBlock {
-
-}

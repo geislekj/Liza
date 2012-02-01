@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="1032" maximized="true" width="960" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -36,13 +36,14 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" partName="Demo.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/DemoTest/Demo.java" title="Demo.java" tooltip="Prototype 1/src/DemoTest/Demo.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/DemoTest/Demo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1873" selectionTopPixel="21"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1873" selectionTopPixel="911"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" partName="LizaBlock.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaBlock.java" title="LizaBlock.java" tooltip="Prototype 1/src/Liza/LizaBlock.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaBlock.java"/>
@@ -54,15 +55,18 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" partName="LizaServer.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaServer.java" title="LizaServer.java" tooltip="Prototype 1/src/Liza/LizaServer.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaServer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1349" selectionTopPixel="813"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="706" selectionTopPixel="32"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServerThread.java" partName="LizaServerThread.java" path="C:/Users/kimsj/Documents/Liza/Codespike 1/Prototype 1/src/Liza/LizaServerThread.java" title="LizaServerThread.java" tooltip="Prototype 1/src/Liza/LizaServerThread.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Prototype 1/src/Liza/LizaServerThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="124" org.eclipse.ui.ide.pathField="164" org.eclipse.ui.ide.resourceField="124" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -240,7 +244,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d1f1d6" ratio="0.7105263" ratioLeft="621" ratioRight="253" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d1f1d6" ratio="0.76593405" ratioLeft="697" ratioRight="213" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -269,6 +273,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServerThread.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Prototype 1/liza-out.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/DemoTest/Demo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Prototype 1/src/Liza/LizaServerThread.java"/>
 </editors>
 <item historyLabel="LizaServer.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -390,8 +396,20 @@
 <item historyLabel="LizaCraftBlock.java" index="4">
 <position info="not_deleted" x="468" y="0"/>
 </item>
-<item active="true" historyLabel="LizaServer.java" index="5">
+<item historyLabel="LizaServer.java" index="5">
 <position info="not_deleted" x="1883" y="0"/>
+</item>
+<item historyLabel="Demo.java" index="8">
+<position info="not_deleted" x="1873" y="0"/>
+</item>
+<item historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="473" y="0"/>
+</item>
+<item historyLabel="LizaServerThread.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="LizaServer.java" index="5">
+<position info="not_deleted" x="473" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -399,9 +417,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@dc420b"/>
 <trimItem IMemento.internal.id="right"/>
@@ -413,16 +428,15 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d1f1d6"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="liza-out.txt" tooltip="Prototype 1/liza-out.txt">
-<persistable path="/Prototype 1/liza-out.txt"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServerThread.java" tooltip="Prototype 1/src/Liza/LizaServerThread.java">
 <persistable path="/Prototype 1/src/Liza/LizaServerThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="liza-out.txt" tooltip="Prototype 1/liza-out.txt">
+<persistable path="/Prototype 1/liza-out.txt"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Prototype 1/src/Liza/LizaServer.java">
 <persistable path="/Prototype 1/src/Liza/LizaServer.java"/>

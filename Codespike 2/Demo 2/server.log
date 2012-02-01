@@ -5932,3 +5932,90 @@ Caused by: java.lang.NullPointerException
 2012-02-01 18:00:07 [INFO] [Liza-Spoof] Unloading Liza-Spoof vnull.
 2012-02-01 18:00:07 [INFO] LizaPlugin disabled
 2012-02-01 18:00:07 [INFO] Saving chunks
+2012-02-01 18:16:01 [INFO] Starting minecraft server version 1.1
+2012-02-01 18:16:01 [INFO] Loading properties
+2012-02-01 18:16:01 [INFO] Starting Minecraft server on localhost:25565
+2012-02-01 18:16:01 [INFO] This server is running CraftBukkit version git-Bukkit-1.1-R3-b1846jnks (MC: 1.1) (Implementing API version 1.1-R3)
+2012-02-01 18:16:01 [INFO] LizaPlugin enabled
+2012-02-01 18:16:01 [INFO] Preparing level "world"
+2012-02-01 18:16:01 [INFO] Default game type: 0
+2012-02-01 18:16:02 [INFO] Preparing start region for level 0 (Seed: -8759603093123575617)
+2012-02-01 18:16:03 [INFO] Preparing spawn area: 48%
+2012-02-01 18:16:03 [INFO] Preparing start region for level 1 (Seed: -8759603093123575617)
+2012-02-01 18:16:04 [INFO] Preparing spawn area: 40%
+2012-02-01 18:16:04 [INFO] Preparing start region for level 2 (Seed: -8759603093123575617)
+2012-02-01 18:16:05 [INFO] Preparing spawn area: 52%
+2012-02-01 18:16:05 [INFO] [Block Loot] Loading Block Loot vmaven-version-number.
+2012-02-01 18:16:05 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-02-01 18:16:05 [INFO] Done (3.910s)! For help, type "help" or "?"
+2012-02-01 18:16:07 [INFO] /127.0.0.1:56986 lost connection
+2012-02-01 18:16:09 [INFO] SoggyNoose [/127.0.0.1:56996] logged in with entity id 399 at ([world] 132.9759159748281, 68.0, 240.55175636856205)
+2012-02-01 18:16:56 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-02-01 18:16:56 [INFO] Connection reset
+2012-02-01 18:19:31 [INFO] Starting minecraft server version 1.1
+2012-02-01 18:19:31 [INFO] Loading properties
+2012-02-01 18:19:31 [INFO] Starting Minecraft server on localhost:25565
+2012-02-01 18:19:31 [INFO] This server is running CraftBukkit version git-Bukkit-1.1-R3-b1846jnks (MC: 1.1) (Implementing API version 1.1-R3)
+2012-02-01 18:19:31 [INFO] LizaPlugin enabled
+2012-02-01 18:19:31 [INFO] Preparing level "world"
+2012-02-01 18:19:31 [INFO] Default game type: 0
+2012-02-01 18:19:32 [INFO] Preparing start region for level 0 (Seed: -8759603093123575617)
+2012-02-01 18:19:33 [INFO] Preparing start region for level 1 (Seed: -8759603093123575617)
+2012-02-01 18:19:33 [INFO] Preparing spawn area: 0%
+2012-02-01 18:19:34 [INFO] Preparing start region for level 2 (Seed: -8759603093123575617)
+2012-02-01 18:19:34 [INFO] Preparing spawn area: 0%
+2012-02-01 18:19:35 [INFO] Preparing spawn area: 97%
+2012-02-01 18:19:35 [INFO] [Block Loot] Loading Block Loot vmaven-version-number.
+2012-02-01 18:19:35 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-02-01 18:19:35 [INFO] Done (3.378s)! For help, type "help" or "?"
+2012-02-01 18:19:37 [INFO] /127.0.0.1:57117 lost connection
+2012-02-01 18:19:39 [INFO] SoggyNoose [/127.0.0.1:57136] logged in with entity id 402 at ([world] 146.74071276733767, 69.0, 234.96019617223615)
+2012-02-01 18:19:48 [INFO] 10
+2012-02-01 18:19:53 [INFO] 20
+2012-02-01 18:19:59 [INFO] 30
+2012-02-01 18:20:04 [INFO] 40
+2012-02-01 18:20:08 [INFO] 50
+2012-02-01 18:20:14 [INFO] 60
+2012-02-01 18:20:19 [INFO] 70
+2012-02-01 18:20:24 [INFO] 80
+2012-02-01 18:20:28 [INFO] 90
+2012-02-01 18:20:34 [INFO] 100
+2012-02-01 18:20:34 [INFO] Report: Out of 100 block destroyed, dropped 0 orbs.
+2012-02-01 18:20:34 [INFO] Average: 0.0
+2012-02-01 18:21:17 [INFO] Starting minecraft server version 1.1
+2012-02-01 18:21:17 [INFO] Loading properties
+2012-02-01 18:21:17 [INFO] Starting Minecraft server on localhost:25565
+2012-02-01 18:21:17 [INFO] This server is running CraftBukkit version git-Bukkit-1.1-R3-b1846jnks (MC: 1.1) (Implementing API version 1.1-R3)
+2012-02-01 18:21:17 [INFO] LizaPlugin enabled
+2012-02-01 18:21:17 [INFO] Preparing level "world"
+2012-02-01 18:21:17 [INFO] Default game type: 0
+2012-02-01 18:21:17 [INFO] Preparing start region for level 0 (Seed: -8759603093123575617)
+2012-02-01 18:21:18 [INFO] Preparing start region for level 1 (Seed: -8759603093123575617)
+2012-02-01 18:21:18 [INFO] Preparing spawn area: 0%
+2012-02-01 18:21:19 [INFO] Preparing start region for level 2 (Seed: -8759603093123575617)
+2012-02-01 18:21:19 [INFO] Preparing spawn area: 0%
+2012-02-01 18:21:20 [INFO] [Block Loot] Loading Block Loot vmaven-version-number.
+2012-02-01 18:21:20 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-02-01 18:21:20 [INFO] Done (3.254s)! For help, type "help" or "?"
+2012-02-01 18:21:21 [INFO] /127.0.0.1:57193 lost connection
+2012-02-01 18:21:24 [INFO] SoggyNoose [/127.0.0.1:57195] logged in with entity id 405 at ([world] 146.74071276733767, 69.0, 234.96019617223615)
+2012-02-01 18:21:31 [INFO] 10
+2012-02-01 18:21:35 [INFO] 20
+2012-02-01 18:21:41 [INFO] 30
+2012-02-01 18:21:45 [INFO] 40
+2012-02-01 18:21:51 [INFO] 50
+2012-02-01 18:21:55 [INFO] 60
+2012-02-01 18:22:00 [INFO] 70
+2012-02-01 18:22:05 [INFO] 80
+2012-02-01 18:22:10 [INFO] 90
+2012-02-01 18:22:14 [INFO] 100
+2012-02-01 18:22:14 [INFO] Report: Out of 100 block destroyed, dropped 11 orbs.
+2012-02-01 18:22:14 [INFO] Average: 0.11
+2012-02-01 18:25:49 [INFO] SoggyNoose: Set time to 0
+2012-02-01 18:26:01 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-02-01 18:26:01 [INFO] Connection reset
+2012-02-01 18:26:01 [INFO] Stopping server
+2012-02-01 18:26:01 [INFO] [Block Loot] Unloading Block Loot vmaven-version-number.
+2012-02-01 18:26:01 [INFO] [Liza-Spoof] Unloading Liza-Spoof vnull.
+2012-02-01 18:26:01 [INFO] LizaPlugin disabled
+2012-02-01 18:26:01 [INFO] Saving chunks

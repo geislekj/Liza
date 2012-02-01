@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="0" y="0">
+<window height="768" maximized="true" width="1024" x="2804" y="-26">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -39,7 +40,8 @@
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="124" org.eclipse.ui.ide.pathField="164" org.eclipse.ui.ide.resourceField="124" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
@@ -107,7 +109,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -220,7 +222,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@150040b" ratio="0.66141003" ratioLeft="713" ratioRight="365" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@b549af" ratio="0.74921954" ratioLeft="720" ratioRight="241" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -256,41 +258,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaBlock.java" tooltip="Codespike 2/src/Liza/LizaBlock.java">
-<persistable path="/Codespike 2/src/Liza/LizaBlock.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftTestModule.java" tooltip="Demo 2/src/LizaCraft/LizaCraftTestModule.java">
+<persistable path="/Demo 2/src/LizaCraft/LizaCraftTestModule.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftBlock.java" tooltip="Codespike 2/src/LizaCraft/LizaCraftBlock.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaCraftBlock.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="plugin.yml" tooltip="BlockLoot/plugin.yml">
+<persistable path="/BlockLoot/plugin.yml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="test.java" tooltip="Codespike 2/src/Test/test.java">
-<persistable path="/Codespike 2/src/Test/test.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaPlayerListener.java" tooltip="Demo 2/src/LizaCraft/Events/LizaPlayerListener.java">
+<persistable path="/Demo 2/src/LizaCraft/Events/LizaPlayerListener.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftEventListener.java" tooltip="Codespike 2/src/LizaCraft/LizaCraftEventListener.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaCraftEventListener.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="server.properties" tooltip="Demo 2/server.properties">
+<persistable path="/Demo 2/server.properties"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaEventListener.java" tooltip="Codespike 2/src/Liza/LizaEventListener.java">
-<persistable path="/Codespike 2/src/Liza/LizaEventListener.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" tooltip="Demo 2/src/Demo/Demo.java">
+<persistable path="/Demo 2/src/Demo/Demo.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaPlayerListener.java" tooltip="Codespike 2/src/LizaCraft/LizaPlayerListener.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaPlayerListener.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaPlugin.java" tooltip="Demo 2/src/LizaCraft/Events/LizaPlugin.java">
+<persistable path="/Demo 2/src/LizaCraft/Events/LizaPlugin.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaPlugin.java" tooltip="Codespike 2/src/LizaCraft/LizaPlugin.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaPlugin.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftServer.java" tooltip="Demo 2/src/LizaCraft/LizaCraftServer.java">
+<persistable path="/Demo 2/src/LizaCraft/LizaCraftServer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaCraftServer.java" tooltip="Codespike 2/src/LizaCraft/LizaCraftServer.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaCraftServer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DemoListener.java" tooltip="Demo 2/src/Demo/DemoListener.java">
+<persistable path="/Demo 2/src/Demo/DemoListener.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SimplePluginManager.class" tooltip="org.bukkit.plugin.SimplePluginManager">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Codespike 2/C:\/Users\/kimsj\/Documents\/Liza\/Codespike 1\/bukkit-1.0.1-R1.jar&lt;org.bukkit.plugin(SimplePluginManager.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaListener.java" tooltip="Demo 2/src/Liza/LizaListener.java">
+<persistable path="/Demo 2/src/Liza/LizaListener.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="liza-out.txt" tooltip="Codespike 2/liza-out.txt">
-<persistable path="/Codespike 2/liza-out.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BLBlockListener.java" tooltip="BlockLoot/src/blockloot/listeners/BLBlockListener.java">
+<persistable path="/BlockLoot/src/blockloot/listeners/BLBlockListener.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Codespike 2/src/LizaCraft/LizaServer.java">
-<persistable path="/Codespike 2/src/LizaCraft/LizaServer.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="CraftEventFactory.class" tooltip="org.bukkit.craftbukkit.event.CraftEventFactory">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Demo 2/C:\/Users\/kimsj\/Documents\/Liza\/Codespike 2\/craftbukkit-1.1-R1.jar&lt;org.bukkit.craftbukkit.event(CraftEventFactory.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Codespike 2/src/Liza/LizaServer.java">
-<persistable path="/Codespike 2/src/Liza/LizaServer.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BLEntityListener.java" tooltip="BlockLoot/src/blockloot/listeners/BLEntityListener.java">
+<persistable path="/BlockLoot/src/blockloot/listeners/BLEntityListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockLoot.java" tooltip="BlockLoot/src/blockloot/BlockLoot.java">
+<persistable path="/BlockLoot/src/blockloot/BlockLoot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaServer.java" tooltip="Demo 2/src/Liza/LizaServer.java">
+<persistable path="/Demo 2/src/Liza/LizaServer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LizaPlayer.java" tooltip="Demo 2/src/Liza/LizaPlayer.java">
+<persistable path="/Demo 2/src/Liza/LizaPlayer.java"/>
 </file>
 </mruList>
 </workbench>

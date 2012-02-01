@@ -10,26 +10,23 @@ import org.bukkit.event.EventException;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.Event.Priority;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.EventExecutor;
-import org.bukkit.plugin.PluginLoader;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import Liza.LizaListener;
 import LizaCraft.LizaCraftTestModule;
 
-@Deprecated //TODO: Update to new event handling
 public class LizaPlugin extends JavaPlugin implements Listener {
     private static final Logger log = Logger.getLogger("Minecraft");
     
-    protected Map<Event.Type, LizaCraftTestModule> waitingList = new HashMap<Event.Type, LizaCraftTestModule>();
+    protected Map<Class<? extends Event>, LizaCraftTestModule> waitingList = new HashMap<Class<? extends Event>, LizaCraftTestModule>();
     
-    private Map<Event.Type, LizaListener> listenerList = new HashMap<Event.Type, LizaListener>();
+    private Map<Class<? extends Event>, LizaListener> listenerList = new HashMap<Class<? extends Event>, LizaListener>();
     
     @Override
     public void onDisable() {
@@ -42,23 +39,19 @@ public class LizaPlugin extends JavaPlugin implements Listener {
         //getServer().getPluginManager().registerEvents(this, this);
     }
     
-    public void waitForEvent(Event.Type event, LizaCraftTestModule testModule) {
+    public void waitForEvent(Class<? extends Event> event, LizaCraftTestModule testModule) {
         this.waitingList.put(event, testModule);
     }
     
     public void releaseFromEvent(Event event) {
-        LizaCraftTestModule waitee = this.waitingList.remove(event.getType());
+        LizaCraftTestModule waitee = this.waitingList.remove(event.getClass());
         if (waitee != null) {
             waitee.release();
         }
     }
     
     public void registerEvent(Class<? extends Event> event) throws IllegalArgumentException {
-//        PluginManager pm = this.getServer().getPluginManager();
-//        pm.registerEvent(event, this.handlerList.get(event.getCategory()), Event.Priority.Monitor, this);
-        
         PluginManager pm = this.getServer().getPluginManager();
-        PluginLoader pl = this.getPluginLoader();
         EventExecutor exec = null;
         
         Method[] methods = this.getClass().getDeclaredMethods();
@@ -89,41 +82,45 @@ public class LizaPlugin extends JavaPlugin implements Listener {
         pm.registerEvent(event, this, EventPriority.MONITOR, exec, this);
     }
     
-    public void registerEvent(Event.Type event, LizaListener listener) {
-        //this.listenerList.put(event, listener);
+    public void registerEvent(Class<? extends Event> event, LizaListener listener) {
+        registerEvent(event);
+        this.listenerList.put(event, listener);
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
     public void playerExpChange(final PlayerExpChangeEvent e) {
+        releaseFromEvent(e);
         relayEvent(e);
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
     public void onPlayerJoin(final PlayerJoinEvent e) {
         releaseFromEvent(e);
-        //relayEvent(e);
+        relayEvent(e);
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
     public void onBlockBreak(final BlockBreakEvent e) {
         releaseFromEvent(e);
-        //relayEvent(e);
+        relayEvent(e);
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
     public void onPlayerQuit(final PlayerQuitEvent e) {
         releaseFromEvent(e);
-        //relayEvent(e);
+        relayEvent(e);
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
     public void onPlayerExpChange(final PlayerExpChangeEvent e) {
         releaseFromEvent(e);
-        //relayEvent(e);
+        relayEvent(e);
     }
     
     public void relayEvent(Event e) {
-        LizaListener ll = this.listenerList.get(e.getType());
-        ll.handleEvent(e);
+        LizaListener ll = this.listenerList.get(e.getClass());
+        if (ll != null) {
+            ll.handleEvent(e);
+        }
     }
 }

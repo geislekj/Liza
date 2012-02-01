@@ -1,8 +1,0 @@
-package Liza;
-
-public class MockModule1 extends PlayerListener {
-
-	public static void main(String[] args) {
-		LizaServer ls = new LizaServer();
-	}
-}

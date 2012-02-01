@@ -1,6 +1,0 @@
-package Liza;
-
-public interface LizaEventListener {
-
-	public void waitForEvent(Event.Type type);
-}

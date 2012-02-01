@@ -22,7 +22,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import Liza.LizaServer;
 import LizaCraft.Events.LizaPlugin;
 
-@Deprecated //TODO: Update to new event handling
 public class LizaCraftTestModule {
     private static final String MINECRAFT_SERVER_THREAD_NAME = "Server thread";
     private static final String MINECRAFT_SERVER_FIELD_NAME = "a";
@@ -211,7 +210,7 @@ public class LizaCraftTestModule {
         return ms.server;
     }
     
-    public void waitForEvent(Event.Type event) {
+    public void waitForEvent(Class<? extends Event> event) {
         this.waiting = true;
         this.eventListener.waitForEvent(event, this);
         while (this.waiting) {}

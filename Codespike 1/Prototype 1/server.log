@@ -1234,3 +1234,40 @@ java.lang.NullPointerException
 2012-01-13 15:49:43 [INFO] Stopping server
 2012-01-13 15:49:43 [INFO] Saving chunks
 2012-01-13 15:49:45 [INFO] Stopping server
+2012-01-16 18:03:44 [INFO] Starting minecraft server version 1.0.1
+2012-01-16 18:03:44 [WARNING] **** NOT ENOUGH RAM!
+2012-01-16 18:03:44 [WARNING] To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+2012-01-16 18:03:44 [INFO] Loading properties
+2012-01-16 18:03:44 [INFO] Starting Minecraft server on localhost:25565
+2012-01-16 18:03:44 [INFO] This server is running Craftbukkit version git-Bukkit-1.0.1-R1-b1597jnks (MC: 1.0.1) (Implementing API version 1.0.1-R1)
+2012-01-16 18:03:44 [INFO] Preparing level "world"
+2012-01-16 18:03:44 [INFO] Default game type: 0
+2012-01-16 18:03:45 [INFO] Preparing start region for level 0 (Seed: 8065705678783935590)
+2012-01-16 18:03:46 [INFO] Preparing spawn area: 28%
+2012-01-16 18:03:47 [INFO] Preparing spawn area: 97%
+2012-01-16 18:03:47 [INFO] Preparing start region for level 1 (Seed: 4186248647938519043)
+2012-01-16 18:03:47 [INFO] Connect to localhost to begin demo!
+2012-01-16 18:03:48 [INFO] Preparing spawn area: 44%
+2012-01-16 18:03:49 [INFO] Preparing start region for level 2 (Seed: 4186248647938519043)
+2012-01-16 18:03:49 [INFO] Preparing spawn area: 0%
+2012-01-16 18:03:50 [INFO] Preparing spawn area: 40%
+2012-01-16 18:03:51 [INFO] Preparing spawn area: 85%
+2012-01-16 18:03:51 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2012-01-16 18:03:52 [INFO] Done (0.797s)! For help, type "help" or "?"
+2012-01-16 18:04:03 [INFO] SoggyNoose [/127.0.0.1:52732] logged in with entity id 611 at ([world] 202.67798584967198, 74.0, 179.83859296072544)
+2012-01-16 18:04:03 [INFO] Hi there, SoggyNoose!
+2012-01-16 18:04:03 [INFO] Making sure it's daytime...
+2012-01-16 18:04:03 [INFO] Making sure you're an op...
+2012-01-16 18:04:08 [INFO] Before we begin, I'd like to clear your inventory.
+2012-01-16 18:04:13 [INFO] Now, take this diamond pickaxe. :)
+2012-01-16 18:04:18 [INFO] There should be a gold block nearby. Use the diamond pickaxe to destroy it
+2012-01-16 18:04:18 [INFO] Because I haven't implemented event listening, I'll be annoying and spam the result of assertBlockType() periodically
+2012-01-16 18:04:18 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-16 18:04:20 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-16 18:04:22 [INFO] assertBlockType returned false! (expected AIR but got GOLD_BLOCK)
+2012-01-16 18:04:24 [INFO] assertBlockType returned true! (AIR)
+2012-01-16 18:04:29 [INFO] Congratulations. This test module will explode in 3 seconds.
+2012-01-16 18:04:43 [INFO] SoggyNoose lost connection: disconnect.quitting
+2012-01-16 18:04:43 [INFO] Connection reset
+2012-01-16 18:04:43 [INFO] Stopping server
+2012-01-16 18:04:43 [INFO] Saving chunks

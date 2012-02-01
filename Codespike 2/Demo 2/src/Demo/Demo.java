@@ -6,7 +6,6 @@ import LizaCraft.LizaCraftTestModule;
 import LizaCraft.Events.LizaPlugin;
 
 import org.bukkit.Material;
-import org.bukkit.event.Event;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
@@ -29,9 +28,9 @@ public class Demo {
         eventListener.registerEvent(PlayerJoinEvent.class); // perhaps this shouldn't be necessary
         eventListener.registerEvent(BlockBreakEvent.class); // but this registers an event without
         eventListener.registerEvent(PlayerQuitEvent.class); // committing to a listener
-        eventListener.registerEvent(PlayerExpChangeEvent.class);
+        eventListener.registerEvent(PlayerExpChangeEvent.class, listener);
 
-        test.waitForEvent(Event.Type.PLAYER_JOIN); // It'd be nice if this returned the Event object or something to determine who joined and such
+        test.waitForEvent(PlayerJoinEvent.class); // It'd be nice if this returned the Event object or something to determine who joined and such
         
         LizaPlayer player = (LizaPlayer) server.getPlayer("soggynoose");
         player.setItemInHand(new ItemStack(Material.DIAMOND_SPADE, 1));
@@ -41,7 +40,7 @@ public class Demo {
         int blockLimit = 100;
         int count = 0;
         while (count < blockLimit) {
-            test.waitForEvent(Event.Type.BLOCK_BREAK);
+            test.waitForEvent(BlockBreakEvent.class);
             count += 1;
             if ((count%10)==0) {
                 System.out.println(count);
@@ -51,7 +50,7 @@ public class Demo {
         System.out.println("Report: Out of " + count + " block destroyed, dropped " + xpCount + " orbs.");
         System.out.println("Average: " + ((float)xpCount)/count);
         
-        test.waitForEvent(Event.Type.PLAYER_QUIT);
+        test.waitForEvent(PlayerQuitEvent.class);
         
         test.disableEvents();
         test.endModule(); // perhaps just be test.end()
