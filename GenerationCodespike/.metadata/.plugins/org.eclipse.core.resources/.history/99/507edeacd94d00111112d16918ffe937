@@ -1,0 +1,11 @@
+package Liza;
+
+/**
+ * @author geislekj
+ * 
+ *  LizaVehicle is the Liza interface representation of
+ *  the Bukkit Vehicle interface
+ */
+public interface LizaVehicle extends Vehicle{
+
+}

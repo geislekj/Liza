@@ -1,0 +1,9 @@
+package LizaCraft.Entity;
+
+public class LizaCraftVehicle {
+
+	public LizaCraftVehicle() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

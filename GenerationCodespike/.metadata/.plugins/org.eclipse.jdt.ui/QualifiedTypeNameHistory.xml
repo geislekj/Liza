@@ -10,4 +10,12 @@
 <fullyQualifiedTypeName name="org.bukkit.entity.Creature"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Projectile"/>
 <fullyQualifiedTypeName name="Liza.LizaProjectile"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Explosive"/>
+<fullyQualifiedTypeName name="Liza.LizaExplosive"/>
+<fullyQualifiedTypeName name="Liza.LizaWeather"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Weather"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.FallingSand"/>
+<fullyQualifiedTypeName name="Liza.LizaFallingSand"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Item"/>
+<fullyQualifiedTypeName name="Liza.LizaItem"/>
 </qualifiedTypeNameHistroy>

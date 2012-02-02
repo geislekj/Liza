@@ -1,0 +1,18 @@
+package LizaCraft.Entity;
+
+import org.bukkit.entity.Vehicle;
+
+public class LizaCraftVehicle {
+
+	private Vehicle vehicle;
+
+	/**
+	 * LizaCraftEntity Constructor
+	 * 
+	 * @param vehicle This is a Bukkit vehicle entity 
+	 */
+	public LizaCraftVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
+}
