@@ -24,6 +24,8 @@ import LizaCraft.LizaCraftTestModule;
 public class LizaPlugin extends JavaPlugin implements Listener {
     private static final Logger log = Logger.getLogger("Minecraft");
     
+    public static final String PLUGIN_NAME = "Liza Event Listener";
+    
     protected Map<Class<? extends Event>, LizaCraftTestModule> waitingList = new HashMap<Class<? extends Event>, LizaCraftTestModule>();
     
     private Map<Class<? extends Event>, LizaListener> listenerList = new HashMap<Class<? extends Event>, LizaListener>();
@@ -36,18 +38,6 @@ public class LizaPlugin extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         log.info("LizaPlugin enabled");
-        //getServer().getPluginManager().registerEvents(this, this);
-    }
-    
-    public void waitForEvent(Class<? extends Event> event, LizaCraftTestModule testModule) {
-        this.waitingList.put(event, testModule);
-    }
-    
-    public void releaseFromEvent(Event event) {
-        LizaCraftTestModule waitee = this.waitingList.remove(event.getClass());
-        if (waitee != null) {
-            waitee.release();
-        }
     }
     
     public void registerEvent(Class<? extends Event> event) throws IllegalArgumentException {
@@ -58,14 +48,10 @@ public class LizaPlugin extends JavaPlugin implements Listener {
         for (final Method method : methods) {
             final EventHandler eh = method.getAnnotation(EventHandler.class);
             if (eh == null) continue;
-            final Class<? extends Event> eventClass = method.getParameterTypes()[0].asSubclass(Event.class);
-            if (event.equals(eventClass)) {
+            if (method.getParameterTypes()[0].equals(Event.class)) {
                 exec = new EventExecutor() {
                     public void execute(Listener listener, Event event) throws EventException {
                         try {
-                            if (!eventClass.isAssignableFrom(event.getClass())) {
-                                throw new EventException("Wrong event type passed");
-                            }
                             method.invoke(listener, event);
                         } catch (Throwable t) {
                             throw new EventException(t);
@@ -88,33 +74,20 @@ public class LizaPlugin extends JavaPlugin implements Listener {
     }
     
     @EventHandler(priority=EventPriority.MONITOR)
-    public void playerExpChange(final PlayerExpChangeEvent e) {
+    public void handleEvent(Event e) {
         releaseFromEvent(e);
         relayEvent(e);
     }
     
-    @EventHandler(priority=EventPriority.MONITOR)
-    public void onPlayerJoin(final PlayerJoinEvent e) {
-        releaseFromEvent(e);
-        relayEvent(e);
+    public void waitForEvent(Class<? extends Event> event, LizaCraftTestModule testModule) {
+        this.waitingList.put(event, testModule);
     }
     
-    @EventHandler(priority=EventPriority.MONITOR)
-    public void onBlockBreak(final BlockBreakEvent e) {
-        releaseFromEvent(e);
-        relayEvent(e);
-    }
-    
-    @EventHandler(priority=EventPriority.MONITOR)
-    public void onPlayerQuit(final PlayerQuitEvent e) {
-        releaseFromEvent(e);
-        relayEvent(e);
-    }
-    
-    @EventHandler(priority=EventPriority.MONITOR)
-    public void onPlayerExpChange(final PlayerExpChangeEvent e) {
-        releaseFromEvent(e);
-        relayEvent(e);
+    public void releaseFromEvent(Event event) {
+        LizaCraftTestModule waitee = this.waitingList.remove(event.getClass());
+        if (waitee != null) {
+            waitee.release(event);
+        }
     }
     
     public void relayEvent(Event e) {

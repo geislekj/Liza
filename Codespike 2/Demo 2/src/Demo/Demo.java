@@ -2,6 +2,7 @@ package Demo;
 
 import Liza.LizaPlayer;
 import Liza.LizaServer;
+import LizaCraft.LizaCraftPlayer;
 import LizaCraft.LizaCraftTestModule;
 import LizaCraft.Events.LizaPlugin;
 
@@ -10,7 +11,6 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
 
-@Deprecated
 public class Demo {
     protected static int xpCount = 0;
 
@@ -25,14 +25,15 @@ public class Demo {
         test.enableEvents();
 
         LizaPlugin eventListener = test.getEventListener();
-        eventListener.registerEvent(PlayerJoinEvent.class); // perhaps this shouldn't be necessary
-        eventListener.registerEvent(BlockBreakEvent.class); // but this registers an event without
-        eventListener.registerEvent(PlayerQuitEvent.class); // committing to a listener
+        eventListener.registerEvent(PlayerJoinEvent.class); // Any way to do without the .class part?
+        eventListener.registerEvent(BlockBreakEvent.class);
+        eventListener.registerEvent(PlayerQuitEvent.class, listener);
         eventListener.registerEvent(PlayerExpChangeEvent.class, listener);
 
-        test.waitForEvent(PlayerJoinEvent.class); // It'd be nice if this returned the Event object or something to determine who joined and such
+        PlayerJoinEvent pje = (PlayerJoinEvent)test.waitForEvent(PlayerJoinEvent.class);
+        if (pje == null) System.out.println("Oh noes");
+        LizaPlayer player = new LizaCraftPlayer(pje.getPlayer()); // oh jesus dont tell me we need to make our own event objects too
         
-        LizaPlayer player = (LizaPlayer) server.getPlayer("soggynoose");
         player.setItemInHand(new ItemStack(Material.DIAMOND_SPADE, 1));
         player.setLevel(0);
         player.setOp(true);
@@ -49,10 +50,5 @@ public class Demo {
         
         System.out.println("Report: Out of " + count + " block destroyed, dropped " + xpCount + " orbs.");
         System.out.println("Average: " + ((float)xpCount)/count);
-        
-        test.waitForEvent(PlayerQuitEvent.class);
-        
-        test.disableEvents();
-        test.endModule(); // perhaps just be test.end()
     }
 }
