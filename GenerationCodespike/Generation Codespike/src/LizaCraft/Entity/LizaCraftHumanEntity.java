@@ -1,4 +1,4 @@
-package LizaCraft.HumanEntity;
+package LizaCraft.Entity;
 
 import java.util.HashSet;
 import java.util.List;

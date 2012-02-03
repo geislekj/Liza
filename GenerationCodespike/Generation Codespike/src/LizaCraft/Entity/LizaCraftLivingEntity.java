@@ -1,4 +1,4 @@
-package LizaCraft.LivingEntity;
+package LizaCraft.Entity;
 
 import java.util.HashSet;
 import java.util.List;
@@ -24,7 +24,6 @@ import Liza.LizaBlock;
 import Liza.LizaEntity;
 import Liza.LizaLivingEntity;
 import LizaCraft.Block.LizaCraftBlock;
-import LizaCraft.Entity.LizaCraftEntity;
 
 /**
  * @author collinbc
