@@ -32,6 +32,10 @@ public class LizaCraftTestModule {
     private static final String PLUGIN_ENABLED_FIELD_NAME = "isEnabled";
     private static final String PLUGIN_SERVER_FIELD_NAME = "server";
     private static final String PLUGIN_LOADER_FIELD_NAME = "loader";
+    private static final String PLUGIN_DESCRIPTION_FIELD_NAME = "description";
+    private static final String PLUGIN_LOOKUP_FIELD_NAME = "lookupNames";
+    
+    private static final String PLUGIN_EXTENSION = ".jar";
     
     private LizaServerThread serverThread;
     private LizaServer server;
@@ -40,6 +44,7 @@ public class LizaCraftTestModule {
     private String name;
     
     private boolean waiting = false;
+    private Event waitingOn;
     
     public LizaCraftTestModule(String name) {
         this.name = name;
@@ -58,7 +63,7 @@ public class LizaCraftTestModule {
     
     @SuppressWarnings("unchecked")
     public void enableEvents() {
-        // TODO: Get rid of that param, get rid of the other method
+        // TODO: Use something other than Field f a bunch of times
         
         // Step 1: Find the appropriate PluginLoader
         Class<? extends PluginManager> pluginManager = ((SimplePluginManager) this.server.getPluginManager()).getClass();
@@ -70,7 +75,7 @@ public class LizaCraftTestModule {
             Map<Pattern, PluginLoader> fileAssociations = ((HashMap) f.get(this.server.getPluginManager()));
             
             for (Pattern p : fileAssociations.keySet()) {
-                Matcher match = p.matcher(".jar"); //TODO: Pull this string out
+                Matcher match = p.matcher(PLUGIN_EXTENSION);
                 if (match.find()) {
                     pluginLoader = fileAssociations.get(p);
                 }
@@ -83,7 +88,7 @@ public class LizaCraftTestModule {
         
         // Step 2: Tell the PluginLoader to load the plugin
         // Step 2.a: Create PluginDescriptionFile object
-        PluginDescriptionFile desc = new PluginDescriptionFile("Liza-Spoof", null, null); // TODO: Pull this string out
+        PluginDescriptionFile desc = new PluginDescriptionFile(LizaPlugin.PLUGIN_NAME, null, null);
                 
         // Step 2.b: Call initialize on the plugin
         Class<? extends JavaPlugin> plugin = this.eventListener.getClass();
@@ -103,7 +108,7 @@ public class LizaCraftTestModule {
             f.set(this.eventListener, this.server);
             f.setAccessible(false);
             
-            f = plugin.getSuperclass().getDeclaredField("description");
+            f = plugin.getSuperclass().getDeclaredField(PLUGIN_DESCRIPTION_FIELD_NAME);
             f.setAccessible(true);
             f.set(this.eventListener, desc);
             f.setAccessible(false);
@@ -129,10 +134,10 @@ public class LizaCraftTestModule {
         // Step 4: Add to lookup table
         Map<String, Plugin> lookupNames;
         try {
-            f = pluginManager.getDeclaredField("lookupNames"); //TODO
+            f = pluginManager.getDeclaredField(PLUGIN_LOOKUP_FIELD_NAME);
             f.setAccessible(true);
             lookupNames = (HashMap<String, Plugin>)f.get(this.server.getPluginManager());
-            lookupNames.put("Liza-Spoof", this.eventListener);
+            lookupNames.put(LizaPlugin.PLUGIN_NAME, this.eventListener);
             f.set(this.server.getPluginManager(), lookupNames);
             f.setAccessible(false);
         } catch (Exception e) {
@@ -210,13 +215,15 @@ public class LizaCraftTestModule {
         return ms.server;
     }
     
-    public void waitForEvent(Class<? extends Event> event) {
+    public Event waitForEvent(Class<? extends Event> event) {
         this.waiting = true;
         this.eventListener.waitForEvent(event, this);
         while (this.waiting) {}
+        return this.waitingOn;
     }
     
-    public void release() {
+    public void release(Event event) {
+        this.waitingOn = event;
         this.waiting = false;
     }
     
