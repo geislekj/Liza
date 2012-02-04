@@ -5,8 +5,8 @@ import org.bukkit.entity.Animals;
 /**
  * @author collinbc
  * 
- *  LizaEntity is the Liza interface representation of
- *  the Bukkit entity interface
+ *  LizaAnimals is the Liza interface representation of
+ *  the Bukkit Animals interface.
  */
 public interface LizaAnimals extends Animals {
 

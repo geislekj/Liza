@@ -9,7 +9,7 @@ import org.bukkit.Location;
 import org.bukkit.Server;
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.craftbukkit.entity.CraftAnimals;
+import org.bukkit.craftbukkit.entity.CraftCow;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Egg;
 import org.bukkit.entity.Entity;
@@ -21,97 +21,97 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
-import Liza.LizaAnimals;
+import Liza.LizaCow;
 import LizaCraft.LizaCraftServer;
 import LizaCraft.LizaCraftWorld;
 import LizaCraft.Block.LizaCraftBlock;
 
 /**
  * @author collinbc
- *
- *  LizaCraftAnimals is the Liza entity representation of
- *  the Bukkit CraftAnimals class.
+ * 
+ *  LizaCraftCow is the Liza entity representation of
+ *  the Bukkit CraftCow class.
  */
-public class LizaCraftAnimals implements LizaAnimals {
-	private CraftAnimals animal;
+public class LizaCraftCow implements LizaCow {
+	private CraftCow cow;
 
-	public LizaCraftAnimals(CraftAnimals animal) {
-		this.animal = animal;
+	public LizaCraftCow(CraftCow cow) {
+		this.cow = cow;
 	}
 
 	@Override
 	public boolean canBreed() {
-		return this.animal.canBreed();
+		return this.cow.canBreed();
 	}
 
 	@Override
 	public int getAge() {
-		return this.animal.getAge();
+		return this.cow.getAge();
 	}
 
 	@Override
 	public boolean getAgeLock() {
-		return this.animal.getAgeLock();
+		return this.cow.getAgeLock();
 	}
 
 	@Override
 	public boolean isAdult() {
-		return this.animal.isAdult();
+		return this.cow.isAdult();
 	}
 
 	@Override
 	public void setAdult() {
-		this.animal.setAdult();
+		this.cow.setAdult();
 	}
 
 	@Override
 	public void setAge(int age) {
-		this.animal.setAge(age);
+		this.cow.setAge(age);
 	}
 
 	@Override
 	public void setAgeLock(boolean lock) {
-		this.animal.setAgeLock(lock);
+		this.cow.setAgeLock(lock);
 	}
 
 	@Override
 	public void setBaby() {
-		this.animal.setBaby();
+		this.cow.setBaby();
 	}
 
 	@Override
 	public void setBreed(boolean breed) {
-		this.animal.setBreed(breed);
+		this.cow.setBreed(breed);
 	}
 
 	@Override
 	public LivingEntity getTarget() {
-		return new LizaCraftLivingEntity(this.animal.getTarget());
+		return new LizaCraftLivingEntity(this.cow.getTarget());
 	}
 
 	@Override
 	public void setTarget(LivingEntity target) {
-		this.animal.setTarget(target);
+		this.cow.setTarget(target);
 	}
 
 	@Override
 	public void damage(int amount) {
-		this.animal.damage(amount);
+		this.cow.damage(amount);
 	}
 
 	@Override
 	public void damage(int amount, Entity source) {
-		this.animal.damage(amount, source);
+		this.cow.damage(amount, source);
 	}
 
 	@Override
 	public double getEyeHeight() {
-		return this.animal.getEyeHeight();
+		return this.cow.getEyeHeight();
 	}
 
 	@Override
 	public double getEyeHeight(boolean ignoreSneaking) {
-		return this.animal.getEyeHeight(ignoreSneaking);
+		return this.cow.getEyeHeight(ignoreSneaking);
 	}
 
 	/**
@@ -119,12 +119,12 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Location getEyeLocation() {
-		return this.animal.getEyeLocation();
+		return this.cow.getEyeLocation();
 	}
 
 	@Override
 	public int getHealth() {
-		return this.animal.getHealth();
+		return this.cow.getHealth();
 	}
 
 	/**
@@ -132,18 +132,18 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Player getKiller() {
-		return this.animal.getKiller();
+		return this.cow.getKiller();
 	}
 
 	@Override
 	public int getLastDamage() {
-		return this.animal.getLastDamage();
+		return this.cow.getLastDamage();
 	}
 
 	@Override
 	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> transparent,
 			int maxDistance) {
-		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
+		List<Block> bl = this.cow.getLastTwoTargetBlocks(transparent,
 				maxDistance);
 
 		for (Block b : bl) {
@@ -154,7 +154,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 
 	@Override
 	public List<Block> getLineOfSight(HashSet<Byte> transparent, int maxDistance) {
-		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
+		List<Block> bl = this.cow.getLastTwoTargetBlocks(transparent,
 				maxDistance);
 
 		for (Block b : bl) {
@@ -165,43 +165,43 @@ public class LizaCraftAnimals implements LizaAnimals {
 
 	@Override
 	public int getMaxHealth() {
-		return this.animal.getMaxHealth();
+		return this.cow.getMaxHealth();
 	}
 
 	@Override
 	public int getMaximumAir() {
-		return this.animal.getMaximumAir();
+		return this.cow.getMaximumAir();
 	}
 
 	@Override
 	public int getMaximumNoDamageTicks() {
-		return this.animal.getMaximumNoDamageTicks();
+		return this.cow.getMaximumNoDamageTicks();
 	}
 
 	@Override
 	public int getNoDamageTicks() {
-		return this.animal.getNoDamageTicks();
+		return this.cow.getNoDamageTicks();
 	}
 
 	@Override
 	public int getRemainingAir() {
-		return this.animal.getRemainingAir();
+		return this.cow.getRemainingAir();
 	}
 
 	@Override
 	public Block getTargetBlock(HashSet<Byte> transparent, int maxDistance) {
-		return new LizaCraftBlock(this.animal.getTargetBlock(transparent,
+		return new LizaCraftBlock(this.cow.getTargetBlock(transparent,
 				maxDistance));
 	}
 
 	@Override
 	public Vehicle getVehicle() {
-		return new LizaCraftVehicle(this.animal.getVehicle());
+		return new LizaCraftVehicle(this.cow.getVehicle());
 	}
 
 	@Override
 	public boolean isInsideVehicle() {
-		return this.animal.isInsideVehicle();
+		return this.cow.isInsideVehicle();
 	}
 
 	/**
@@ -209,42 +209,42 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean leaveVehicle() {
-		return this.animal.leaveVehicle();
+		return this.cow.leaveVehicle();
 	}
 
 	@Override
 	public void setHealth(int health) {
-		this.animal.setHealth(health);
+		this.cow.setHealth(health);
 	}
 
 	@Override
 	public void setLastDamage(int damage) {
-		this.animal.setLastDamage(damage);
+		this.cow.setLastDamage(damage);
 	}
 
 	@Override
 	public void setMaximumAir(int ticks) {
-		this.animal.setMaximumAir(ticks);
+		this.cow.setMaximumAir(ticks);
 	}
 
 	@Override
 	public void setMaximumNoDamageTicks(int ticks) {
-		this.animal.setMaximumNoDamageTicks(ticks);
+		this.cow.setMaximumNoDamageTicks(ticks);
 	}
 
 	@Override
 	public void setNoDamageTicks(int ticks) {
-		this.animal.setNoDamageTicks(ticks);
+		this.cow.setNoDamageTicks(ticks);
 	}
 
 	@Override
 	public void setRemainingAir(int ticks) {
-		this.animal.setRemainingAir(ticks);
+		this.cow.setRemainingAir(ticks);
 	}
 
 	@Override
 	public Arrow shootArrow() {
-		return new LizaCraftArrow(this.animal.shootArrow());
+		return new LizaCraftArrow(this.cow.shootArrow());
 	}
 
 	/**
@@ -252,7 +252,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Egg throwEgg() {
-		return this.animal.throwEgg();
+		return this.cow.throwEgg();
 	}
 
 	/**
@@ -260,7 +260,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Snowball throwSnowball() {
-		return this.animal.throwSnowball();
+		return this.cow.throwSnowball();
 	}
 
 	/**
@@ -268,22 +268,22 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean eject() {
-		return this.animal.eject();
+		return this.cow.eject();
 	}
 
 	@Override
 	public int getEntityId() {
-		return this.animal.getEntityId();
+		return this.cow.getEntityId();
 	}
 
 	@Override
 	public float getFallDistance() {
-		return this.animal.getFallDistance();
+		return this.cow.getFallDistance();
 	}
 
 	@Override
 	public int getFireTicks() {
-		return this.animal.getFireTicks();
+		return this.cow.getFireTicks();
 	}
 
 	/**
@@ -291,7 +291,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public EntityDamageEvent getLastDamageCause() {
-		return this.animal.getLastDamageCause();
+		return this.cow.getLastDamageCause();
 	}
 
 	/**
@@ -299,12 +299,12 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Location getLocation() {
-		return this.animal.getLocation();
+		return this.cow.getLocation();
 	}
 
 	@Override
 	public int getMaxFireTicks() {
-		return this.animal.getMaxFireTicks();
+		return this.cow.getMaxFireTicks();
 	}
 
 	/**
@@ -317,7 +317,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public List<Entity> getNearbyEntities(double x, double y, double z) {
-		List<Entity> el = this.animal.getNearbyEntities(x, y, z);
+		List<Entity> el = this.cow.getNearbyEntities(x, y, z);
 
 		for (Entity e : el) {
 			e = new LizaCraftEntity(e);
@@ -327,7 +327,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 
 	@Override
 	public Entity getPassenger() {
-		return new LizaCraftEntity(this.animal.getPassenger());
+		return new LizaCraftEntity(this.cow.getPassenger());
 	}
 
 	/**
@@ -335,17 +335,17 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Server getServer() {
-		return new LizaCraftServer(this.animal.getServer());
+		return new LizaCraftServer(this.cow.getServer());
 	}
 
 	@Override
 	public int getTicksLived() {
-		return this.animal.getTicksLived();
+		return this.cow.getTicksLived();
 	}
 
 	@Override
 	public UUID getUniqueId() {
-		return this.animal.getUniqueId();
+		return this.cow.getUniqueId();
 	}
 
 	/**
@@ -353,47 +353,47 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public Vector getVelocity() {
-		return this.animal.getVelocity();
+		return this.cow.getVelocity();
 	}
 
 	@Override
 	public World getWorld() {
-		return new LizaCraftWorld(this.animal.getWorld());
+		return new LizaCraftWorld(this.cow.getWorld());
 	}
 
 	@Override
 	public boolean isDead() {
-		return this.animal.isDead();
+		return this.cow.isDead();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		return this.animal.isEmpty();
+		return this.cow.isEmpty();
 	}
 
 	@Override
 	public void playEffect(EntityEffect type) {
-		this.animal.playEffect(type);
+		this.cow.playEffect(type);
 	}
 
 	@Override
 	public void remove() {
-		this.animal.remove();
+		this.cow.remove();
 	}
 
 	@Override
 	public void setFallDistance(float distance) {
-		this.animal.setFallDistance(distance);
+		this.cow.setFallDistance(distance);
 	}
 
 	@Override
 	public void setFireTicks(int ticks) {
-		this.animal.setFireTicks(ticks);
+		this.cow.setFireTicks(ticks);
 	}
 
 	@Override
 	public void setLastDamageCause(EntityDamageEvent event) {
-		this.animal.setLastDamageCause(event);
+		this.cow.setLastDamageCause(event);
 	}
 
 	/**
@@ -401,17 +401,17 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean setPassenger(Entity passenger) {
-		return this.animal.setPassenger(passenger);
+		return this.cow.setPassenger(passenger);
 	}
 
 	@Override
 	public void setTicksLived(int ticks) {
-		this.animal.setTicksLived(ticks);
+		this.cow.setTicksLived(ticks);
 	}
 
 	@Override
 	public void setVelocity(Vector vel) {
-		this.animal.setVelocity(vel);
+		this.cow.setVelocity(vel);
 	}
 
 	/**
@@ -419,7 +419,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean teleport(Location location) {
-		return this.animal.teleport(location);
+		return this.cow.teleport(location);
 	}
 
 	/**
@@ -427,7 +427,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean teleport(Entity destination) {
-		return this.animal.teleport(destination);
+		return this.cow.teleport(destination);
 	}
 
 	/**
@@ -435,7 +435,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean teleport(Location location, TeleportCause cause) {
-		return this.animal.teleport(location, cause);
+		return this.cow.teleport(location, cause);
 	}
 
 	/**
@@ -443,7 +443,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 */
 	@Override
 	public boolean teleport(Entity destination, TeleportCause cause) {
-		return this.animal.teleport(destination, cause);
+		return this.cow.teleport(destination, cause);
 	}
 
 }
