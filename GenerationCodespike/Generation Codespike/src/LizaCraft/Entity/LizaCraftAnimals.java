@@ -115,7 +115,7 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	/**
-	 * TODO: Change once LizaCraftLocation is implemented.
+	 * TODO: Change this once LizaCraftLocation is implemented.
 	 */
 	@Override
 	public Location getEyeLocation() {
