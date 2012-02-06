@@ -18,4 +18,12 @@
 <fullyQualifiedTypeName name="Liza.LizaFallingSand"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Item"/>
 <fullyQualifiedTypeName name="Liza.LizaItem"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Painting"/>
+<fullyQualifiedTypeName name="Liza.LizaPainting"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Vehicle"/>
+<fullyQualifiedTypeName name="Liza.LizaVehicle"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Arrow"/>
+<fullyQualifiedTypeName name="Liza.LizaArrow"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Fish"/>
+<fullyQualifiedTypeName name="Liza.LizaFish"/>
 </qualifiedTypeNameHistroy>
