@@ -3,4 +3,14 @@
 \contentsline {section}{\numberline {3}Operational Contracts (OC)}{7}
 \contentsline {section}{\numberline {4}Package Diagram}{7}
 \contentsline {section}{\numberline {5}Class Diagram}{9}
-\contentsline {section}{\numberline {6}Prototype}{12}
+\contentsline {section}{\numberline {6}Application of GRASP Principles}{12}
+\contentsline {subsection}{\numberline {6.1}Creator}{12}
+\contentsline {subsection}{\numberline {6.2}Information Expert}{12}
+\contentsline {subsection}{\numberline {6.3}Controller}{12}
+\contentsline {subsection}{\numberline {6.4}Low Coupling}{12}
+\contentsline {subsection}{\numberline {6.5}High Cohesion}{12}
+\contentsline {subsection}{\numberline {6.6}Polymorphism}{13}
+\contentsline {subsection}{\numberline {6.7}Indirection}{13}
+\contentsline {subsection}{\numberline {6.8}Pure Fabrication}{13}
+\contentsline {subsection}{\numberline {6.9}Protected Variation}{13}
+\contentsline {section}{\numberline {7}Prototype}{14}

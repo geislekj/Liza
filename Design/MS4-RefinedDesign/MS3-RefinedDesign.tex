@@ -17,7 +17,7 @@
 \section{Domain Model}
 
 The domain model did not change due to the Grasp principles.  Although some 
-changes where made in the DCD, this did not require the Domain model to change.
+changes were made in the DCD, this did not require the Domain model to change.
 This is because the additional classes will be used in the testcode class in the 
 Domain Model.  The communication will continue to work as the diagram depicts below:
 
@@ -45,27 +45,23 @@ general case SSD did not change.
 
 \section{Operational Contracts (OC)}
 
-The will be a controller in Liza to startup and shutdown the server that it will control.
+There will be a controller in Liza to start the server that it will control.
  Here is an operational contract which describes the startup process.:  \newline
 
-Operation name: startServer() 
+\textbf{Operation name:} startServer() 
 \newline \indent
-Cross-References: SSD1 
+\textbf{Cross-References:} SSD1 
 \newline  \indent
-Preconditions: LizaCraftController has been created.
+\textbf{Preconditions:} LizaCraftController has been created.
 \newline  \indent
-Postconditions: CraftBukkit has been started; CraftBukkit thread has been \indent grabbed.
- \newline \newline
-The shutdown operational contract is a simular process: \newline
-
-Operation name: ShutdownServer() 
-\newline \indent
-Cross-References: SSD1 
-\newline  \indent
-Preconditions: LizaCraftController has been created; All the desired testing \indent has occured.
-\newline  \indent
-Postconditions: CraftBukkit has been stopped; CraftBukkit thread has been \indent stopped
- \newline \newline
+\textbf{Postconditions: }
+	\begin{enumerate}
+		\item CraftBukkitThread was created.
+		\item CraftBukkitThread was run
+		\item CraftServer object was retrieved from CraftBukkitThread
+		\item EventListener was created
+		\item Association between EventListener and CraftServer established
+	\end{enumerate}•
 
 \section{Package Diagram}
 
@@ -121,10 +117,10 @@ Grasp Principles:
 
 \noindent
 The Liza Unit Testing Framework follows the protected variation design pattern as
-described as in the Package Diagram with the included drawback of a high cohesive system.
+described as in the Package Diagram with the included drawback of a highly coupled system.
 Due to the nature of the relationship of our system with Bukkit and Minecraft our design is limited.
 With our design restriction, this limits the ability to communicate to classes without going through
-other classes.  It would nice to create a more low cohesive system but we are restricted here. \newline 
+other classes.  It would nice to create a more low coupled system but we are restricted here. \newline 
 
 \noindent
 We have created a LizaCraftController following the Grasp controller principle.  This will allow for the developer 
@@ -141,9 +137,99 @@ The diagram is found on the following pages.
 \includepdf[pages={-}]{LizaClassDiagram.pdf}
 
 \newpage
+\section{Application of GRASP Principles}
+
+In previous sections, we have discussed some applications of GRASP principles. 
+This section will reiterate those, and discuss others in detail.
+
+	\subsection{Creator}
+
+	Because our system mainly views the properties of an already running system,
+	our code does not create many objects. However, we have a LizaController class.
+	This class is responsible for creating the server thread object, retrieving the
+	server, and creating the LizaListener.
+
+	\subsection{Information Expert}
+
+	This principle does not particularly apply to us. There is not very much data
+	that goes through the system. Because of this, it is difficult to have an
+	object be an ``expert''. The LizaController in its enabling of the EventListener
+	may be seen as an information expert. In truth, the information needed
+	is spread across many classes, but the LizaController sits at the top.
+
+	\subsection{Controller}
+
+	Once again, the LizaController, as the name suggests, is an application
+	of a Use-Case Controller. It handles the flow of the beginning of the
+	use-case, which is starting up and intializing the server and world. It
+	may also include the creation of the Mock Players.
+
+	\subsection{Low Coupling}
+
+	Unfortunately, our system's architecture is highly reliant on that
+	of Bukkit's. Bukkit (and Minecraft) is highly coupled, with countless
+	numbers of circular references and dependencies. In order for our
+	system to effectively work along Bukkit, we must share this coupling.
+
+	\subsection{High Cohesion}
+
+	Despite the high coupling, Bukkit's design is fairly cohesive. Each
+	element of the game is put into its own class. As for Liza's implementation,
+	the LizaController demonstrates higher cohesion, as
+	starting up a server takes many steps across many classes. Putting this
+	work into a single existing Bukkit class (such as the Server) would require
+	responsibilities found in outside classes (such as PluginManager).
+
+	The LizaPlayer and LizaMockPlayer was also an attempt to achieve higher
+	cohesion. In addition to asserting states about a player, the system
+	also needs to control an automated player. So control and assertion
+	were split into two classes.
+
+	\subsection{Polymorphism}
+
+	As the class diagram shows, there is numerous cases of polymorphism, 
+	which we inherit from Bukkit. The Entity class, in full, actually expands
+	to roughly 60 classes in its heirarchy. 
+
+	It is designed this way because Players should be able to interact
+	with anything in the Minecraft world. However, different objects 
+	may react in different ways. Therefore Polymorphism allows each
+	object type to respond appropriately. 
+
+	\subsection{Indirection}
+
+	Each one of the LizaCraftObject classes is an application of
+	Indirection. Each is composed of the matching CraftBukkitObject.
+	This makes each LizaCraftObject class to act as an intermediary
+	between the developer's test code and the Bukkit code.
+
+	\subsection{Pure Fabrication}
+
+	We do not believe that there are any ``pure'' applications of the
+	Pure Fabrication principle, as in there aren't any objects that don't
+	exist in the domain. However, some exist that are more of a ``side
+	 effect'' of the means to implement some of the domain objects. 
+
+	For example, the LizaListener isn't explicitly detailed in the domain
+	model, but is a means of providing Events. Similarly, the LizaController
+	isn't directly the ``Test Code'' found in the domain model. However,
+	it begins and ends the process.
+
+	\subsection{Protected Variation}
+
+	The LizaObject interfaces are applications of Protected Variation.
+	They extend the BukkitObject interfaces, and therefore have
+	all the methods. However, the implementations are handled
+	via an adapter. Therefore, changes in Bukkit's code should not
+	force changes to the plugin developer's test codes, but only
+	on the adapter level.
+
+\newpage
 \section{Prototype}
 
 The prototype for this milestone is currently availble on github online at
+
+\noindent
 https://github.com/geislekj/Liza
 
 \end{document}

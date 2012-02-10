@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Analysis Models}{4}
+\contentsline {subsection}{\numberline {2.1}Domain Model}{4}
+\contentsline {subsection}{\numberline {2.2}Activity Diagram}{6}
+\contentsline {section}{\numberline {3}Logical Architecture}{8}
+\contentsline {subsection}{\numberline {3.1}System Sequence Diagrams (SSD)}{8}
+\contentsline {subsection}{\numberline {3.2}Operational Contracts (OC)}{10}
+\contentsline {subsection}{\numberline {3.3}Package Diagram}{10}
+\contentsline {subsection}{\numberline {3.4}Class Diagram}{12}
+\contentsline {section}{\numberline {4}Gang of Four Patterns}{15}
+\contentsline {subsection}{\numberline {4.1}Adapter}{15}
+\contentsline {subsection}{\numberline {4.2}Fa\c {c}ade}{15}
+\contentsline {subsection}{\numberline {4.3}Observer}{15}
+\contentsline {section}{\numberline {5}Acceptance Test Plan}{16}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.26)  9 FEB 2012 17:57
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.26)  10 FEB 2012 16:29
 entering extended mode
 **C:/Users/geislekj/Documents/Courses/Junior*2011-2012/Winter*Term/CSSE374/Liza
-/Liza/Design/MS4-RefinedDesign/MS3-RefinedDesign.tex
+/Liza/Design/MS5-FinalProjectDesign/liza-FinalProjectDesign.tex
 
 ("C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/Liza
-/Liza/Design/MS4-RefinedDesign/MS3-RefinedDesign.tex"
+/Liza/Design/MS5-FinalProjectDesign/liza-FinalProjectDesign.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -120,7 +120,7 @@ File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
 \AM@templatesizebox=\box27
 )
 ("C:\Users\geislekj\Documents\Courses\Junior 2011-2012\Winter Term\CSSE374\Liza
-\Liza\Design\MS4-RefinedDesign\MS3-RefinedDesign.aux")
+\Liza\Design\MS5-FinalProjectDesign\liza-FinalProjectDesign.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -159,61 +159,125 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("C:\Users\geislekj\Documents\Courses\Junior 2011-2012\Winter Term\CSSE374\Liza
-\Liza\Design\MS4-RefinedDesign\MS3-RefinedDesign.toc"
+\Liza\Design\MS5-FinalProjectDesign\liza-FinalProjectDesign.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 7.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 7.
+(Font)              <5> on input line 3.
 )
 \tf@toc=\write3
- [2] [3]
-<DomainModel.pdf, id=18, page=1, 614.295pt x 794.97pt>
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Overfull \hbox (0.55624pt too wide) in paragraph at lines 25--30
+\OT1/cmr/m/n/10 Modifying Minecraft [1] has be-come in-creas-ingly pop-u-lar, a
+s a num-ber of changes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
+
+ []
+
+[4] <DomainModel.pdf, id=21, page=1, 614.295pt x 794.97pt>
 File: DomainModel.pdf Graphic file (type pdf)
 
 <use DomainModel.pdf, page 1>
-Package pdftex.def Info: DomainModel.pdf, page1 used on input line 24.
+Package pdftex.def Info: DomainModel.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: DomainModel.pdf Graphic file (type pdf)
  <use DomainModel.pdf, page 1>
-Package pdftex.def Info: DomainModel.pdf, page1 used on input line 24.
+Package pdftex.def Info: DomainModel.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DomainModel.pdf Graphic file (type pdf)
 
 <use DomainModel.pdf, page 1>
-Package pdftex.def Info: DomainModel.pdf, page1 used on input line 24.
+Package pdftex.def Info: DomainModel.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DomainModel.pdf Graphic file (type pdf)
  <use DomainModel.pdf, page 1>
-Package pdftex.def Info: DomainModel.pdf, page1 used on input line 24.
+Package pdftex.def Info: DomainModel.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DomainModel.pdf Graphic file (type pdf)
 
 <use DomainModel.pdf, page 1>
-Package pdftex.def Info: DomainModel.pdf, page1 used on input line 24.
+Package pdftex.def Info: DomainModel.pdf, page1 used on input line 51.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [4 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/L
-iza/Liza/Design/MS4-RefinedDesign/DomainModel.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+ [5 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/L
+iza/Liza/Design/MS5-FinalProjectDesign/DomainModel.pdf>] [6] <LizaActivity.pdf,
+ id=53, page=1, 597.50786pt x 845.04686pt>
+File: LizaActivity.pdf Graphic file (type pdf)
+
+<use LizaActivity.pdf, page 1>
+Package pdftex.def Info: LizaActivity.pdf, page1 used on input line 61.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: LizaActivity.pdf Graphic file (type pdf)
+ <use LizaActivity.pdf, page 1>
+Package pdftex.def Info: LizaActivity.pdf, page1 used on input line 61.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: LizaActivity.pdf Graphic file (type pdf)
+
+<use LizaActivity.pdf, page 1>
+Package pdftex.def Info: LizaActivity.pdf, page1 used on input line 61.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: LizaActivity.pdf Graphic file (type pdf)
+ <use LizaActivity.pdf, page 1>
+Package pdftex.def Info: LizaActivity.pdf, page1 used on input line 61.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: LizaActivity.pdf Graphic file (type pdf)
+
+<use LizaActivity.pdf, page 1>
+Package pdftex.def Info: LizaActivity.pdf, page1 used on input line 61.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+ [7 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/L
+iza/Liza/Design/MS5-FinalProjectDesign/LizaActivity.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
 
  []
 
-<ssd.png, id=45, 322.95656pt x 564.60938pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
+
+ []
+
+<ssd.png, id=81, 322.95656pt x 564.60938pt>
 File: ssd.png Graphic file (type png)
  <use ssd.png>
-Package pdftex.def Info: ssd.png used on input line 44.
+Package pdftex.def Info: ssd.png used on input line 78.
 (pdftex.def)             Requested size: 322.95576pt x 564.60799pt.
- [5]
+ [8]
 Overfull \vbox (14.60799pt too high) has occurred while \output is active []
 
 
-[6 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/Li
-za/Liza/Design/MS4-RefinedDesign/ssd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+[9 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/Li
+za/Liza/Design/MS5-FinalProjectDesign/ssd.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
@@ -221,146 +285,222 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--76
+Underfull \hbox (badness 10000) in paragraph at lines 103--111
 
  []
 
-[7] <Bukkit-Liza-Relationship.pdf, id=59, page=1, 597.45204pt x 845.1575pt>
+[10] <Bukkit-Liza-Relationship.pdf, id=94, page=1, 597.45204pt x 845.1575pt>
 File: Bukkit-Liza-Relationship.pdf Graphic file (type pdf)
 
 <use Bukkit-Liza-Relationship.pdf, page 1>
 Package pdftex.def Info: Bukkit-Liza-Relationship.pdf, page1 used on input line
- 83.
+ 112.
 (pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
 File: Bukkit-Liza-Relationship.pdf Graphic file (type pdf)
 
 <use Bukkit-Liza-Relationship.pdf, page 1>
 Package pdftex.def Info: Bukkit-Liza-Relationship.pdf, page1 used on input line
- 83.
+ 112.
 (pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
 File: Bukkit-Liza-Relationship.pdf Graphic file (type pdf)
 
 <use Bukkit-Liza-Relationship.pdf, page 1>
 Package pdftex.def Info: Bukkit-Liza-Relationship.pdf, page1 used on input line
- 83.
+ 112.
 (pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
 File: Bukkit-Liza-Relationship.pdf Graphic file (type pdf)
 
 <use Bukkit-Liza-Relationship.pdf, page 1>
 Package pdftex.def Info: Bukkit-Liza-Relationship.pdf, page1 used on input line
- 83.
+ 112.
 (pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
 File: Bukkit-Liza-Relationship.pdf Graphic file (type pdf)
 
 <use Bukkit-Liza-Relationship.pdf, page 1>
 Package pdftex.def Info: Bukkit-Liza-Relationship.pdf, page1 used on input line
- 83.
+ 112.
 (pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
- [8 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/L
-iza/Liza/Design/MS4-RefinedDesign/Bukkit-Liza-Relationship.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+ [11 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/Bukkit-Liza-Relationship.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--100
+Underfull \hbox (badness 10000) in paragraph at lines 119--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--108
+Underfull \hbox (badness 10000) in paragraph at lines 130--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--113
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
-
- []
-
-[9] <LizaClassDiagram.pdf, id=83, page=1, 845.1575pt x 597.45204pt>
+[12] <LizaClassDiagram.pdf, id=118, page=1, 845.1575pt x 597.45204pt>
 File: LizaClassDiagram.pdf Graphic file (type pdf)
 
 <use LizaClassDiagram.pdf, page 1>
-Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 147.
 (pdftex.def)             Requested size: 845.15544pt x 597.45058pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
  <use LizaClassDiagram.pdf, page 1>
-Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
 
 <use LizaClassDiagram.pdf, page 1>
-Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
  <use LizaClassDiagram.pdf, page 1>
-Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
 
 <use LizaClassDiagram.pdf, page 1>
-Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page1 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
- [10 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
-Liza/Liza/Design/MS4-RefinedDesign/LizaClassDiagram.pdf, page is rotated 90 deg
-rees>]
-<LizaClassDiagram.pdf, id=102, page=2, 845.1575pt x 597.45204pt>
+ [13 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/LizaClassDiagram.pdf, page is rotated 9
+0 degrees>]
+<LizaClassDiagram.pdf, id=138, page=2, 845.1575pt x 597.45204pt>
 File: LizaClassDiagram.pdf Graphic file (type pdf)
 
 <use LizaClassDiagram.pdf, page 2>
-Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
  <use LizaClassDiagram.pdf, page 2>
-Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
 File: LizaClassDiagram.pdf Graphic file (type pdf)
 
 <use LizaClassDiagram.pdf, page 2>
-Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 137.
+Package pdftex.def Info: LizaClassDiagram.pdf, page2 used on input line 147.
 (pdftex.def)             Requested size: 614.40643pt x 434.33131pt.
- [11 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
-Liza/Liza/Design/MS4-RefinedDesign/LizaClassDiagram.pdf, page is rotated 90 deg
-rees>] [12] [13] [14]
+ [14 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/LizaClassDiagram.pdf, page is rotated 9
+0 degrees>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [15]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--208
+
+ []
+
+[16] <TestCases.pdf, id=153, page=1, 614.295pt x 794.97pt>
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 1>
+Package pdftex.def Info: TestCases.pdf, page1 used on input line 210.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: TestCases.pdf Graphic file (type pdf)
+ <use TestCases.pdf, page 1>
+Package pdftex.def Info: TestCases.pdf, page1 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 1>
+Package pdftex.def Info: TestCases.pdf, page1 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+ <use TestCases.pdf, page 1>
+Package pdftex.def Info: TestCases.pdf, page1 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 1>
+Package pdftex.def Info: TestCases.pdf, page1 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [17 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/TestCases.pdf>] <TestCases.pdf, id=173,
+ page=2, 614.295pt x 794.97pt>
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 2>
+Package pdftex.def Info: TestCases.pdf, page2 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+ <use TestCases.pdf, page 2>
+Package pdftex.def Info: TestCases.pdf, page2 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 2>
+Package pdftex.def Info: TestCases.pdf, page2 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [18 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/TestCases.pdf>] <TestCases.pdf, id=178,
+ page=3, 614.295pt x 794.97pt>
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 3>
+Package pdftex.def Info: TestCases.pdf, page3 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+ <use TestCases.pdf, page 3>
+Package pdftex.def Info: TestCases.pdf, page3 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: TestCases.pdf Graphic file (type pdf)
+
+<use TestCases.pdf, page 3>
+Package pdftex.def Info: TestCases.pdf, page3 used on input line 210.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [19 <C:/Users/geislekj/Documents/Courses/Junior 2011-2012/Winter Term/CSSE374/
+Liza/Liza/Design/MS5-FinalProjectDesign/TestCases.pdf>]
 ("C:\Users\geislekj\Documents\Courses\Junior 2011-2012\Winter Term\CSSE374\Liza
-\Liza\Design\MS4-RefinedDesign\MS3-RefinedDesign.aux") ) 
+\Liza\Design\MS5-FinalProjectDesign\liza-FinalProjectDesign.aux") ) 
 Here is how much of TeX's memory you used:
- 2390 strings out of 494049
- 33896 string characters out of 3146056
- 94411 words of memory out of 3000000
- 5678 multiletter control sequences out of 15000+200000
- 7895 words of font info for 28 fonts, out of 3000000 for 9000
+ 2410 strings out of 494049
+ 34398 string characters out of 3146056
+ 93411 words of memory out of 3000000
+ 5693 multiletter control sequences out of 15000+200000
+ 8063 words of font info for 29 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 40i,18n,44p,349b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on MS3-RefinedDesign.pdf (14 pages, 212517 bytes).
+ 40i,18n,44p,360b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on liza-FinalProjectDesign.pdf (19 pages, 353516 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
