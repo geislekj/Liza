@@ -1,13 +1,17 @@
 package Liza;
 
+import java.util.List;
+
 import org.bukkit.entity.Arrow;
 
 /**
- * @author geislekj
- * 
  *  LizaArrow is the Liza interface representation of
- *  the Bukkit arrow interface
+ *  the Bukkit Arrow interface.
+ * 
+ * @author geislekj
  */
 public interface LizaArrow extends Arrow{
+
+	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }

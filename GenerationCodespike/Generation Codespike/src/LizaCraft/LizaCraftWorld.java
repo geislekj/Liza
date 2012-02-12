@@ -33,10 +33,10 @@ import org.bukkit.util.Vector;
 import Liza.LizaWorld;
 
 /**
- * @author geislekj
- *
  *  LizeCraftWorld is the Liza world representation of
- *  the Bukkit world class.
+ *  the Bukkit World class.
+ *
+ * @author geislekj
  */
 public class LizaCraftWorld implements LizaWorld{
 

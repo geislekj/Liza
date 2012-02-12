@@ -1,5 +1,8 @@
 package Liza;
 
+import java.util.HashSet;
+import java.util.List;
+
 import org.bukkit.entity.Villager;
 
 /**
@@ -11,5 +14,13 @@ import org.bukkit.entity.Villager;
  *  @author collinbc
  */
 public interface LizaVillager extends Villager {
+
+	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
+			int maxDistance);
+
+	List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
+			int maxDistance);
+
+	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }

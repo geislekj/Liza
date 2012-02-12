@@ -8,8 +8,6 @@ import java.util.UUID;
 
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Projectile;
@@ -17,13 +15,19 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
+import Liza.LizaEntity;
+import Liza.LizaLivingEntity;
 import Liza.LizaProjectile;
+import Liza.LizaServer;
+import Liza.LizaWorld;
+import LizaCraft.LizaCraftServer;
+import LizaCraft.LizaCraftWorld;
 
 /**
- * @author geislekj
- *
  *  LizeCraftProjectile is the Liza entity representation of
  *  the Bukkit Projectile class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftProjectile implements LizaProjectile{
 	private Projectile projectile;
@@ -43,18 +47,18 @@ public class LizaCraftProjectile implements LizaProjectile{
 	}
 
 	@Override
-	public LivingEntity getShooter() {
-		return this.projectile.getShooter();
+	public LizaLivingEntity getShooter() {
+		return new LizaCraftLivingEntity(this.projectile.getShooter());
 	}
 
 	@Override
-	public void setBounce(boolean arg0) {
-		this.projectile.setBounce(arg0);
+	public void setBounce(boolean doesBounce) {
+		this.projectile.setBounce(doesBounce);
 	}
 
 	@Override
-	public void setShooter(LivingEntity arg0) {
-		this.projectile.setShooter(arg0);
+	public void setShooter(LivingEntity shooter) {
+		this.projectile.setShooter(shooter);
 	}
 
 	@Override
@@ -93,18 +97,27 @@ public class LizaCraftProjectile implements LizaProjectile{
 	}
 
 	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.projectile.getNearbyEntities(arg0, arg1, arg2); 
+	@Deprecated
+	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		List<Entity> el = this.projectile.getNearbyEntities(x, y, z);
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		
+		return el;
 	}
 
 	@Override
-	public Entity getPassenger() {
-		return this.projectile.getPassenger();
+	public LizaEntity getPassenger() {
+		return new LizaCraftEntity(this.projectile.getPassenger());
 	}
 
 	@Override
-	public Server getServer() {
-		return this.projectile.getServer();
+	public LizaServer getServer() {
+		return new LizaCraftServer(this.projectile.getServer());
 	}
 
 	@Override
@@ -123,8 +136,8 @@ public class LizaCraftProjectile implements LizaProjectile{
 	}
 
 	@Override
-	public World getWorld() {
-		return this.projectile.getWorld();
+	public LizaWorld getWorld() {
+		return new LizaCraftWorld(this.projectile.getWorld());
 	}
 
 	@Override
@@ -138,8 +151,8 @@ public class LizaCraftProjectile implements LizaProjectile{
 	}
 
 	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.projectile.playEffect(arg0);
+	public void playEffect(EntityEffect type) {
+		this.projectile.playEffect(type);
 	}
 
 	@Override
@@ -148,54 +161,77 @@ public class LizaCraftProjectile implements LizaProjectile{
 	}
 
 	@Override
-	public void setFallDistance(float arg0) {
-		this.projectile.setFallDistance(arg0);
+	public void setFallDistance(float distance) {
+		this.projectile.setFallDistance(distance);
 	}
 
 	@Override
-	public void setFireTicks(int arg0) {
-		this.projectile.setFireTicks(arg0);
+	public void setFireTicks(int ticks) {
+		this.projectile.setFireTicks(ticks);
 	}
 
 	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.projectile.setLastDamageCause(arg0);
+	public void setLastDamageCause(EntityDamageEvent cause) {
+		this.projectile.setLastDamageCause(cause);
 	}
 
 	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.projectile.setPassenger(arg0);
+	public boolean setPassenger(Entity passenger) {
+		return this.projectile.setPassenger(passenger);
 	}
 
 	@Override
-	public void setTicksLived(int arg0) {
-		this.projectile.setTicksLived(arg0);
+	public void setTicksLived(int ticks) {
+		this.projectile.setTicksLived(ticks);
 	}
 
 	@Override
-	public void setVelocity(Vector arg0) {
-		this.projectile.setVelocity(arg0);
+	public void setVelocity(Vector vel) {
+		this.projectile.setVelocity(vel);
 	}
 
 	@Override
-	public boolean teleport(Location arg0) {
-		return this.projectile.teleport(arg0); 
+	public boolean teleport(Location location) {
+		return this.projectile.teleport(location);
 	}
 
 	@Override
-	public boolean teleport(Entity arg0) {
-		return this.projectile.teleport(arg0); 
+	public boolean teleport(Entity destination) {
+		return this.projectile.teleport(destination);
 	}
 
 	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.projectile.teleport(arg0, arg1); 
+	public boolean teleport(Location location, TeleportCause cause) {
+		return this.projectile.teleport(location, cause);
 	}
 
 	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.projectile.teleport(arg0, arg1); 
+	public boolean teleport(Entity destination, TeleportCause cause) {
+		return this.projectile.teleport(destination, cause);
 	}
-	
-	
+
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.projectile.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
 }

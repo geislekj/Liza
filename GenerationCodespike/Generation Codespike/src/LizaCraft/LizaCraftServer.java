@@ -39,11 +39,10 @@ import com.avaje.ebean.config.ServerConfig;
 import Liza.LizaServer;
 
 /**
- * @author geislekj
- * 
  *  LizeCraftServer is the Liza server representation of
- *  the Bukkit server class.
+ *  the Bukkit Server class.
  *
+ * @author geislekj
  */
 public class LizaCraftServer implements LizaServer{
 	

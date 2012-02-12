@@ -19,10 +19,10 @@ import Liza.LizaPainting;
 
 
 /**
- * @author geislekj
- *
  *  LizeCraftPainting is the Liza entity representation of
  *  the Bukkit Painting class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftPainting implements LizaPainting{
 
@@ -31,7 +31,7 @@ public class LizaCraftPainting implements LizaPainting{
 	/**
 	 * LizaCraftPainting Constructor
 	 * 
-	 * @param entity This is a Bukkit entity 
+	 * @param painting This is a Bukkit Painting entity 
 	 */
 	public LizaCraftPainting(Painting painting) {
 		this.painting = painting;

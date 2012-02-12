@@ -6,8 +6,8 @@ import org.bukkit.entity.Tameable;
 import Liza.LizaTameable;
 
 /**
- *  LizaCraftMonster is the Liza entity representation of
- *  the Bukkit Monster class.
+ *  LizaCraftTameable is the Liza entity representation of
+ *  the Bukkit Tameable class.
  *  
  *  @author collinbc
  */
@@ -22,6 +22,10 @@ public class LizaCraftTameable implements LizaTameable {
 	public LizaCraftTameable(Tameable tameable) {
 		this.tameable = tameable;
 	}
+
+	/**
+	 * TODO: Change once LizaCraftAnimalTamer is implemented.
+	 */
 	@Override
 	public AnimalTamer getOwner() {
 		return this.tameable.getOwner();

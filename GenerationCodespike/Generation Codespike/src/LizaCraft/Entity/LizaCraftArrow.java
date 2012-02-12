@@ -5,8 +5,6 @@ import java.util.UUID;
 
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
@@ -15,21 +13,27 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
 import Liza.LizaArrow;
+import Liza.LizaEntity;
+import Liza.LizaLivingEntity;
+import Liza.LizaServer;
+import Liza.LizaWorld;
+import LizaCraft.LizaCraftServer;
+import LizaCraft.LizaCraftWorld;
 
 /**
- * @author geislekj
- *
  *  LizeCraftArrow is the Liza entity representation of
- *  the Bukkit arrow class.
+ *  the Bukkit Arrow class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftArrow implements LizaArrow{
 
 	private Arrow arrow;
 
 	/**
-	 * LizaCraftarrow Constructor
+	 * LizaCraftArrow Constructor
 	 * 
-	 * @param arrow This is a Bukkit arrow entity 
+	 * @param arrow This is a Bukkit Arrow entity 
 	 */
 	public LizaCraftArrow(Arrow arrow){
 		this.arrow = arrow;
@@ -41,18 +45,18 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public LivingEntity getShooter() {
-		return this.arrow.getShooter();
+	public LizaLivingEntity getShooter() {
+		return new LizaCraftLivingEntity(this.arrow.getShooter());
 	}
 
 	@Override
-	public void setBounce(boolean arg0) {
-		this.arrow.setBounce(arg0);
+	public void setBounce(boolean doesBounce) {
+		this.arrow.setBounce(doesBounce);
 	}
 
 	@Override
-	public void setShooter(LivingEntity arg0) {
-		this.arrow.setShooter(arg0);
+	public void setShooter(LivingEntity shooter) {
+		this.arrow.setShooter(shooter);
 	}
 
 	@Override
@@ -91,18 +95,27 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.arrow.getNearbyEntities(arg0, arg1, arg2); 
+	@Deprecated
+	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		List<Entity> el = this.arrow.getNearbyEntities(x, y, z);
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		
+		return el;
 	}
 
 	@Override
-	public Entity getPassenger() {
-		return this.arrow.getPassenger();
+	public LizaEntity getPassenger() {
+		return new LizaCraftEntity(this.arrow.getPassenger());
 	}
 
 	@Override
-	public Server getServer() {
-		return this.arrow.getServer();
+	public LizaServer getServer() {
+		return new LizaCraftServer(this.arrow.getServer());
 	}
 
 	@Override
@@ -121,8 +134,8 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public World getWorld() {
-		return this.arrow.getWorld();
+	public LizaWorld getWorld() {
+		return new LizaCraftWorld(this.arrow.getWorld());
 	}
 
 	@Override
@@ -136,8 +149,8 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.arrow.playEffect(arg0);
+	public void playEffect(EntityEffect type) {
+		this.arrow.playEffect(type);
 	}
 
 	@Override
@@ -146,53 +159,77 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public void setFallDistance(float arg0) {
-		this.arrow.setFallDistance(arg0);
+	public void setFallDistance(float distance) {
+		this.arrow.setFallDistance(distance);
 	}
 
 	@Override
-	public void setFireTicks(int arg0) {
-		this.arrow.setFallDistance(arg0);
+	public void setFireTicks(int ticks) {
+		this.arrow.setFireTicks(ticks);
 	}
 
 	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.arrow.setLastDamageCause(arg0);
+	public void setLastDamageCause(EntityDamageEvent cause) {
+		this.arrow.setLastDamageCause(cause);
 	}
 
 	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.arrow.setPassenger(arg0); 
+	public boolean setPassenger(Entity passenger) {
+		return this.arrow.setPassenger(passenger);
 	}
 
 	@Override
-	public void setTicksLived(int arg0) {
-		this.arrow.setTicksLived(arg0);
+	public void setTicksLived(int ticks) {
+		this.arrow.setTicksLived(ticks);
 	}
 
 	@Override
-	public void setVelocity(Vector arg0) {
-		this.arrow.setVelocity(arg0);
+	public void setVelocity(Vector vel) {
+		this.arrow.setVelocity(vel);
 	}
 
 	@Override
-	public boolean teleport(Location arg0) {
-		return this.arrow.teleport(arg0); 
+	public boolean teleport(Location location) {
+		return this.arrow.teleport(location);
 	}
 
 	@Override
-	public boolean teleport(Entity arg0) {
-		return this.arrow.teleport(arg0); 
+	public boolean teleport(Entity destination) {
+		return this.arrow.teleport(destination);
 	}
 
 	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.arrow.teleport(arg0, arg1); 
+	public boolean teleport(Location location, TeleportCause cause) {
+		return this.arrow.teleport(location, cause);
 	}
 
 	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.arrow.teleport(arg0, arg1); 
+	public boolean teleport(Entity destination, TeleportCause cause) {
+		return this.arrow.teleport(destination, cause);
 	}
 
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.arrow.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
 }

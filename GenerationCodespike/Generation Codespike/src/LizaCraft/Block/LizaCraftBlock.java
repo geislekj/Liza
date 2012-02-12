@@ -18,10 +18,10 @@ import org.bukkit.inventory.ItemStack;
 import Liza.LizaBlock;
 
 /**
- * @author kimsj; geislekj
- *
  *  LizeCraftBlock is the Liza block representation of
- *  the Bukkit block class
+ *  the Bukkit block class.
+ *  
+ * @author kimsj; geislekj
  */
 public class LizaCraftBlock implements LizaBlock {
 	private Block block;

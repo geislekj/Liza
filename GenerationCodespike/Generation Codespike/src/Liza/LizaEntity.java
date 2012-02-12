@@ -3,10 +3,10 @@ package Liza;
 import org.bukkit.entity.Entity;
 
 /**
- * @author geislekj
- * 
  *  LizaEntity is the Liza interface representation of
- *  the Bukkit entity interface
+ *  the Bukkit entity interface.
+ * 
+ * @author geislekj
  */
 public interface LizaEntity extends Entity{
 

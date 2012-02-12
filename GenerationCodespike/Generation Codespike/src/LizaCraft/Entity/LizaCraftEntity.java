@@ -2,6 +2,10 @@ package LizaCraft.Entity;
 
 //Liza Imports
 import Liza.LizaEntity;
+import Liza.LizaServer;
+import Liza.LizaWorld;
+import LizaCraft.LizaCraftServer;
+import LizaCraft.LizaCraftWorld;
 
 //Java Imports
 import java.util.List;
@@ -10,8 +14,6 @@ import java.util.UUID;
 //Bukkit Imports
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
@@ -19,10 +21,10 @@ import org.bukkit.util.Vector;
 
 
 /**
- * @author geislekj
- *
  *  LizeCraftEntity is the Liza entity representation of
- *  the Bukkit entity class.
+ *  the Bukkit Entity class.
+ *  
+ *  @author geislekj
  */
 public class LizaCraftEntity implements LizaEntity{
 	private Entity entity;
@@ -30,7 +32,7 @@ public class LizaCraftEntity implements LizaEntity{
 	/**
 	 * LizaCraftEntity Constructor
 	 * 
-	 * @param entity This is a Bukkit entity 
+	 * @param entity This is a Bukkit Entity 
 	 */
 	public LizaCraftEntity(Entity entity){
 		this.entity = entity;
@@ -48,12 +50,12 @@ public class LizaCraftEntity implements LizaEntity{
 
 	@Override
 	public float getFallDistance() {
-		return this.getFallDistance();
+		return this.entity.getFallDistance();
 	}
 
 	@Override
 	public int getFireTicks() {
-		return this.getFireTicks();
+		return this.entity.getFireTicks();
 	}
 
 	@Override
@@ -72,18 +74,23 @@ public class LizaCraftEntity implements LizaEntity{
 	}
 
 	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.getNearbyEntities(arg0, arg1, arg2);
+	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		List<Entity> el = this.entity.getNearbyEntities(x, y, z);
+
+		for (Entity e : el) {
+			e = new LizaCraftEntity(e);
+		}
+		return el;
 	}
 
 	@Override
-	public Entity getPassenger() {
-		return this.entity.getPassenger();
+	public LizaEntity getPassenger() {
+		return new LizaCraftEntity(this.entity.getPassenger());
 	}
 
 	@Override
-	public Server getServer() {
-		return this.entity.getServer();
+	public LizaServer getServer() {
+		return new LizaCraftServer(this.entity.getServer());
 	}
 
 	@Override
@@ -102,8 +109,8 @@ public class LizaCraftEntity implements LizaEntity{
 	}
 
 	@Override
-	public World getWorld() {
-		return this.entity.getWorld();
+	public LizaWorld getWorld() {
+		return new LizaCraftWorld(this.entity.getWorld());
 	}
 
 	@Override
@@ -122,58 +129,70 @@ public class LizaCraftEntity implements LizaEntity{
 	}
 
 	@Override
-	public void setFallDistance(float arg0) {
-		this.entity.setFallDistance(arg0);
+	public void setFallDistance(float distance) {
+		this.entity.setFallDistance(distance);
 	}
 
 	@Override
-	public void setFireTicks(int arg0) {
-		this.entity.setFireTicks(arg0);
+	public void setFireTicks(int ticks) {
+		this.entity.setFireTicks(ticks);
 	}
 
 	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.entity.setLastDamageCause(arg0);		
+	public void setLastDamageCause(EntityDamageEvent event) {
+		this.entity.setLastDamageCause(event);		
 	}
 
 	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.entity.setPassenger(arg0);
+	public boolean setPassenger(Entity passenger) {
+		return this.entity.setPassenger(passenger);
 	}
 
 	@Override
-	public void setTicksLived(int arg0) {
-		this.setTicksLived(arg0);
+	public void setTicksLived(int ticks) {
+		this.entity.setTicksLived(ticks);
 	}
 
 	@Override
-	public void setVelocity(Vector arg0) {
-		this.entity.setVelocity(arg0);
+	public void setVelocity(Vector vel) {
+		this.entity.setVelocity(vel);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Location location) {
+		return this.entity.teleport(location);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Entity destination) {
+		return this.entity.teleport(destination);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Location location, TeleportCause cause) {
+		return this.entity.teleport(location, cause);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Entity destination, TeleportCause cause) {
+		return this.entity.teleport(destination, cause);
 	}
 
 	@Override
-	public boolean teleport(Location arg0) {
-		return this.entity.teleport(arg0);
-	}
-
-	@Override
-	public boolean teleport(Entity arg0) {
-		return this.entity.teleport(arg0);
-	}
-
-	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.entity.teleport(arg0, arg1); 
-	}
-
-	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.entity.teleport(arg0, arg1); 
-	}
-
-	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.entity.playEffect(arg0);		
+	public void playEffect(EntityEffect effect) {
+		this.entity.playEffect(effect);		
 	}
 
 }

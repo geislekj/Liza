@@ -3,10 +3,10 @@ package Liza;
 import org.bukkit.entity.Explosive;
 
 /**
- * @author geislekj
- * 
  *  LizaExplosive is the Liza interface representation of
- *  the Bukkit Explosive interface
+ *  the Bukkit Explosive interface.
+ * 
+ * @author geislekj
  */
 public interface LizaExplosive extends Explosive{
 

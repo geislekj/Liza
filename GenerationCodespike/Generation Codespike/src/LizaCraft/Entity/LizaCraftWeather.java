@@ -16,10 +16,10 @@ import org.bukkit.util.Vector;
 import Liza.LizaWeather;
 
 /**
- * @author geislekj
- *
  *  LizeCraftWeather is the Liza entity representation of
  *  the Bukkit weather class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftWeather implements LizaWeather{
 

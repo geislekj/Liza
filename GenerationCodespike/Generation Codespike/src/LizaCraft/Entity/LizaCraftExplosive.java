@@ -19,10 +19,10 @@ import org.bukkit.util.Vector;
 import Liza.LizaExplosive;
 
 /**
- * @author geislekj
- *
  *  LizeCraftExplosive is the Liza entity representation of
  *  the Bukkit Explosive class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftExplosive implements LizaExplosive{
 
@@ -31,7 +31,7 @@ public class LizaCraftExplosive implements LizaExplosive{
 	/**
 	 * LizaCraftExplosive Constructor
 	 * 
-	 * @param explosive This is a Bukkit explosive entity 
+	 * @param explosive This is a Bukkit Explosive entity 
 	 */
 	public LizaCraftExplosive(Explosive explosive) {
 		this.explosive = explosive;

@@ -6,35 +6,42 @@ import java.util.UUID;
 
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.craftbukkit.entity.CraftAnimals;
-import org.bukkit.entity.Arrow;
-import org.bukkit.entity.Egg;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Snowball;
-import org.bukkit.entity.Vehicle;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
 import Liza.LizaAnimals;
+import Liza.LizaArrow;
+import Liza.LizaBlock;
+import Liza.LizaEgg;
+import Liza.LizaEntity;
+import Liza.LizaPlayer;
+import Liza.LizaServer;
+import Liza.LizaSnowball;
+import Liza.LizaVehicle;
+import Liza.LizaWorld;
 import LizaCraft.LizaCraftServer;
 import LizaCraft.LizaCraftWorld;
 import LizaCraft.Block.LizaCraftBlock;
 
 /**
- * @author collinbc
- *
  *  LizaCraftAnimals is the Liza entity representation of
  *  the Bukkit CraftAnimals class.
+ *  
+ * @author collinbc
  */
 public class LizaCraftAnimals implements LizaAnimals {
 	private CraftAnimals animal;
 
+	/**
+	 * LizaCraftAnimals Constructor
+	 * 
+	 * @param animal A Bukkit Animals
+	 */
 	public LizaCraftAnimals(CraftAnimals animal) {
 		this.animal = animal;
 	}
@@ -114,9 +121,6 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.getEyeHeight(ignoreSneaking);
 	}
 
-	/**
-	 * TODO: Change this once LizaCraftLocation is implemented.
-	 */
 	@Override
 	public Location getEyeLocation() {
 		return this.animal.getEyeLocation();
@@ -127,12 +131,10 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.getHealth();
 	}
 
-	/**
-	 * TODO: Change once LizaCraftLocation is implemented.
-	 */
+
 	@Override
-	public Player getKiller() {
-		return this.animal.getKiller();
+	public LizaPlayer getKiller() {
+		return new LizaCraftPlayer(this.animal.getKiller());
 	}
 
 	@Override
@@ -141,24 +143,30 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	@Override
+	@Deprecated
 	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> transparent,
 			int maxDistance) {
 		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
 				maxDistance);
 
 		for (Block b : bl) {
-			b = new LizaCraftBlock(b);
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
 		}
 		return bl;
 	}
-
+	
 	@Override
+	@Deprecated
 	public List<Block> getLineOfSight(HashSet<Byte> transparent, int maxDistance) {
 		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
 				maxDistance);
 
 		for (Block b : bl) {
-			b = new LizaCraftBlock(b);
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
 		}
 		return bl;
 	}
@@ -189,13 +197,13 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	@Override
-	public Block getTargetBlock(HashSet<Byte> transparent, int maxDistance) {
+	public LizaBlock getTargetBlock(HashSet<Byte> transparent, int maxDistance) {
 		return new LizaCraftBlock(this.animal.getTargetBlock(transparent,
 				maxDistance));
 	}
 
 	@Override
-	public Vehicle getVehicle() {
+	public LizaVehicle getVehicle() {
 		return new LizaCraftVehicle(this.animal.getVehicle());
 	}
 
@@ -243,24 +251,18 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	@Override
-	public Arrow shootArrow() {
+	public LizaArrow shootArrow() {
 		return new LizaCraftArrow(this.animal.shootArrow());
 	}
 
-	/**
-	 * TODO: Change once LizaCraftLocation is implemented.
-	 */
 	@Override
-	public Egg throwEgg() {
-		return this.animal.throwEgg();
+	public LizaEgg throwEgg() {
+		return new LizaCraftEgg(this.animal.throwEgg());
 	}
 
-	/**
-	 * TODO: Change once LizaCraftLocation is implemented.
-	 */
 	@Override
-	public Snowball throwSnowball() {
-		return this.animal.throwSnowball();
+	public LizaSnowball throwSnowball() {
+		return new LizaCraftSnowball(this.animal.throwSnowball());
 	}
 
 	/**
@@ -286,17 +288,11 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.getFireTicks();
 	}
 
-	/**
-	 * TODO: Review this method.
-	 */
 	@Override
 	public EntityDamageEvent getLastDamageCause() {
 		return this.animal.getLastDamageCause();
 	}
 
-	/**
-	 * TODO: Change once LizaCraftLocation is implemented.
-	 */
 	@Override
 	public Location getLocation() {
 		return this.animal.getLocation();
@@ -316,25 +312,25 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 *            Size of the box along z axis
 	 */
 	@Override
+	@Deprecated
 	public List<Entity> getNearbyEntities(double x, double y, double z) {
 		List<Entity> el = this.animal.getNearbyEntities(x, y, z);
 
 		for (Entity e : el) {
-			e = new LizaCraftEntity(e);
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
 		}
 		return el;
 	}
 
 	@Override
-	public Entity getPassenger() {
+	public LizaEntity getPassenger() {
 		return new LizaCraftEntity(this.animal.getPassenger());
 	}
 
-	/**
-	 * TODO: Review this method.
-	 */
 	@Override
-	public Server getServer() {
+	public LizaServer getServer() {
 		return new LizaCraftServer(this.animal.getServer());
 	}
 
@@ -348,16 +344,13 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.getUniqueId();
 	}
 
-	/**
-	 * TODO: Change if LizaCraftVector is implemented.
-	 */
 	@Override
 	public Vector getVelocity() {
 		return this.animal.getVelocity();
 	}
 
 	@Override
-	public World getWorld() {
+	public LizaWorld getWorld() {
 		return new LizaCraftWorld(this.animal.getWorld());
 	}
 
@@ -446,4 +439,71 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.teleport(destination, cause);
 	}
 
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent, maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLineOfSight, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.animal.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
 }

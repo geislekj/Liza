@@ -6,55 +6,57 @@ import java.util.UUID;
 
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Arrow;
-import org.bukkit.entity.Egg;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Snowball;
-import org.bukkit.entity.Vehicle;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.util.Vector;
 
+import Liza.LizaArrow;
 import Liza.LizaBlock;
+import Liza.LizaEgg;
 import Liza.LizaEntity;
 import Liza.LizaLivingEntity;
+import Liza.LizaPlayer;
+import Liza.LizaServer;
+import Liza.LizaSnowball;
+import Liza.LizaVehicle;
+import Liza.LizaWorld;
+import LizaCraft.LizaCraftServer;
+import LizaCraft.LizaCraftWorld;
 import LizaCraft.Block.LizaCraftBlock;
 
 /**
- * @author collinbc
- *
- *  LizaCraftLivingEntity is the Liza LivingEntity representation of
+ *  LizaCraftLivingEntity is the Liza entity representation of
  *  the Bukkit LivingEntity class.
  *  
- *  TODO: Methods that return Bukkit classes that may later be implemented
+ *  DONE: Methods that return Bukkit classes that may later be implemented
  *  in Liza should be changed to use those interfaces and classes after
  *  they are created.
+ *  
+ *  @author collinbc
  */
 public class LizaCraftLivingEntity implements LizaLivingEntity {
 	private LivingEntity livingEntity;
 	
 	/**
-	 * LizaCraftHumanEntity Constructor
+	 * LizaCraftLivingEntity Constructor
 	 * 
-	 * @param humanEntity A Bukkit HumanEntity
+	 * @param livingEntity A Bukkit LivingEntity
 	 */
 	public LizaCraftLivingEntity(LivingEntity livingEntity) {
 		this.livingEntity = livingEntity;
 	}
 	
 	@Override
-	public void damage(int arg0) {
-		this.livingEntity.damage(arg0);
+	public void damage(int amount) {
+		this.livingEntity.damage(amount);
 	}
 
 	@Override
-	public void damage(int arg0, Entity arg1) {
-		this.livingEntity.damage(arg0, arg1);
+	public void damage(int amount, Entity source) {
+		this.livingEntity.damage(amount, source);
 	}
 
 	@Override
@@ -63,8 +65,8 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public double getEyeHeight(boolean arg0) {
-		return this.livingEntity.getEyeHeight(arg0);
+	public double getEyeHeight(boolean ignoreSneaking) {
+		return this.livingEntity.getEyeHeight(ignoreSneaking);
 	}
 
 	@Override
@@ -77,9 +79,10 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return this.livingEntity.getHealth();
 	}
 
+
 	@Override
-	public Player getKiller() {
-		return this.livingEntity.getKiller();
+	public LizaPlayer getKiller() {
+		return new LizaCraftPlayer(this.livingEntity.getKiller());
 	}
 
 	@Override
@@ -88,50 +91,30 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> arg0, int arg1) {
-		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
-		
-		for(Block b : bl) {
-			b = new LizaCraftBlock(b);
+	@Deprecated
+	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> transparent,
+			int maxDistance) {
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+
+		for (Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
 		}
 		return bl;
 	}
 	
-	/**
-	 * @param arg0
-	 * @param arg1
-	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
-	 * 
-	 * TODO: Review this method.
-	 */
-	@Deprecated
-	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> arg0, int arg1) {
-		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(arg0, arg1);
-		Class<? extends List> c = bl.getClass();
-		List<LizaBlock> lbl = null;
-		try {
-			lbl = c.newInstance();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		for(Block b : bl) {
-			lbl.add(new LizaCraftBlock(b));
-		}
-		return lbl;
-	}
-
-	// TODO: A method may be needed that will return type List<LizaBlock>.
 	@Override
-	public List<Block> getLineOfSight(HashSet<Byte> arg0, int arg1) {
-		List<Block> bl = this.livingEntity.getLineOfSight(arg0, arg1);
-		
-		for(Block b : bl) {
-			b = new LizaCraftBlock(b);
+	@Deprecated
+	public List<Block> getLineOfSight(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+
+		for (Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
 		}
 		return bl;
 	}
@@ -162,13 +145,14 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public LizaBlock getTargetBlock(HashSet<Byte> arg0, int arg1) {
-		return new LizaCraftBlock(this.livingEntity.getTargetBlock(arg0, arg1));
+	public LizaBlock getTargetBlock(HashSet<Byte> transparent, int maxDistance) {
+		return new LizaCraftBlock(this.livingEntity.getTargetBlock(transparent,
+				maxDistance));
 	}
 
 	@Override
-	public Vehicle getVehicle() {
-		return this.livingEntity.getVehicle();
+	public LizaVehicle getVehicle() {
+		return new LizaCraftVehicle(this.livingEntity.getVehicle());
 	}
 
 	@Override
@@ -176,56 +160,62 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return this.livingEntity.isInsideVehicle();
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
 	public boolean leaveVehicle() {
 		return this.livingEntity.leaveVehicle();
 	}
 
 	@Override
-	public void setHealth(int arg0) {
-		this.livingEntity.setHealth(arg0);
+	public void setHealth(int health) {
+		this.livingEntity.setHealth(health);
 	}
 
 	@Override
-	public void setLastDamage(int arg0) {
-		this.livingEntity.setLastDamage(arg0);
+	public void setLastDamage(int damage) {
+		this.livingEntity.setLastDamage(damage);
 	}
 
 	@Override
-	public void setMaximumAir(int arg0) {
-		this.livingEntity.setMaximumAir(arg0);
+	public void setMaximumAir(int ticks) {
+		this.livingEntity.setMaximumAir(ticks);
 	}
 
 	@Override
-	public void setMaximumNoDamageTicks(int arg0) {
-		this.livingEntity.setMaximumNoDamageTicks(arg0);
+	public void setMaximumNoDamageTicks(int ticks) {
+		this.livingEntity.setMaximumNoDamageTicks(ticks);
 	}
 
 	@Override
-	public void setNoDamageTicks(int arg0) {
-		this.livingEntity.setNoDamageTicks(arg0);
+	public void setNoDamageTicks(int ticks) {
+		this.livingEntity.setNoDamageTicks(ticks);
 	}
 
 	@Override
-	public void setRemainingAir(int arg0) {
-		this.livingEntity.setRemainingAir(arg0);
+	public void setRemainingAir(int ticks) {
+		this.livingEntity.setRemainingAir(ticks);
 	}
 
 	@Override
-	public Arrow shootArrow() {
-		return this.livingEntity.shootArrow();
+	public LizaArrow shootArrow() {
+		return new LizaCraftArrow(this.livingEntity.shootArrow());
 	}
 
 	@Override
-	public Egg throwEgg() {
-		return this.livingEntity.throwEgg();
+	public LizaEgg throwEgg() {
+		return new LizaCraftEgg(this.livingEntity.throwEgg());
 	}
 
 	@Override
-	public Snowball throwSnowball() {
-		return this.livingEntity.throwSnowball();
+	public LizaSnowball throwSnowball() {
+		return new LizaCraftSnowball(this.livingEntity.throwSnowball());
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
 	public boolean eject() {
 		return this.livingEntity.eject();
@@ -258,16 +248,26 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 
 	@Override
 	public int getMaxFireTicks() {
-		return this.livingEntity.getFireTicks();
+		return this.livingEntity.getMaxFireTicks();
 	}
 
-	// TODO: A method may be needed that will return type List<LizaEntity>.
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 */
 	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		List<Entity> el = this.livingEntity.getNearbyEntities(arg0, arg1, arg2);
-		
-		for(Entity e : el) {
-			e = new LizaCraftEntity(e);
+	@Deprecated
+	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		List<Entity> el = this.livingEntity.getNearbyEntities(x, y, z);
+
+		for (Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
 		}
 		return el;
 	}
@@ -278,8 +278,8 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public Server getServer() {
-		return this.livingEntity.getServer();
+	public LizaServer getServer() {
+		return new LizaCraftServer(this.livingEntity.getServer());
 	}
 
 	@Override
@@ -298,8 +298,8 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public World getWorld() {
-		return this.livingEntity.getWorld();
+	public LizaWorld getWorld() {
+		return new LizaCraftWorld(this.livingEntity.getWorld());
 	}
 
 	@Override
@@ -313,8 +313,8 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.livingEntity.playEffect(arg0);
+	public void playEffect(EntityEffect type) {
+		this.livingEntity.playEffect(type);
 	}
 
 	@Override
@@ -323,53 +323,145 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 	}
 
 	@Override
-	public void setFallDistance(float arg0) {
-		this.livingEntity.setFallDistance(arg0);
+	public void setFallDistance(float distance) {
+		this.livingEntity.setFallDistance(distance);
 	}
 
 	@Override
-	public void setFireTicks(int arg0) {
-		this.livingEntity.setFireTicks(arg0);
+	public void setFireTicks(int ticks) {
+		this.livingEntity.setFireTicks(ticks);
 	}
 
 	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.livingEntity.setLastDamageCause(arg0);
+	public void setLastDamageCause(EntityDamageEvent event) {
+		this.livingEntity.setLastDamageCause(event);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean setPassenger(Entity passenger) {
+		return this.livingEntity.setPassenger(passenger);
 	}
 
 	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.livingEntity.setPassenger(arg0);
+	public void setTicksLived(int ticks) {
+		this.livingEntity.setTicksLived(ticks);
 	}
 
 	@Override
-	public void setTicksLived(int arg0) {
-		this.livingEntity.setTicksLived(arg0);
+	public void setVelocity(Vector vel) {
+		this.livingEntity.setVelocity(vel);
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
-	public void setVelocity(Vector arg0) {
-		this.livingEntity.setVelocity(arg0);
+	public boolean teleport(Location location) {
+		return this.livingEntity.teleport(location);
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
-	public boolean teleport(Location arg0) {
-		return this.livingEntity.teleport(arg0);
+	public boolean teleport(Entity destination) {
+		return this.livingEntity.teleport(destination);
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
-	public boolean teleport(Entity arg0) {
-		return this.livingEntity.teleport(arg0);
+	public boolean teleport(Location location, TeleportCause cause) {
+		return this.livingEntity.teleport(location, cause);
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.livingEntity.teleport(arg0, arg1);
+	public boolean teleport(Entity destination, TeleportCause cause) {
+		return this.livingEntity.teleport(destination, cause);
 	}
 
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.livingEntity.teleport(arg0, arg1);
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(transparent, maxDistance);
+		List<LizaBlock> lbl;
+/*
+ * Don't do this.
+		Class<? extends List> c = bl.getClass();
+		try {
+			lbl = c.newInstance();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+ */
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
 	}
+	
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLineOfSight, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.livingEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+		List<LizaBlock> lbl;
 
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.livingEntity.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
 }

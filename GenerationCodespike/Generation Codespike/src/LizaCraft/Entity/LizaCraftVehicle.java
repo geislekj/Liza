@@ -16,10 +16,10 @@ import org.bukkit.util.Vector;
 import Liza.LizaVehicle;
 
 /**
- * @author geislekj
- *
  *  LizeCraftVehicle is the Liza entity representation of
  *  the Bukkit Vehicle class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftVehicle implements LizaVehicle{
 

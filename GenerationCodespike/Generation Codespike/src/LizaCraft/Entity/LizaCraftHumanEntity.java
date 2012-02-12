@@ -8,16 +8,9 @@ import java.util.UUID;
 import org.bukkit.EntityEffect;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Arrow;
-import org.bukkit.entity.Egg;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.HumanEntity;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Snowball;
-import org.bukkit.entity.Vehicle;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.inventory.ItemStack;
@@ -28,20 +21,30 @@ import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
+import Liza.LizaArrow;
 import Liza.LizaBlock;
+import Liza.LizaEgg;
+import Liza.LizaEntity;
 import Liza.LizaHumanEntity;
+import Liza.LizaPlayer;
+import Liza.LizaServer;
+import Liza.LizaSnowball;
+import Liza.LizaVehicle;
+import Liza.LizaWorld;
+import LizaCraft.LizaCraftServer;
+import LizaCraft.LizaCraftWorld;
 import LizaCraft.Block.LizaCraftBlock;
 import LizaCraft.Entity.LizaCraftEntity;
 
 /**
- * @author collinbc
- *
  *  LizaCraftHumanEntity is the Liza HumanEntity representation of
  *  the Bukkit HumanEntity class.
  *  
- *  TODO: Methods that return Bukkit classes that may later be implemented
+ *  DONE: Methods that return Bukkit classes that may later be implemented
  *  in Liza should be changed to use those interfaces and classes after
  *  they are created.
+ *  
+ * @author collinbc
  */
 public class LizaCraftHumanEntity implements LizaHumanEntity {
 	private HumanEntity humanEntity;
@@ -60,6 +63,9 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.getGameMode();
 	}
 
+	/**
+	 * TODO: Change once LizaCraftPlayerInventory is implemented.
+	 */
 	@Override
 	public PlayerInventory getInventory() {
 		return this.humanEntity.getInventory();
@@ -86,23 +92,23 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public void setGameMode(GameMode arg0) {
-		this.humanEntity.setGameMode(arg0);
+	public void setGameMode(GameMode mode) {
+		this.humanEntity.setGameMode(mode);
 	}
 
 	@Override
-	public void setItemInHand(ItemStack arg0) {
-		this.humanEntity.setItemInHand(arg0);
+	public void setItemInHand(ItemStack item) {
+		this.humanEntity.setItemInHand(item);
 	}
 
 	@Override
-	public void damage(int arg0) {
-		this.humanEntity.damage(arg0);
+	public void damage(int amount) {
+		this.humanEntity.damage(amount);
 	}
 
 	@Override
-	public void damage(int arg0, Entity arg1) {
-		this.humanEntity.damage(arg0, arg1);
+	public void damage(int amount, Entity source) {
+		this.humanEntity.damage(amount, source);
 	}
 
 	@Override
@@ -111,8 +117,8 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public double getEyeHeight(boolean arg0) {
-		return this.humanEntity.getEyeHeight();
+	public double getEyeHeight(boolean ignoreSneaking) {
+		return this.humanEntity.getEyeHeight(ignoreSneaking);
 	}
 
 	@Override
@@ -125,9 +131,10 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.getHealth();
 	}
 
+
 	@Override
-	public Player getKiller() {
-		return this.humanEntity.getKiller();
+	public LizaPlayer getKiller() {
+		return new LizaCraftPlayer(this.humanEntity.getKiller());
 	}
 
 	@Override
@@ -135,23 +142,26 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.getLastDamage();
 	}
 
-	// TODO: A method may be needed that will return type List<LizaBlock>.
 	@Override
-	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> arg0, int arg1) {
-		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(arg0, arg1);
-		
-		for(Block b : bl) {
+	@Deprecated
+	public List<Block> getLastTwoTargetBlocks(HashSet<Byte> transparent,
+			int maxDistance) {
+		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+
+		for (Block b : bl) {
 			b = new LizaCraftBlock(b);
 		}
 		return bl;
 	}
-
-	// TODO: A method may be needed that will return type List<LizaBlock>.
+	
 	@Override
-	public List<Block> getLineOfSight(HashSet<Byte> arg0, int arg1) {
-		List<Block> bl = this.humanEntity.getLineOfSight(arg0, arg1);
-		
-		for(Block b : bl) {
+	@Deprecated
+	public List<Block> getLineOfSight(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+
+		for (Block b : bl) {
 			b = new LizaCraftBlock(b);
 		}
 		return bl;
@@ -183,13 +193,14 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public LizaBlock getTargetBlock(HashSet<Byte> arg0, int arg1) {
-		return new LizaCraftBlock(this.humanEntity.getTargetBlock(arg0, arg1));
+	public LizaBlock getTargetBlock(HashSet<Byte> transparent, int maxDistance) {
+		return new LizaCraftBlock(this.humanEntity.getTargetBlock(transparent,
+				maxDistance));
 	}
 
 	@Override
-	public Vehicle getVehicle() {
-		return this.humanEntity.getVehicle();
+	public LizaVehicle getVehicle() {
+		return new LizaCraftVehicle(this.humanEntity.getVehicle());
 	}
 
 	@Override
@@ -197,56 +208,62 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.isInsideVehicle();
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
 	public boolean leaveVehicle() {
 		return this.humanEntity.leaveVehicle();
 	}
 
 	@Override
-	public void setHealth(int arg0) {
-		this.humanEntity.setHealth(arg0);
+	public void setHealth(int health) {
+		this.humanEntity.setHealth(health);
 	}
 
 	@Override
-	public void setLastDamage(int arg0) {
-		this.humanEntity.setLastDamage(arg0);
+	public void setLastDamage(int damage) {
+		this.humanEntity.setLastDamage(damage);
 	}
 
 	@Override
-	public void setMaximumAir(int arg0) {
-		this.humanEntity.setMaximumAir(arg0);
+	public void setMaximumAir(int ticks) {
+		this.humanEntity.setMaximumAir(ticks);
 	}
 
 	@Override
-	public void setMaximumNoDamageTicks(int arg0) {
-		this.humanEntity.setMaximumNoDamageTicks(arg0);
+	public void setMaximumNoDamageTicks(int ticks) {
+		this.humanEntity.setMaximumNoDamageTicks(ticks);
 	}
 
 	@Override
-	public void setNoDamageTicks(int arg0) {
-		this.humanEntity.setNoDamageTicks(arg0);
+	public void setNoDamageTicks(int ticks) {
+		this.humanEntity.setNoDamageTicks(ticks);
 	}
 
 	@Override
-	public void setRemainingAir(int arg0) {
-		this.humanEntity.setRemainingAir(arg0);
+	public void setRemainingAir(int ticks) {
+		this.humanEntity.setRemainingAir(ticks);
 	}
 
 	@Override
-	public Arrow shootArrow() {
-		return this.humanEntity.shootArrow();
+	public LizaArrow shootArrow() {
+		return new LizaCraftArrow(this.humanEntity.shootArrow());
 	}
 
 	@Override
-	public Egg throwEgg() {
-		return this.humanEntity.throwEgg();
+	public LizaEgg throwEgg() {
+		return new LizaCraftEgg(this.humanEntity.throwEgg());
 	}
 
 	@Override
-	public Snowball throwSnowball() {
-		return this.humanEntity.throwSnowball();
+	public LizaSnowball throwSnowball() {
+		return new LizaCraftSnowball(this.humanEntity.throwSnowball());
 	}
 
+	/**
+	 * This method performs an action and returns a value.
+	 */
 	@Override
 	public boolean eject() {
 		return this.humanEntity.eject();
@@ -282,19 +299,33 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 		return this.humanEntity.getMaxFireTicks();
 	}
 
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 */
 	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.humanEntity.getNearbyEntities(arg0, arg1, arg2);
+	@Deprecated
+	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		List<Entity> el = this.humanEntity.getNearbyEntities(x, y, z);
+
+		for (Entity e : el) {
+			e = new LizaCraftEntity(e);
+		}
+		return el;
 	}
 
 	@Override
-	public Entity getPassenger() {
+	public LizaEntity getPassenger() {
 		return new LizaCraftEntity(this.humanEntity.getPassenger());
 	}
 
 	@Override
-	public Server getServer() {
-		return this.humanEntity.getServer();
+	public LizaServer getServer() {
+		return new LizaCraftServer(this.humanEntity.getServer());
 	}
 
 	@Override
@@ -313,8 +344,8 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public World getWorld() {
-		return this.humanEntity.getWorld();
+	public LizaWorld getWorld() {
+		return new LizaCraftWorld(this.humanEntity.getWorld());
 	}
 
 	@Override
@@ -328,8 +359,8 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.humanEntity.playEffect(arg0);
+	public void playEffect(EntityEffect type) {
+		this.humanEntity.playEffect(type);
 	}
 
 	@Override
@@ -338,75 +369,158 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public void setFallDistance(float arg0) {
-		this.humanEntity.setFallDistance(arg0);
+	public void setFallDistance(float distance) {
+		this.humanEntity.setFallDistance(distance);
 	}
 
 	@Override
-	public void setFireTicks(int arg0) {
-		this.humanEntity.setFireTicks(arg0);
+	public void setFireTicks(int ticks) {
+		this.humanEntity.setFireTicks(ticks);
 	}
 
 	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.humanEntity.setLastDamageCause(arg0);
+	public void setLastDamageCause(EntityDamageEvent event) {
+		this.humanEntity.setLastDamageCause(event);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean setPassenger(Entity passenger) {
+		return this.humanEntity.setPassenger(passenger);
 	}
 
 	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.humanEntity.setPassenger(arg0);
+	public void setTicksLived(int ticks) {
+		this.humanEntity.setTicksLived(ticks);
 	}
 
 	@Override
-	public void setTicksLived(int arg0) {
-		this.humanEntity.setTicksLived(arg0);
+	public void setVelocity(Vector vel) {
+		this.humanEntity.setVelocity(vel);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Location location) {
+		return this.humanEntity.teleport(location);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Entity destination) {
+		return this.humanEntity.teleport(destination);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Location location, TeleportCause cause) {
+		return this.humanEntity.teleport(location, cause);
+	}
+
+	/**
+	 * This method performs an action and returns a value.
+	 */
+	@Override
+	public boolean teleport(Entity destination, TeleportCause cause) {
+		return this.humanEntity.teleport(destination, cause);
+	}
+
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(transparent, maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLineOfSight, but as LizaBlocks.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.humanEntity.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.humanEntity.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
 	}
 
 	@Override
-	public void setVelocity(Vector arg0) {
-		this.humanEntity.setVelocity(arg0);
+	public PermissionAttachment addAttachment(Plugin plugin) {
+		return this.humanEntity.addAttachment(plugin);
 	}
 
 	@Override
-	public boolean teleport(Location arg0) {
-		return this.humanEntity.teleport(arg0);
+	public PermissionAttachment addAttachment(Plugin plugin, int ticks) {
+		return this.humanEntity.addAttachment(plugin, ticks);
 	}
 
 	@Override
-	public boolean teleport(Entity arg0) {
-		return this.humanEntity.teleport(arg0);
+	public PermissionAttachment addAttachment(Plugin plugin, String name,
+			boolean value) {
+		return this.humanEntity.addAttachment(plugin, name, value);
 	}
 
 	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.humanEntity.teleport(arg0, arg1);
-	}
-
-	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.humanEntity.teleport(arg0, arg1);
-	}
-
-	@Override
-	public PermissionAttachment addAttachment(Plugin arg0) {
-		return this.humanEntity.addAttachment(arg0);
-	}
-
-	@Override
-	public PermissionAttachment addAttachment(Plugin arg0, int arg1) {
-		return this.humanEntity.addAttachment(arg0, arg1);
-	}
-
-	@Override
-	public PermissionAttachment addAttachment(Plugin arg0, String arg1,
-			boolean arg2) {
-		return this.humanEntity.addAttachment(arg0, arg1, arg2);
-	}
-
-	@Override
-	public PermissionAttachment addAttachment(Plugin arg0, String arg1,
-			boolean arg2, int arg3) {
-		return this.humanEntity.addAttachment(arg0, arg1, arg2, arg3);
+	public PermissionAttachment addAttachment(Plugin plugin, String name,
+			boolean value, int ticks) {
+		return this.humanEntity.addAttachment(plugin, name, value, ticks);
 	}
 
 	@Override
@@ -415,23 +529,23 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public boolean hasPermission(String arg0) {
-		return this.humanEntity.hasPermission(arg0);
+	public boolean hasPermission(String name) {
+		return this.humanEntity.hasPermission(name);
 	}
 
 	@Override
-	public boolean hasPermission(Permission arg0) {
-		return this.humanEntity.hasPermission(arg0);
+	public boolean hasPermission(Permission perm) {
+		return this.humanEntity.hasPermission(perm);
 	}
 
 	@Override
-	public boolean isPermissionSet(String arg0) {
-		return this.humanEntity.isPermissionSet(arg0);
+	public boolean isPermissionSet(String name) {
+		return this.humanEntity.isPermissionSet(name);
 	}
 
 	@Override
-	public boolean isPermissionSet(Permission arg0) {
-		return this.humanEntity.isPermissionSet(arg0);
+	public boolean isPermissionSet(Permission perm) {
+		return this.humanEntity.isPermissionSet(perm);
 	}
 
 	@Override
@@ -440,8 +554,8 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public void removeAttachment(PermissionAttachment arg0) {
-		this.humanEntity.removeAttachment(arg0);
+	public void removeAttachment(PermissionAttachment attachment) {
+		this.humanEntity.removeAttachment(attachment);
 	}
 
 	@Override
@@ -450,8 +564,8 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	}
 
 	@Override
-	public void setOp(boolean arg0) {
-		this.humanEntity.setOp(arg0);
+	public void setOp(boolean value) {
+		this.humanEntity.setOp(value);
 	}
 
 }

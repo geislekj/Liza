@@ -18,10 +18,10 @@ import Liza.LizaItem;
 
 
 /**
- * @author geislekj
- *
  *  LizeCraftItem is the Liza entity representation of
  *  the Bukkit Item class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftItem implements LizaItem{
 
@@ -30,7 +30,7 @@ public class LizaCraftItem implements LizaItem{
 	/**
 	 * LizaCraftItem Constructor
 	 * 
-	 * @param entity This is a Bukkit entity 
+	 * @param item This is a Bukkit Item entity 
 	 */
 	public LizaCraftItem(Item item) {
 		this.item = item;

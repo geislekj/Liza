@@ -3,10 +3,10 @@ package Liza;
 import org.bukkit.entity.Vehicle;
 
 /**
- * @author geislekj
- * 
  *  LizaVehicle is the Liza interface representation of
- *  the Bukkit Vehicle interface
+ *  the Bukkit Vehicle interface.
+ * 
+ * @author geislekj
  */
 public interface LizaVehicle extends Vehicle{
 

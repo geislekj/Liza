@@ -17,10 +17,10 @@ import Liza.LizaFallingSand;
 
 
 /**
- * @author geislekj
- *
  *  LizeCraftFallingSand is the Liza entity representation of
  *  the Bukkit FallingSand class.
+ *  
+ * @author geislekj
  */
 public class LizaCraftFallingSand implements LizaFallingSand{
 
@@ -29,7 +29,7 @@ public class LizaCraftFallingSand implements LizaFallingSand{
 	/**
 	 * LizaCraftFallingSand Constructor
 	 * 
-	 * @param FallingSand This is a Bukkit FallingSand entity 
+	 * @param fallingSand This is a Bukkit FallingSand entity 
 	 */
 	public LizaCraftFallingSand(FallingSand fallingSand) {
 		this.fallingSand = fallingSand;
