@@ -28,7 +28,7 @@ public class LizaCraftVehicle implements LizaVehicle{
 	/**
 	 * LizaCraftEntity Constructor
 	 * 
-	 * @param vehicle This is a Bukkit vehicle entity 
+	 * @param vehicle This is a Bukkit Vehicle entity 
 	 */
 	public LizaCraftVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
