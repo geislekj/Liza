@@ -1,7 +1,0 @@
-package Liza;
-
-import org.bukkit.entity.Item;
-
-public interface LizaItem extends Item{
-
-}

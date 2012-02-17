@@ -1,9 +1,0 @@
-package LizaCraft.Entity;
-
-public class LizaCraftArrow {
-
-	public LizaCraftArrow() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
