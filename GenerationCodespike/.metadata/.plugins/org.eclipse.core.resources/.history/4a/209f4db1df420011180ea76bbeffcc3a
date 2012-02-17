@@ -1,7 +1,0 @@
-package LizaCraft.Entity;
-
-import org.bukkit.entity.Entity;
-
-public class LizaCraftEntity implements LizaEnity{
-
-}
