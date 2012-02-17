@@ -373,4 +373,17 @@ public class LizaCraftLivingEntity implements LizaLivingEntity {
 		return this.livingEntity.teleport(arg0, arg1);
 	}
 
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
+			int maxDistance) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

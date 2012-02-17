@@ -29,6 +29,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 import Liza.LizaBlock;
+import Liza.LizaEntity;
 import Liza.LizaHumanEntity;
 import LizaCraft.Block.LizaCraftBlock;
 import LizaCraft.Entity.LizaCraftEntity;
@@ -452,6 +453,26 @@ public class LizaCraftHumanEntity implements LizaHumanEntity {
 	@Override
 	public void setOp(boolean arg0) {
 		this.humanEntity.setOp(arg0);
+	}
+
+	@Override
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(
+			HashSet<Byte> transparent, int maxDistance) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
+			int maxDistance) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

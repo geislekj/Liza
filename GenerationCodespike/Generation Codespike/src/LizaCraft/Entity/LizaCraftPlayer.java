@@ -327,8 +327,7 @@ public class LizaCraftPlayer implements LizaPlayer {
 
 	@Override
 	public void setExp(float arg0) {
-		// TODO Auto-generated method stub
-
+		this.player.setExp(arg0);
 	}
 
 	@Override
@@ -345,8 +344,7 @@ public class LizaCraftPlayer implements LizaPlayer {
 
 	@Override
 	public void setLevel(int arg0) {
-		// TODO Auto-generated method stub
-
+		this.player.setLevel(arg0);
 	}
 
 	@Override
