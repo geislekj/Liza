@@ -1,0 +1,7 @@
+commands:
+	hi:
+		description: This says hi back
+		usage: /hi
+		permission: BobPlugin.basic
+		permission-message: You don't have permission
+		

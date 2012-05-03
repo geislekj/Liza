@@ -18,20 +18,20 @@
 
 \noindent   
 
-Minecraft [1] is a sandbox computer game where players can create and remove blocks in a simulated world. 
+Minecraft is a sandbox computer game where players can create and remove blocks in a simulated world. 
 These blocks can be arranged in a nearly unlimited number of ways and is only limited by the player's imagination.
  Despite being recently officially released, it has gained immense popularity with a user base exceeding 10 million people. \newline
 
-\noindent Modifying Minecraft [1] has become increasingly popular, as a number of changes can be made to suit each user’s needs.
- There are currently two methods of modifying Minecraft [1]. Mods require a user to directly modify their game files in order to add 
-or alter functionality in Minecraft [1]. For a server to effectively use a mod, the server requires each user to install that mod. On the 
-other hand, plugins enable developers to make changes to Minecraft [1] without needing each user to directly modify the platform. 
+\noindent Modifying Minecraft has become increasingly popular, as a number of changes can be made to suit each user’s needs.
+ There are currently two methods of modifying Minecraft. Mods require a user to directly modify their game files in order to add 
+or alter functionality in Minecraft. For a server to effectively use a mod, the server requires each user to install that mod. On the 
+other hand, plugins enable developers to make changes to Minecraft without needing each user to directly modify the platform. 
 Only the server needs to be modified. \newline 
 
-\noindent A common way of introducing plugins to a Minecraft [1] server is to utilize a tool called Bukkit [2]. Bukkit wraps around the official
+\noindent A common way of introducing plugins to a Minecraft server is to utilize a tool called Bukkit. Bukkit wraps around the official
  server application and exposes an easy application programming interface (API) for developers to create plugins.  \newline
 
-\noindent Bukkit [2] currently does not possess any means of testing, which makes debugging plugins a tedious process. Liza intends to 
+\noindent Bukkit currently does not possess any means of testing, which makes debugging plugins a tedious process. Liza intends to 
 provide a unit testing framework for plugin developers to programmatically test their code.  This document will briefly summarize the 
 problem with the current system, and provide details on how Liza intends to solve them. This will be a compilation of all of the previous
  milestones, and include the need, features, requirements, and details about the development of the system.
@@ -54,7 +54,7 @@ Bukkit-Liza Class Diagram. \newline \newline
 
 \subsection{Activity Diagram}
 
-\noindent   This diagram shows how the Developer's test code, the Liza interface, and Bukkit interactall together.
+\noindent   This diagram shows how the Developer's test code, the Liza interface, and Bukkit interact together.
 There is a large amount of activity that goes through a massive loop, shown in the rectangular box.  This loop
 is the main guts of what Liza does when running.
 

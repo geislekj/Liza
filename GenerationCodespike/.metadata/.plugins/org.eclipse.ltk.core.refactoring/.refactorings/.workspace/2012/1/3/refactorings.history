@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;Class and Interface Generation Codespike&apos; to &apos;Generation Codespike&apos;&#x0D;&#x0A;- Original element: &apos;Class and Interface Generation Codespike&apos;&#x0D;&#x0A;- Renamed element: &apos;Class and Interface Generation Codespike&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Class and Interface Generation Codespike&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Class and Interface Generation Codespike" name="Generation Codespike" references="true" stamp="1327012530931" version="1.0"/>
-</session>
