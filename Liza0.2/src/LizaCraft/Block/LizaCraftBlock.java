@@ -2,6 +2,7 @@ package LizaCraft.Block;
 
 //Bukkit Imports
 import java.util.Collection;
+import java.util.List;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;
@@ -13,6 +14,8 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.PistonMoveReaction;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 
 //Liza Imports
 import Liza.LizaBlock;
@@ -63,21 +66,10 @@ public class LizaCraftBlock implements LizaBlock {
 	public byte getData() {
 		return this.block.getData();
 	}
-
-	@Override
-	@Deprecated
-	public Block getFace(BlockFace arg0) {
-		return new LizaCraftBlock(this.block.getFace(arg0));
-	}
-
+	
 	@Override
 	public BlockFace getFace(Block arg0) {
 		return this.block.getFace(arg0);
-	}
-
-	@Override
-	public Block getFace(BlockFace arg0, int arg1) {
-		return this.block.getFace(arg0, arg1); 
 	}
 
 	@Override
@@ -243,6 +235,30 @@ public class LizaCraftBlock implements LizaBlock {
 	@Override
 	public byte getLightFromSky() {
 		return this.block.getLightFromSky();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean hasMetadata(String arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void removeMetadata(String arg0, Plugin arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setMetadata(String arg0, MetadataValue arg1) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
