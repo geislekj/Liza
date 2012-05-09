@@ -477,7 +477,7 @@ public class LizaCraftBlaze implements LizaBlaze {
 	}
 
 	@Override
-	public Entity getVehicle() {
-		return this.blaze.getVehicle();
+	public LizaEntity getVehicle() {
+		return new LizaCraftEntity(this.blaze.getVehicle());
 	}
 }

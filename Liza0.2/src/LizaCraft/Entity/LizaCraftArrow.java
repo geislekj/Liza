@@ -230,8 +230,8 @@ public class LizaCraftArrow implements LizaArrow{
 	}
 
 	@Override
-	public Entity getVehicle() {
-		return this.arrow.getVehicle();
+	public LizaEntity getVehicle() {
+		return new LizaCraftEntity(this.arrow.getVehicle());
 	}
 
 	@Override

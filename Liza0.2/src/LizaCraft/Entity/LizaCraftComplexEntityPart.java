@@ -7,8 +7,11 @@ import org.bukkit.EntityEffect;
 import org.bukkit.Location;
 import org.bukkit.entity.ComplexEntityPart;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 import Liza.LizaComplexEntityPart;
@@ -162,33 +165,21 @@ public class LizaCraftComplexEntityPart implements LizaComplexEntityPart{
 		this.part.setVelocity(vel);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Location location) {
 		return this.part.teleport(location);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Entity destination) {
 		return this.part.teleport(destination);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Location location, TeleportCause cause) {
 		return this.part.teleport(location, cause);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Entity destination, TeleportCause cause) {
 		return this.part.teleport(destination, cause);
@@ -197,6 +188,46 @@ public class LizaCraftComplexEntityPart implements LizaComplexEntityPart{
 	@Override
 	public void playEffect(EntityEffect effect) {
 		this.part.playEffect(effect);		
+	}
+
+	@Override
+	public EntityType getType() {
+		return this.part.getType();
+	}
+
+	@Override
+	public Entity getVehicle() {
+		return this.part.getVehicle();
+	}
+
+	@Override
+	public boolean isInsideVehicle() {
+		return this.part.isInsideVehicle();
+	}
+
+	@Override
+	public boolean leaveVehicle() {
+		return this.part.leaveVehicle();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.part.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.part.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin plugin) {
+		this.removeMetadata(metadataKey, plugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
+		this.part.setMetadata(metadataKey, newMetadataValue);
 	}
 
 }
