@@ -1,7 +1,5 @@
 package Liza;
 
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import org.bukkit.entity.ComplexLivingEntity;
@@ -14,14 +12,10 @@ import org.bukkit.entity.ComplexLivingEntity;
  */
 public interface LizaComplexLivingEntity extends ComplexLivingEntity {
 
-	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
-			int maxDistance);
-
-	List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
-			int maxDistance);
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
-
+	/**
+	 * 
+	 * @return the parts of this entity as liza objects
+	 */
 	Set<LizaComplexEntityPart> getPartsLiza();
 
 }
