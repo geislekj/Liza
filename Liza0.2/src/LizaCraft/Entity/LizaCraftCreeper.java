@@ -33,8 +33,6 @@ import LizaCraft.Block.LizaCraftBlock;
  *  LizaCraftCreeper is the Liza entity representation of
  *  the Bukkit Creeper class.
  *  
- *  That'sssss a very nicccce sssset of code you have...
- *  
  *  @author collinbc
  */
 public class LizaCraftCreeper extends LizaCraftMonster implements LizaCreeper {
