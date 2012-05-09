@@ -1,5 +1,6 @@
 package LizaCraft.Entity;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.UUID;
@@ -13,12 +14,18 @@ import org.bukkit.entity.Arrow;
 import org.bukkit.entity.CaveSpider;
 import org.bukkit.entity.Egg;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Projectile;
 import org.bukkit.entity.Snowball;
 import org.bukkit.entity.Vehicle;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
 import Liza.LizaArrow;
@@ -53,6 +60,55 @@ public class LizaCraftCaveSpider implements LizaCaveSpider {
 		this.caveSpider = caveSpider;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.caveSpider.getLastTwoTargetBlocks(transparent, maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.caveSpider.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.caveSpider.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
+	
 	@Override
 	public LivingEntity getTarget() {
 		return new LizaCraftLivingEntity(this.caveSpider.getTarget());
@@ -165,11 +221,6 @@ public class LizaCraftCaveSpider implements LizaCaveSpider {
 	}
 
 	@Override
-	public LizaVehicle getVehicle() {
-		return new LizaCraftVehicle(this.caveSpider.getVehicle());
-	}
-
-	@Override
 	public boolean isInsideVehicle() {
 		return this.caveSpider.isInsideVehicle();
 	}
@@ -213,16 +264,19 @@ public class LizaCraftCaveSpider implements LizaCaveSpider {
 	}
 
 	@Override
+	@Deprecated
 	public LizaArrow shootArrow() {
 		return new LizaCraftArrow(this.caveSpider.shootArrow());
 	}
 
 	@Override
+	@Deprecated
 	public LizaEgg throwEgg() {
 		return new LizaCraftEgg(this.caveSpider.throwEgg());
 	}
 
 	@Override
+	@Deprecated
 	public LizaSnowball throwSnowball() {
 		return new LizaCraftSnowball(this.caveSpider.throwSnowball());
 	}
@@ -401,71 +455,70 @@ public class LizaCraftCaveSpider implements LizaCaveSpider {
 		return this.caveSpider.teleport(destination, cause);
 	}
 
-	/**
-	 * @param transparent
-	 * @param maxDistance
-	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
-	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
-		List<Block> bl = this.caveSpider.getLastTwoTargetBlocks(transparent, maxDistance);
-		List<LizaBlock> lbl;
-
-		for(Block b : bl) {
-			bl.remove(b);
-			LizaBlock lb = new LizaCraftBlock(b);
-			bl.add(lb);
-		}
-		lbl = (List) bl;
-		
-		return lbl;
+	public boolean addPotionEffect(PotionEffect effect) {
+		return this.caveSpider.addPotionEffect(effect);
 	}
-	
-	/**
-	 * @param transparent
-	 * @param maxDistance
-	 * @return The result of getLineOfSight, but as LizaBlocks.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
-	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
-		List<Block> bl = this.caveSpider.getLastTwoTargetBlocks(transparent,
-				maxDistance);
-		List<LizaBlock> lbl;
 
-		for(Block b : bl) {
-			bl.remove(b);
-			LizaBlock lb = new LizaCraftBlock(b);
-			bl.add(lb);
-		}
-		lbl = (List) bl;
-		
-		return lbl;
+	@Override
+	public boolean addPotionEffect(PotionEffect effect, boolean force) {
+		return this.caveSpider.addPotionEffect(effect, force);
 	}
-	
-	/**
-	 * @param x
-	 *            Size of the box along x axis
-	 * @param y
-	 *            Size of the box along y axis
-	 * @param z
-	 *            Size of the box along z axis
-	 * @return The result of getNearbyEntities, but as LizaEntities.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
-	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
-		List<Entity> el = this.caveSpider.getNearbyEntities(x, y, z);
-		List<LizaEntity> lel;
 
-		for(Entity e : el) {
-			el.remove(e);
-			LizaEntity le = new LizaCraftEntity(e);
-			el.add(le);
-		}
-		lel = (List) el;
-		
-		return lel;
+	@Override
+	public boolean addPotionEffects(Collection<PotionEffect> effects) {
+		return this.caveSpider.addPotionEffects(effects);
+	}
+
+	@Override
+	public Collection<PotionEffect> getActivePotionEffects() {
+
+		return this.caveSpider.getActivePotionEffects();
+	}
+
+	@Override
+	public boolean hasPotionEffect(PotionEffectType Type) {
+		return this.hasPotionEffect(Type);
+	}
+
+	@Override
+	public <T extends Projectile> T launchProjectile(Class<? extends T> projectile) {
+		return this.caveSpider.launchProjectile(projectile);
+	}
+
+	@Override
+	public void removePotionEffect(PotionEffectType effect) {
+		this.caveSpider.removePotionEffect(effect);
+	}
+
+	@Override
+	public EntityType getType() {
+		return this.caveSpider.getType();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.caveSpider.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.caveSpider.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin owningPlugin) {
+		this.caveSpider.removeMetadata(metadataKey, owningPlugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue value) {
+		this.caveSpider.setMetadata(metadataKey, value);
+	}
+
+	@Override
+	public Entity getVehicle() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -41,7 +41,6 @@ public class LizaCraftEntity implements LizaEntity{
 		this.entity = entity;
 	}
 	
-	@Override
 	public Entity getBukkitHandle() {
 		return this.entity;
 	}
