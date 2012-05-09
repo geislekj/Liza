@@ -1,5 +1,6 @@
 package LizaCraft.Entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -7,9 +8,12 @@ import org.bukkit.EntityEffect;
 import org.bukkit.Location;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 import Liza.LizaArrow;
@@ -37,6 +41,18 @@ public class LizaCraftArrow implements LizaArrow{
 	 */
 	public LizaCraftArrow(Arrow arrow){
 		this.arrow = arrow;
+	}
+
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.arrow.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel = new ArrayList<LizaEntity>();
+
+		for(Entity e : el) {
+			lel.add(new LizaCraftEntity(e));
+		}
+		
+		return lel;
 	}
 
 	@Override
@@ -208,28 +224,43 @@ public class LizaCraftArrow implements LizaArrow{
 		return this.arrow.teleport(destination, cause);
 	}
 
-	/**
-	 * @param x
-	 *            Size of the box along x axis
-	 * @param y
-	 *            Size of the box along y axis
-	 * @param z
-	 *            Size of the box along z axis
-	 * @return The result of getNearbyEntities, but as LizaEntities.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
-	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
-		List<Entity> el = this.arrow.getNearbyEntities(x, y, z);
-		List<LizaEntity> lel;
+	public EntityType getType() {
+		return this.arrow.getType();
+	}
 
-		for(Entity e : el) {
-			el.remove(e);
-			LizaEntity le = new LizaCraftEntity(e);
-			el.add(le);
-		}
-		lel = (List) el;
-		
-		return lel;
+	@Override
+	public LizaEntity getVehicle() {
+		return new LizaCraftEntity(this.arrow.getVehicle());
+	}
+
+	@Override
+	public boolean isInsideVehicle() {
+		return this.arrow.isInsideVehicle();
+	}
+
+	@Override
+	public boolean leaveVehicle() {
+		return this.arrow.leaveVehicle();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.arrow.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.arrow.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin plugin) {
+		this.arrow.removeMetadata(metadataKey, plugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue ) {
+		this.arrow.setMetadata(metadataKey, newMetadataValue);
 	}
 }
