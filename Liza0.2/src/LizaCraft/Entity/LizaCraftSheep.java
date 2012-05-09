@@ -44,7 +44,7 @@ public class LizaCraftSheep extends LizaCraftAnimals implements LizaSheep {
 	 * @param sheep
 	 *            A Bukkit Sheep
 	 */
-	public LizaCraftSheep(CraftSheep sheep) {
+	public LizaCraftSheep(Sheep sheep) {
 		super(sheep);
 	}
 

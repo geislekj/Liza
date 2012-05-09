@@ -43,7 +43,7 @@ public class LizaCraftWolf extends LizaCraftAnimals implements LizaWolf {
 	 * 
 	 * @param wolf A Bukkit Wolf
 	 */
-	public LizaCraftWolf(CraftWolf wolf) {
+	public LizaCraftWolf(Wolf wolf) {
 		super(wolf);
 	}
 	
