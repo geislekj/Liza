@@ -14,6 +14,4 @@ import org.bukkit.entity.Egg;
  */
 public interface LizaEgg extends Egg {
 
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
-
 }
