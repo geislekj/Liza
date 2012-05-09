@@ -49,7 +49,7 @@ public class LizaCraftAnimals extends LizaCraftCreature implements LizaAnimals {
 	 * 
 	 * @param animal A Bukkit Animals
 	 */
-	public LizaCraftAnimals(CraftAnimals animal) {
+	public LizaCraftAnimals(Animals animal) {
 		super(animal);
 	}
 	

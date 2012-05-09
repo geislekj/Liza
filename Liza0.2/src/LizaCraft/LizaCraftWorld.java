@@ -35,6 +35,7 @@ import org.bukkit.util.Vector;
 
 import Liza.LizaEntity;
 import Liza.LizaWorld;
+import LizaCraft.Entity.LizaCraftEntity;
 
 /**
  *  LizeCraftWorld is the Liza world representation of
@@ -462,11 +463,6 @@ public class LizaCraftWorld implements LizaWorld{
 	}
 
 	@Override
-	public LivingEntity spawnCreature(Location arg0, CreatureType arg1) {
-		return this.world.spawnCreature(arg0, arg1); 
-	}
-
-	@Override
 	public LightningStrike strikeLightning(Location arg0) {
 		return this.world.strikeLightning(arg0);
 	}
@@ -608,6 +604,12 @@ public class LizaCraftWorld implements LizaWorld{
 	public void setMetadata(String arg0, MetadataValue arg1) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public LivingEntity spawnCreature(Location arg0, CreatureType arg1) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

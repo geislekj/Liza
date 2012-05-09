@@ -11,6 +11,7 @@ public class LizaCraftMinecart extends LizaCraftVehicle implements LizaMinecart 
 		super(minecart);
 	}
 	
+	@Override
 	public Minecart getBukkitHandle(){
 		return (Minecart)this.entity;
 	}
