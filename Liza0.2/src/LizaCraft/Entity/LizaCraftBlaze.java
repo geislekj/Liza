@@ -54,7 +54,7 @@ public class LizaCraftBlaze extends LizaCraftMonster implements LizaBlaze {
 		super(blaze);
 	}
 	
-	@override
+	@Override
 	public Blaze getBukkitHandle(){
 		return (Blaze)this.entity;
 	}
