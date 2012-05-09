@@ -23,9 +23,7 @@ import Liza.LizaItem;
  *  
  * @author geislekj
  */
-public class LizaCraftItem implements LizaItem{
-
-	private Item item;
+public class LizaCraftItem extends LizaCraftEntity implements LizaItem{
 	
 	/**
 	 * LizaCraftItem Constructor
@@ -33,167 +31,32 @@ public class LizaCraftItem implements LizaItem{
 	 * @param item This is a Bukkit Item entity 
 	 */
 	public LizaCraftItem(Item item) {
-		this.item = item;
+		super(item);
+	}
+	
+	public Item getBukkitHandle() {
+		return (Item)this.entity;
 	}
 
 	@Override
 	public ItemStack getItemStack() {
-		return this.item.getItemStack();
+		return this.getBukkitHandle().getItemStack();
 	}
 
 	@Override
 	public int getPickupDelay() {
-		return this.item.getPickupDelay();
+		return this.getBukkitHandle().getPickupDelay();
 	}
 
 	@Override
-	public void setItemStack(ItemStack arg0) {
-		this.item.setItemStack(arg0);
+	public void setItemStack(ItemStack stack) {
+		this.getBukkitHandle().setItemStack(stack);
 	}
 
 	@Override
-	public void setPickupDelay(int arg0) {
-		this.item.setPickupDelay(arg0);
+	public void setPickupDelay(int delay) {
+		this.getBukkitHandle().setPickupDelay(delay);
+		
 	}
-
-	@Override
-	public boolean eject() {
-		return this.item.eject();
-	}
-
-	@Override
-	public int getEntityId() {
-		return this.item.getEntityId();
-	}
-
-	@Override
-	public float getFallDistance() {
-		return this.item.getFallDistance();
-	}
-
-	@Override
-	public int getFireTicks() {
-		return this.item.getFireTicks();
-	}
-
-	@Override
-	public EntityDamageEvent getLastDamageCause() {
-		return this.item.getLastDamageCause();
-	}
-
-	@Override
-	public Location getLocation() {
-		return this.item.getLocation();
-	}
-
-	@Override
-	public int getMaxFireTicks() {
-		return this.item.getMaxFireTicks();
-	}
-
-	@Override
-	public List<Entity> getNearbyEntities(double arg0, double arg1, double arg2) {
-		return this.item.getNearbyEntities(arg0, arg1, arg2); 
-	}
-
-	@Override
-	public Entity getPassenger() {
-		return this.item.getPassenger();
-	}
-
-	@Override
-	public Server getServer() {
-		return this.item.getServer();
-	}
-
-	@Override
-	public int getTicksLived() {
-		return this.item.getTicksLived();
-	}
-
-	@Override
-	public UUID getUniqueId() {
-		return this.item.getUniqueId();
-	}
-
-	@Override
-	public Vector getVelocity() {
-		return this.item.getVelocity();
-	}
-
-	@Override
-	public World getWorld() {
-		return this.item.getWorld();
-	}
-
-	@Override
-	public boolean isDead() {
-		return this.item.isDead();
-	}
-
-	@Override
-	public boolean isEmpty() {
-		return this.item.isEmpty();
-	}
-
-	@Override
-	public void playEffect(EntityEffect arg0) {
-		this.item.playEffect(arg0);
-	}
-
-	@Override
-	public void remove() {
-		this.item.remove();
-	}
-
-	@Override
-	public void setFallDistance(float arg0) {
-		this.item.setFallDistance(arg0);
-	}
-
-	@Override
-	public void setFireTicks(int arg0) {
-		this.item.setFireTicks(arg0);
-	}
-
-	@Override
-	public void setLastDamageCause(EntityDamageEvent arg0) {
-		this.item.setLastDamageCause(arg0);
-	}
-
-	@Override
-	public boolean setPassenger(Entity arg0) {
-		return this.item.setPassenger(arg0);	
-	}
-
-	@Override
-	public void setTicksLived(int arg0) {
-		this.item.setTicksLived(arg0);
-	}
-
-	@Override
-	public void setVelocity(Vector arg0) {
-		this.item.setVelocity(arg0);
-	}
-
-	@Override
-	public boolean teleport(Location arg0) {
-		return this.item.teleport(arg0); 
-	}
-
-	@Override
-	public boolean teleport(Entity arg0) {
-		return this.item.teleport(arg0); 
-	}
-
-	@Override
-	public boolean teleport(Location arg0, TeleportCause arg1) {
-		return this.item.teleport(arg0, arg1); 
-	}
-
-	@Override
-	public boolean teleport(Entity arg0, TeleportCause arg1) {
-		return this.item.teleport(arg0, arg1); 
-	}
-
+	
 }
