@@ -11,7 +11,16 @@ import org.bukkit.entity.Arrow;
  * @author geislekj
  */
 public interface LizaArrow extends Arrow{
-
+	
+	/**
+	 * @param x
+	 *            Size of the box along x axis
+	 * @param y
+	 *            Size of the box along y axis
+	 * @param z
+	 *            Size of the box along z axis
+	 * @return The result of getNearbyEntities, but as LizaEntities.
+	 */
 	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }
