@@ -15,8 +15,11 @@ import java.util.UUID;
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 
@@ -27,7 +30,7 @@ import org.bukkit.util.Vector;
  *  @author geislekj
  */
 public class LizaCraftEntity implements LizaEntity{
-	private Entity entity;
+	protected Entity entity;
 	
 	/**
 	 * LizaCraftEntity Constructor
@@ -36,6 +39,11 @@ public class LizaCraftEntity implements LizaEntity{
 	 */
 	public LizaCraftEntity(Entity entity){
 		this.entity = entity;
+	}
+	
+	@Override
+	public Entity getBukkitHandle() {
+		return this.entity;
 	}
 	
 	@Override
@@ -75,6 +83,7 @@ public class LizaCraftEntity implements LizaEntity{
 
 	@Override
 	public List<Entity> getNearbyEntities(double x, double y, double z) {
+		// TODO;
 		List<Entity> el = this.entity.getNearbyEntities(x, y, z);
 
 		for (Entity e : el) {
@@ -158,33 +167,21 @@ public class LizaCraftEntity implements LizaEntity{
 		this.entity.setVelocity(vel);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Location location) {
 		return this.entity.teleport(location);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Entity destination) {
 		return this.entity.teleport(destination);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Location location, TeleportCause cause) {
 		return this.entity.teleport(location, cause);
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean teleport(Entity destination, TeleportCause cause) {
 		return this.entity.teleport(destination, cause);
@@ -193,6 +190,46 @@ public class LizaCraftEntity implements LizaEntity{
 	@Override
 	public void playEffect(EntityEffect effect) {
 		this.entity.playEffect(effect);		
+	}
+
+	@Override
+	public EntityType getType() {
+		return this.entity.getType();
+	}
+
+	@Override
+	public LizaEntity getVehicle() {
+		return new LizaCraftEntity(this.entity.getVehicle());
+	}
+
+	@Override
+	public boolean isInsideVehicle() {
+		return this.entity.isInsideVehicle();
+	}
+
+	@Override
+	public boolean leaveVehicle() {
+		return this.entity.leaveVehicle();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.entity.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.entity.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin ownedPlugin) {
+		this.entity.removeMetadata(metadataKey, ownedPlugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
+		this.entity.setMetadata(metadataKey, newMetadataValue);
 	}
 
 }

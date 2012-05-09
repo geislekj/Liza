@@ -42,8 +42,7 @@ import LizaCraft.Block.LizaCraftBlock;
  *  
  * @author collinbc
  */
-public class LizaCraftAnimals implements LizaAnimals {
-	private CraftAnimals animal;
+public class LizaCraftAnimals extends LizaCraftEntity implements LizaAnimals {
 
 	/**
 	 * LizaCraftAnimals Constructor
@@ -51,12 +50,12 @@ public class LizaCraftAnimals implements LizaAnimals {
 	 * @param animal A Bukkit Animals
 	 */
 	public LizaCraftAnimals(CraftAnimals animal) {
-		this.animal = animal;
+		super(animal);
 	}
 	
 	@Override
-	public Animals getBukkitAnimals() {
-		return this.animal;
+	public Animals getBukkitEntity() {
+		return (Animals)this.entity;
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })

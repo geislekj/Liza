@@ -12,6 +12,8 @@ import org.bukkit.entity.Chicken;
  * @author collinbc
  */
 public interface LizaChicken extends Chicken {
+	
+	Chicken getBukkitChicken();
 
 	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
 			int maxDistance);
