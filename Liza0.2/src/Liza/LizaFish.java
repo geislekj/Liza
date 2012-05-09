@@ -12,6 +12,4 @@ import org.bukkit.entity.Fish;
  */
 public interface LizaFish extends Fish{
 
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
-
 }
