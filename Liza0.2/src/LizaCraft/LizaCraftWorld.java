@@ -76,8 +76,17 @@ public class LizaCraftWorld implements LizaWorld{
 	@Override
 	public List<LizaEntity> getLizaEntitiesWithinRadius(Location center,
 			double radius) {
-		// TODO Auto-generated method stub
-		return null;
+		List<LizaEntity> lizaEntities = new ArrayList<LizaEntity>();
+		
+		List<Entity> entities = this.getEntities();
+		
+		for (Entity entity : entities) {
+			if (center.distance(entity.getLocation()) < radius) {
+				lizaEntities.add(new LizaCraftEntity(entity));
+			}
+		}
+		
+		return lizaEntities;
 	}
 	
 	///////////////////////////////////////////////////////

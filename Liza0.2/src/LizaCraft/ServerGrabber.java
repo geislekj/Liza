@@ -12,12 +12,17 @@ public class ServerGrabber {
 	private static final String MINECRAFT_SERVER_THREAD_NAME = "Server thread";
 	private static final String MINECRAFT_SERVER_FIELD_NAME = "a";
 
-	protected CraftServer searchThreads(LizaCraftTestModule lizaCraftTestModule) {
+	protected CraftServer searchThreads() {
 
-		Thread threads[] = this.getThreads();
-
-		ThreadServerApplication tsa = getThreadServerApplication(threads);
-
+		Thread[] threads;
+		ThreadServerApplication tsa = null;
+		
+		while (tsa == null) {
+			threads = this.getThreads();
+			
+			tsa = getThreadServerApplication(threads);
+		}
+		
 		MinecraftServer minecraftServer = getMinecraftServer(tsa);
 
 		return minecraftServer.server;
@@ -36,6 +41,7 @@ public class ServerGrabber {
 			// TODO: do some proper exception handling
 			e.printStackTrace();
 		}
+		
 		return minecraftServer;
 	}
 
