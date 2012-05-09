@@ -13,6 +13,8 @@ import org.bukkit.entity.Animals;
  */
 public interface LizaAnimals extends Animals {
 
+	Animals getBukkitAnimals();
+	
 	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
 			int maxDistance);
 
