@@ -15,12 +15,4 @@ import org.bukkit.entity.MushroomCow;
  */
 public interface LizaMushroomCow extends MushroomCow {
 
-	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
-			int maxDistance);
-
-	List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
-			int maxDistance);
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
-
 }

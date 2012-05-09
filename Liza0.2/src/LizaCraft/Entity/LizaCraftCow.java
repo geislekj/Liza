@@ -42,7 +42,7 @@ public class LizaCraftCow extends LizaCraftAnimals implements LizaCow {
 	 * 
 	 * @param mooshroom A Bukkit MushroomCow
 	 */
-	public LizaCraftCow(CraftCow cow) {
+	public LizaCraftCow(Cow cow) {
 		super(cow);
 	}
 	
