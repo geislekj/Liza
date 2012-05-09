@@ -1,18 +1,6 @@
 package LizaCraft.Entity;
 
-import java.util.List;
-import java.util.UUID;
-
-import org.bukkit.EntityEffect;
-import org.bukkit.Location;
-import org.bukkit.Server;
-import org.bukkit.World;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Vehicle;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
-import org.bukkit.util.Vector;
-
 import Liza.LizaVehicle;
 
 /**
