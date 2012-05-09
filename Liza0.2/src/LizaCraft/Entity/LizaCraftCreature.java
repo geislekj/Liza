@@ -6,6 +6,7 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Creature;
 import org.bukkit.entity.LivingEntity;
 import Liza.LizaCreature;
+import Liza.LizaLivingEntity;
 
 /**
  *  LizeCraftCreature is the Liza entity representation of
@@ -30,7 +31,7 @@ public class LizaCraftCreature extends LizaCraftLivingEntity implements LizaCrea
 	}
 
 	@Override
-	public LizaCraftLivingEntity getTarget() {
+	public LizaLivingEntity getTarget() {
 		return new LizaCraftLivingEntity(this.getBukkitHandle().getTarget());
 	}
 
