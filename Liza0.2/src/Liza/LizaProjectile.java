@@ -1,7 +1,5 @@
 package Liza;
 
-import java.util.List;
-
 import org.bukkit.entity.Projectile;
 
 
@@ -12,7 +10,5 @@ import org.bukkit.entity.Projectile;
  * @author geislekj
  */
 public interface LizaProjectile extends Projectile{
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }
