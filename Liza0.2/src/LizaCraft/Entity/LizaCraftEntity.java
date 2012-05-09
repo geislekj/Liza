@@ -8,6 +8,7 @@ import LizaCraft.LizaCraftServer;
 import LizaCraft.LizaCraftWorld;
 
 //Java Imports
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -46,6 +47,17 @@ public class LizaCraftEntity implements LizaEntity{
 	}
 	
 	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.getBukkitHandle().getNearbyEntities(x, y, z);
+		List<LizaEntity> lel = new ArrayList<LizaEntity>();
+		
+		for(Entity e : el)
+			lel.add(new LizaCraftEntity(e));
+		
+		return lel;
+	}
+	
+	@Override
 	public boolean eject() {
 		return this.entity.eject();
 	}
@@ -81,14 +93,9 @@ public class LizaCraftEntity implements LizaEntity{
 	}
 
 	@Override
+	@Deprecated
 	public List<Entity> getNearbyEntities(double x, double y, double z) {
-		// TODO;
-		List<Entity> el = this.entity.getNearbyEntities(x, y, z);
-
-		for (Entity e : el) {
-			e = new LizaCraftEntity(e);
-		}
-		return el;
+		return this.entity.getNearbyEntities(x, y, z);
 	}
 
 	@Override

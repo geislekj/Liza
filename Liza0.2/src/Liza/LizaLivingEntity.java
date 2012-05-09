@@ -13,12 +13,20 @@ import org.bukkit.entity.LivingEntity;
  */
 public interface LizaLivingEntity extends LivingEntity{
 
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
+	 */
 	List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent,
 			int maxDistance);
 
+	/**
+	 * @param transparent
+	 * @param maxDistance
+	 * @return The result of getLineOfSight, but as LizaBlocks.
+	 */
 	List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent,
 			int maxDistance);
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }
