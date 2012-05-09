@@ -1,7 +1,5 @@
 package Liza;
 
-import java.util.List;
-
 import org.bukkit.entity.Fireball;
 
 /**
@@ -11,7 +9,5 @@ import org.bukkit.entity.Fireball;
  * @author collinbc
  */
 public interface LizaFireball extends Fireball {
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }

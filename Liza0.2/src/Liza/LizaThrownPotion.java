@@ -12,6 +12,4 @@ import org.bukkit.entity.ThrownPotion;
  */
 public interface LizaThrownPotion extends ThrownPotion {
 
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
-
 }
