@@ -34,6 +34,7 @@ public class LizaCraftItem extends LizaCraftEntity implements LizaItem{
 		super(item);
 	}
 	
+	@Override
 	public Item getBukkitHandle() {
 		return (Item)this.entity;
 	}

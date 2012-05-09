@@ -41,6 +41,7 @@ public class LizaCraftArrow extends LizaCraftProjectile implements LizaArrow{
 		super(arrow);
 	}
 
+	@Override
 	public Arrow getBukkitHandle(){
 		return (Arrow)this.entity;
 	}
