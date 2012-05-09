@@ -1,5 +1,6 @@
 package LizaCraft.Entity;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.UUID;
@@ -8,10 +9,17 @@ import org.bukkit.EntityEffect;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.craftbukkit.entity.CraftAnimals;
+import org.bukkit.entity.Animals;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Projectile;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
 import Liza.LizaAnimals;
@@ -45,7 +53,62 @@ public class LizaCraftAnimals implements LizaAnimals {
 	public LizaCraftAnimals(CraftAnimals animal) {
 		this.animal = animal;
 	}
+	
+	@Override
+	public Animals getBukkitAnimals() {
+		return this.animal;
+	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent, maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
+		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
+				maxDistance);
+		List<LizaBlock> lbl;
+
+		for(Block b : bl) {
+			bl.remove(b);
+			LizaBlock lb = new LizaCraftBlock(b);
+			bl.add(lb);
+		}
+		lbl = (List) bl;
+		
+		return lbl;
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
+		List<Entity> el = this.animal.getNearbyEntities(x, y, z);
+		List<LizaEntity> lel;
+
+		for(Entity e : el) {
+			el.remove(e);
+			LizaEntity le = new LizaCraftEntity(e);
+			el.add(le);
+		}
+		lel = (List) el;
+		
+		return lel;
+	}
+
+	
 	@Override
 	public boolean canBreed() {
 		return this.animal.canBreed();
@@ -203,11 +266,6 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	@Override
-	public LizaVehicle getVehicle() {
-		return new LizaCraftVehicle(this.animal.getVehicle());
-	}
-
-	@Override
 	public boolean isInsideVehicle() {
 		return this.animal.isInsideVehicle();
 	}
@@ -251,23 +309,23 @@ public class LizaCraftAnimals implements LizaAnimals {
 	}
 
 	@Override
+	@Deprecated
 	public LizaArrow shootArrow() {
 		return new LizaCraftArrow(this.animal.shootArrow());
 	}
 
 	@Override
+	@Deprecated
 	public LizaEgg throwEgg() {
 		return new LizaCraftEgg(this.animal.throwEgg());
 	}
 
 	@Override
+	@Deprecated
 	public LizaSnowball throwSnowball() {
 		return new LizaCraftSnowball(this.animal.throwSnowball());
 	}
 
-	/**
-	 * This method performs an action and returns a value.
-	 */
 	@Override
 	public boolean eject() {
 		return this.animal.eject();
@@ -439,71 +497,68 @@ public class LizaCraftAnimals implements LizaAnimals {
 		return this.animal.teleport(destination, cause);
 	}
 
-	/**
-	 * @param transparent
-	 * @param maxDistance
-	 * @return The result of getLastTwoTargetBlocks, but as LizaBlocks.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
-	public List<LizaBlock> getLastTwoTargetLizaBlocks(HashSet<Byte> transparent, int maxDistance) {
-		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent, maxDistance);
-		List<LizaBlock> lbl;
-
-		for(Block b : bl) {
-			bl.remove(b);
-			LizaBlock lb = new LizaCraftBlock(b);
-			bl.add(lb);
-		}
-		lbl = (List) bl;
-		
-		return lbl;
+	public boolean addPotionEffect(PotionEffect effect) {
+		return this.animal.addPotionEffect(effect);
 	}
-	
-	/**
-	 * @param transparent
-	 * @param maxDistance
-	 * @return The result of getLineOfSight, but as LizaBlocks.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
-	public List<LizaBlock> getLineOfSightLiza(HashSet<Byte> transparent, int maxDistance) {
-		List<Block> bl = this.animal.getLastTwoTargetBlocks(transparent,
-				maxDistance);
-		List<LizaBlock> lbl;
 
-		for(Block b : bl) {
-			bl.remove(b);
-			LizaBlock lb = new LizaCraftBlock(b);
-			bl.add(lb);
-		}
-		lbl = (List) bl;
-		
-		return lbl;
+	@Override
+	public boolean addPotionEffect(PotionEffect effect, boolean force) {
+		return this.animal.addPotionEffect(effect, force);
 	}
-	
-	/**
-	 * @param x
-	 *            Size of the box along x axis
-	 * @param y
-	 *            Size of the box along y axis
-	 * @param z
-	 *            Size of the box along z axis
-	 * @return The result of getNearbyEntities, but as LizaEntities.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
-	public List<LizaEntity> getNearbyLizaEntities(double x, double y, double z) {
-		List<Entity> el = this.animal.getNearbyEntities(x, y, z);
-		List<LizaEntity> lel;
 
-		for(Entity e : el) {
-			el.remove(e);
-			LizaEntity le = new LizaCraftEntity(e);
-			el.add(le);
-		}
-		lel = (List) el;
-		
-		return lel;
+	@Override
+	public boolean addPotionEffects(Collection<PotionEffect> effects) {
+		return this.animal.addPotionEffects(effects);
+	}
+
+	@Override
+	public Collection<PotionEffect> getActivePotionEffects() {
+		return this.animal.getActivePotionEffects();
+	}
+
+	@Override
+	public boolean hasPotionEffect(PotionEffectType type) {
+		return this.animal.hasPotionEffect(type);
+	}
+
+	@Override
+	public <T extends Projectile> T launchProjectile(Class<? extends T> projectile) {
+		return this.animal.launchProjectile(projectile);
+	}
+
+	@Override
+	public void removePotionEffect(PotionEffectType type) {
+		this.removePotionEffect(type);
+	}
+
+	@Override
+	public EntityType getType() {
+		return this.animal.getType();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.animal.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.animal.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin owningPlugin) {
+		this.animal.removeMetadata(metadataKey, owningPlugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
+		this.animal.setMetadata(metadataKey, newMetadataValue);
+	}
+
+	@Override
+	public Entity getVehicle() {
+		return this.animal.getVehicle();
 	}
 }
