@@ -12,9 +12,10 @@ import org.bukkit.block.Block;
 public interface LizaBlock extends Block {
 
 	/**
-	 * Asserts Block Type
-	 * @param type
-	 * @return boolean
+	 * Returns the Bukkit interface for this Block
+	 * 
+	 * @return the Block Bukkit interface
 	 */
-	public boolean assertBlockType(Material type);
+	public Block getBukkitBlock();
+	
 }

@@ -2,6 +2,7 @@ package LizaCraft.Block;
 
 //Bukkit Imports
 import java.util.Collection;
+import java.util.List;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;
@@ -13,14 +14,15 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.PistonMoveReaction;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.metadata.MetadataValue;
+import org.bukkit.plugin.Plugin;
 
 //Liza Imports
 import Liza.LizaBlock;
 
 /**
- *  LizeCraftBlock is the Liza block representation of
- *  the Bukkit block class.
- *  
+ * LizeCraftBlock is the Liza block representation of the Bukkit block class.
+ * 
  * @author kimsj; geislekj
  */
 public class LizaCraftBlock implements LizaBlock {
@@ -29,14 +31,16 @@ public class LizaCraftBlock implements LizaBlock {
 	/**
 	 * LizaCraftBlock Constructor
 	 * 
-	 * @param block This is a Bukkit Block 
+	 * @param block
+	 *            This is a Bukkit Block
 	 */
 	public LizaCraftBlock(Block block) {
 		this.block = block;
 	}
 
-	public boolean assertBlockType(Material type) {
-		return this.getType().equals(type);
+	@Override
+	public Block getBukkitBlock() {
+		return this.block;
 	}
 
 	@Override
@@ -50,8 +54,8 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public int getBlockPower(BlockFace arg0) {
-		return this.block.getBlockPower(arg0);
+	public int getBlockPower(BlockFace face) {
+		return this.block.getBlockPower(face);
 	}
 
 	@Override
@@ -65,19 +69,8 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	@Deprecated
-	public Block getFace(BlockFace arg0) {
-		return new LizaCraftBlock(this.block.getFace(arg0));
-	}
-
-	@Override
-	public BlockFace getFace(Block arg0) {
-		return this.block.getFace(arg0);
-	}
-
-	@Override
-	public Block getFace(BlockFace arg0, int arg1) {
-		return this.block.getFace(arg0, arg1); 
+	public BlockFace getFace(Block block) {
+		return this.block.getFace(block);
 	}
 
 	@Override
@@ -101,18 +94,18 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public Block getRelative(BlockFace arg0) {
-		return this.block.getRelative(arg0); 
+	public Block getRelative(BlockFace face) {
+		return this.block.getRelative(face);
 	}
 
 	@Override
-	public Block getRelative(BlockFace arg0, int arg1) {
-		return this.block.getRelative(arg0, arg1); 
+	public Block getRelative(BlockFace face, int distance) {
+		return this.block.getRelative(face, distance);
 	}
 
 	@Override
-	public Block getRelative(int arg0, int arg1, int arg2) {
-		return this.block.getRelative(arg0, arg1, arg2); 
+	public Block getRelative(int modX, int modY, int modZ) {
+		return this.block.getRelative(modX, modY, modZ);
 	}
 
 	@Override
@@ -122,7 +115,7 @@ public class LizaCraftBlock implements LizaBlock {
 
 	@Override
 	public double getTemperature() {
-		return this.block.getTemperature(); 
+		return this.block.getTemperature();
 	}
 
 	@Override
@@ -156,13 +149,13 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public boolean isBlockFaceIndirectlyPowered(BlockFace arg0) {
-		return this.block.isBlockFaceIndirectlyPowered(arg0);
+	public boolean isBlockFaceIndirectlyPowered(BlockFace face) {
+		return this.block.isBlockFaceIndirectlyPowered(face);
 	}
 
 	@Override
-	public boolean isBlockFacePowered(BlockFace arg0) {
-		return this.block.isBlockFacePowered(arg0); 
+	public boolean isBlockFacePowered(BlockFace face) {
+		return this.block.isBlockFacePowered(face);
 	}
 
 	@Override
@@ -186,33 +179,33 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public void setData(byte arg0) {
-		this.block.setData(arg0);	
+	public void setData(byte data) {
+		this.block.setData(data);
 	}
 
 	@Override
-	public void setData(byte arg0, boolean arg1) {
-		this.block.setData(arg0, arg1);
+	public void setData(byte data, boolean applyPhysics) {
+		this.block.setData(data, applyPhysics);
 	}
 
 	@Override
-	public void setType(Material arg0) {
-		this.block.setType(arg0);
+	public void setType(Material type) {
+		this.block.setType(type);
 	}
 
 	@Override
-	public boolean setTypeId(int arg0) {
-		return this.block.setTypeId(arg0); 
+	public boolean setTypeId(int type) {
+		return this.block.setTypeId(type);
 	}
 
 	@Override
-	public boolean setTypeId(int arg0, boolean arg1) {
-		return this.block.setTypeId(arg0, arg1); 
+	public boolean setTypeId(int type, boolean applyPhysics) {
+		return this.block.setTypeId(type, applyPhysics);
 	}
 
 	@Override
-	public boolean setTypeIdAndData(int arg0, byte arg1, boolean arg2) {
-		return this.block.setTypeIdAndData(arg0, arg1, arg2); 
+	public boolean setTypeIdAndData(int type, byte data, boolean applyPhysics) {
+		return this.block.setTypeIdAndData(type, data, applyPhysics);
 	}
 
 	@Override
@@ -221,8 +214,8 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public boolean breakNaturally(ItemStack arg0) {
-		return this.block.breakNaturally(arg0);
+	public boolean breakNaturally(ItemStack tool) {
+		return this.block.breakNaturally(tool);
 	}
 
 	@Override
@@ -231,8 +224,8 @@ public class LizaCraftBlock implements LizaBlock {
 	}
 
 	@Override
-	public Collection<ItemStack> getDrops(ItemStack arg0) {
-		return this.block.getDrops(arg0);
+	public Collection<ItemStack> getDrops(ItemStack tool) {
+		return this.block.getDrops(tool);
 	}
 
 	@Override
@@ -243,6 +236,26 @@ public class LizaCraftBlock implements LizaBlock {
 	@Override
 	public byte getLightFromSky() {
 		return this.block.getLightFromSky();
+	}
+
+	@Override
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.block.getMetadata(metadataKey);
+	}
+
+	@Override
+	public boolean hasMetadata(String metadataKey) {
+		return this.block.hasMetadata(metadataKey);
+	}
+
+	@Override
+	public void removeMetadata(String metadataKey, Plugin owningPlugin) {
+		this.block.removeMetadata(metadataKey, owningPlugin);
+	}
+
+	@Override
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
+		this.block.setMetadata(metadataKey, newMetadataValue);
 	}
 
 }

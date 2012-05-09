@@ -10,6 +10,6 @@ import org.bukkit.entity.Entity;
  */
 public interface LizaEntity extends Entity{
 
-	Entity getBukkitEntity();
+	public Entity getBukkitEntity();
 	
 }
