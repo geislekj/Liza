@@ -155,7 +155,7 @@ public class TestGetLizaEntityRange {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
 		
 		for (LizaEntity entity : entities) {
-			assertFalse(this.farEntities.contains(entity.getBukkitEntity()));
+			assertFalse(this.farEntities.contains(entity.getBukkitHandle()));
 		}
 	}
 	
@@ -164,7 +164,7 @@ public class TestGetLizaEntityRange {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
 		
 		for (LizaEntity entity : entities) {
-			assertTrue(this.nearEntities.contains(entity.getBukkitEntity()));
+			assertTrue(this.nearEntities.contains(entity.getBukkitHandle()));
 		}
 		
 		assertEquals(this.nearEntities.size(), entities.size());

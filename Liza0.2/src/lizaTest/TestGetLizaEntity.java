@@ -78,7 +78,7 @@ public class TestGetLizaEntity {
 		List<LizaEntity> entities = world.getLizaEntities();
 		
 		for (int i=0; i<this.entityList.size(); i++) {
-			assertSame(this.entityList.get(i), entities.get(i).getBukkitEntity());
+			assertSame(this.entityList.get(i), entities.get(i).getBukkitHandle());
 		}
 	}
 	

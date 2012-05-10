@@ -42,8 +42,7 @@ public class LizaCraftComplexLivingEntity extends LizaCraftLivingEntity implemen
 	}
 
 	@Override
-	@Deprecated
 	public Set<ComplexEntityPart> getParts() {
-		return this.cle.getParts();
+		return this.getBukkitHandle().getParts();
 	}
 }
