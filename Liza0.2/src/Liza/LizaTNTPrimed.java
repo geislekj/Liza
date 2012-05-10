@@ -1,7 +1,5 @@
 package Liza;
 
-import java.util.List;
-
 import org.bukkit.entity.TNTPrimed;
 
 /**
@@ -11,7 +9,5 @@ import org.bukkit.entity.TNTPrimed;
  * @author collinbc
  */
 public interface LizaTNTPrimed extends TNTPrimed {
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }

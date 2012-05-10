@@ -1,8 +1,5 @@
 package Liza;
 
-import java.util.HashSet;
-import java.util.List;
-
 import org.bukkit.entity.Chicken;
 
 /**

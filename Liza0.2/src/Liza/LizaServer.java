@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Liza;
 
 import org.bukkit.Server;

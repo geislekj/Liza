@@ -1,7 +1,5 @@
 package Liza;
 
-import java.util.List;
-
 import org.bukkit.entity.Snowball;
 
 /**
@@ -11,7 +9,5 @@ import org.bukkit.entity.Snowball;
  * @author collinbc
  */
 public interface LizaSnowball extends Snowball {
-
-	List<LizaEntity> getNearbyLizaEntities(double x, double y, double z);
 
 }
