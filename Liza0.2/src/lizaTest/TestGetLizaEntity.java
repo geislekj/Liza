@@ -23,14 +23,30 @@ import LizaCraft.LizaCraftTestModule;
 import LizaCraft.LizaCraftWorld;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TestGetLizaEntity.
+ */
 public class TestGetLizaEntity {
 	
+	/** The mock test module. */
 	private LizaCraftTestModule mockTestModule;
+	
+	/** The mock server. */
 	private LizaServer mockServer;
+	
+	/** The liza world. */
 	private LizaWorld lizaWorld;
+	
+	/** The mock world. */
 	private World mockWorld;
+	
+	/** The entity list. */
 	private List<Entity> entityList = new ArrayList<Entity>();
 	
+	/**
+	 * Sets the up.
+	 */
 	@Before
 	public void setUp() {
 		this.mockTestModule = Mockito.mock(LizaCraftTestModule.class);
@@ -46,6 +62,9 @@ public class TestGetLizaEntity {
 		when(this.mockWorld.getEntities()).thenReturn(this.entityList);
 	}
 	
+	/**
+	 * Populate array.
+	 */
 	private void populateArray() {
 		Pig pig = null;
 		Villager testificate = null;
@@ -56,6 +75,9 @@ public class TestGetLizaEntity {
 		this.entityList.add(creeper);
 	}
 	
+	/**
+	 * Test get liza entities does not return null.
+	 */
 	@Test
 	public void testGetLizaEntitiesDoesNotReturnNull() {
 		LizaWorld world = this.mockTestModule.getServer().getWorld("World");
@@ -64,6 +86,9 @@ public class TestGetLizaEntity {
 		assertNotNull(entities);
 	}
 	
+	/**
+	 * Test get liza entities does not return empty list.
+	 */
 	@Test
 	public void testGetLizaEntitiesDoesNotReturnEmptyList() {
 		LizaWorld world = this.mockTestModule.getServer().getWorld("World");
@@ -72,6 +97,9 @@ public class TestGetLizaEntity {
 		assertTrue(entities.size() > 0);
 	}
 	
+	/**
+	 * Test get liza entities returns correct list.
+	 */
 	@Test
 	public void testGetLizaEntitiesReturnsCorrectList() {
 		LizaWorld world = this.mockTestModule.getServer().getWorld("World");

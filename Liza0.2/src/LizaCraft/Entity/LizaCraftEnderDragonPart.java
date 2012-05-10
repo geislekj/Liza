@@ -5,6 +5,7 @@ import org.bukkit.entity.EnderDragonPart;
 import Liza.LizaEnderDragon;
 import Liza.LizaEnderDragonPart;
 
+// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftEnderDragonPart is the Liza entity representation of
  *  the Bukkit EnderDragonPart class.
@@ -14,19 +15,25 @@ import Liza.LizaEnderDragonPart;
 public class LizaCraftEnderDragonPart extends LizaCraftComplexEntityPart implements LizaEnderDragonPart {
 	
 	/**
-	 * LizaCraftEnderDragonPart Constructor
-	 * 
+	 * LizaCraftEnderDragonPart Constructor.
+	 *
 	 * @param part A Bukkit EnderDragonPart
 	 */
 	public LizaCraftEnderDragonPart(EnderDragonPart part) {
 		super(part);
 	}
 	
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftComplexEntityPart#getBukkitHandle()
+	 */
 	@Override
 	public EnderDragonPart getBukkitHandle() {
 		return (EnderDragonPart) this.entity;
 	}
 
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftComplexEntityPart#getParent()
+	 */
 	@Override
 	public LizaEnderDragon getParent() {
 		return new LizaCraftEnderDragon(this.getBukkitHandle().getParent());

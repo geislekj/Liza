@@ -7,11 +7,23 @@ import net.minecraft.server.ThreadServerApplication;
 
 import org.bukkit.craftbukkit.CraftServer;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ServerGrabber.
+ */
 public class ServerGrabber {
 
+	/** The Constant MINECRAFT_SERVER_THREAD_NAME. */
 	private static final String MINECRAFT_SERVER_THREAD_NAME = "Server thread";
+	
+	/** The Constant MINECRAFT_SERVER_FIELD_NAME. */
 	private static final String MINECRAFT_SERVER_FIELD_NAME = "a";
 
+	/**
+	 * Search threads.
+	 *
+	 * @return the craft server
+	 */
 	protected CraftServer searchThreads() {
 
 		Thread[] threads;
@@ -28,6 +40,12 @@ public class ServerGrabber {
 		return minecraftServer.server;
 	}
 
+	/**
+	 * Gets the minecraft server.
+	 *
+	 * @param serverThread the server thread
+	 * @return the minecraft server
+	 */
 	private MinecraftServer getMinecraftServer(ThreadServerApplication serverThread) {
 		Class<? extends ThreadServerApplication> serverThreadClass = serverThread.getClass();
 		Field minecraftServerField;
@@ -45,6 +63,12 @@ public class ServerGrabber {
 		return minecraftServer;
 	}
 
+	/**
+	 * Gets the thread server application.
+	 *
+	 * @param threads the threads
+	 * @return the thread server application
+	 */
 	private ThreadServerApplication getThreadServerApplication(Thread[] threads) {
 
 		ThreadServerApplication serverThread = null;
@@ -59,6 +83,11 @@ public class ServerGrabber {
 		return serverThread;
 	}
 
+	/**
+	 * Gets the threads.
+	 *
+	 * @return the threads
+	 */
 	private Thread[] getThreads() {
 
 		ThreadGroup rootGroup = Thread.currentThread().getThreadGroup();

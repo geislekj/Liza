@@ -4,6 +4,7 @@ import org.bukkit.entity.FallingSand;
 
 import Liza.LizaFallingSand;
 
+// TODO: Auto-generated Javadoc
 /**
  * LizeCraftFallingSand is the Liza entity representation of the Bukkit
  * FallingSand class.
@@ -12,16 +13,19 @@ import Liza.LizaFallingSand;
  */
 public class LizaCraftFallingSand extends LizaCraftEntity implements
 		LizaFallingSand {
+	
 	/**
-	 * LizaCraftFallingSand Constructor
-	 * 
-	 * @param fallingSand
-	 *            This is a Bukkit FallingSand entity
+	 * LizaCraftFallingSand Constructor.
+	 *
+	 * @param fallingSand This is a Bukkit FallingSand entity
 	 */
 	public LizaCraftFallingSand(FallingSand fallingSand) {
 		super(fallingSand);
 	}
 
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftEntity#getBukkitHandle()
+	 */
 	@Override
 	public FallingSand getBukkitHandle() {
 		return (FallingSand) this.entity;

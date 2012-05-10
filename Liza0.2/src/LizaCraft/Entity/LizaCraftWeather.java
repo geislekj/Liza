@@ -4,6 +4,7 @@ import org.bukkit.entity.Weather;
 
 import Liza.LizaWeather;
 
+// TODO: Auto-generated Javadoc
 /**
  * LizeCraftWeather is the Liza entity representation of the Bukkit weather
  * class.
@@ -11,16 +12,19 @@ import Liza.LizaWeather;
  * @author geislekj
  */
 public class LizaCraftWeather extends LizaCraftEntity implements LizaWeather {
+	
 	/**
-	 * LizaCraftWeather Constructor
-	 * 
-	 * @param weather
-	 *            This is a Bukkit weather entity
+	 * LizaCraftWeather Constructor.
+	 *
+	 * @param weather This is a Bukkit weather entity
 	 */
 	public LizaCraftWeather(Weather weather) {
 		super(weather);
 	}
 
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftEntity#getBukkitHandle()
+	 */
 	@Override
 	public Weather getBukkitHandle() {
 		return (Weather) this.entity;

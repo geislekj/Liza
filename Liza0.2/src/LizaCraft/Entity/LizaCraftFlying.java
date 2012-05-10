@@ -4,6 +4,7 @@ import org.bukkit.entity.Flying;
 
 import Liza.LizaFlying;
 
+// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftFlying is the Liza entity representation of
  *  the Bukkit Flying class.
@@ -11,15 +12,19 @@ import Liza.LizaFlying;
  *  @author collinbc
  */
 public class LizaCraftFlying extends LizaCraftLivingEntity implements LizaFlying {
+	
 	/**
-	 * LizaCraftFlying Constructor
-	 * 
+	 * LizaCraftFlying Constructor.
+	 *
 	 * @param flying A Bukkit Flying
 	 */
 	public LizaCraftFlying(Flying flying) {
 		super(flying);
 	}
 	
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftLivingEntity#getBukkitHandle()
+	 */
 	@Override
 	public Flying getBukkitHandle() {
 		return (Flying)this.entity;

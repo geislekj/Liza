@@ -31,34 +31,75 @@ import Liza.LizaWorld;
 import LizaCraft.LizaCraftWorld;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TestGetLizaEntityRange.
+ */
 public class TestGetLizaEntityRange {
 
+	/** The liza world. */
 	private LizaWorld lizaWorld;
+	
+	/** The mock mc world. */
 	private World mockMCWorld;
 	
+	/** The RADIUS. */
 	private static int RADIUS = 15;
 	
+	/** The arrow. */
 	private Arrow arrow;
+	
+	/** The boat. */
 	private Boat boat;
+	
+	/** The chicken. */
 	private Chicken chicken;
+	
+	/** The egg. */
 	private Egg egg;
+	
+	/** The xp orb. */
 	private ExperienceOrb xpOrb;
+	
+	/** The testificate. */
 	private Villager testificate;
+	
+	/** The potion. */
 	private ThrownPotion potion;
+	
+	/** The ghast. */
 	private Ghast ghast;
+	
+	/** The fish. */
 	private Fish fish;
+	
+	/** The fireball. */
 	private Fireball fireball;
+	
+	/** The giant. */
 	private Giant giant;
+	
+	/** The tnt. */
 	private TNTPrimed tnt;
+	
+	/** The snowball. */
 	private Snowball snowball;
 	
+	/** The ref point. */
 	private Location refPoint;
 	
+	/** The entity list. */
 	private List<Entity> entityList = new ArrayList<Entity>();
 	
+	/** The far entities. */
 	private List<Entity> farEntities = new ArrayList<Entity>();
+	
+	/** The near entities. */
 	private List<Entity> nearEntities = new ArrayList<Entity>();
 	
+	/**
+	 * Sets the up.
+	 */
 	@Before
 	public void setUp() {
 		this.mockMCWorld = Mockito.mock(World.class);
@@ -72,6 +113,9 @@ public class TestGetLizaEntityRange {
 		when(this.mockMCWorld.getEntities()).thenReturn(this.entityList);
 	}
 	
+	/**
+	 * Sets the up mock entities.
+	 */
 	private void setUpMockEntities() {
 		this.arrow = Mockito.mock(Arrow.class);
 		this.boat = Mockito.mock(Boat.class);
@@ -136,6 +180,9 @@ public class TestGetLizaEntityRange {
 		this.nearEntities.add(this.giant);
 	}
 	
+	/**
+	 * Test get liza entities within radius does not return null.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinRadiusDoesNotReturnNull() {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
@@ -143,6 +190,9 @@ public class TestGetLizaEntityRange {
 		assertNotNull(entities);
 	}
 	
+	/**
+	 * Test get liza entities within radius does not return empty.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinRadiusDoesNotReturnEmpty() {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
@@ -150,6 +200,9 @@ public class TestGetLizaEntityRange {
 		assertTrue(entities.size() > 0);
 	}
 	
+	/**
+	 * Test get liza entities within radius does not return entities outside of radius.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinRadiusDoesNotReturnEntitiesOutsideOfRadius() {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
@@ -159,6 +212,9 @@ public class TestGetLizaEntityRange {
 		}
 	}
 	
+	/**
+	 * Test get liza entities within radius returns all entities within radius.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinRadiusReturnsAllEntitiesWithinRadius() {
 		List<LizaEntity> entities = this.lizaWorld.getLizaEntitiesWithinRadius(this.refPoint, RADIUS);
@@ -172,21 +228,33 @@ public class TestGetLizaEntityRange {
 	}
 	
 	
+	/**
+	 * Test get liza entities within box does not return null.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinBoxDoesNotReturnNull() {
 		
 	}
 	
+	/**
+	 * Test get liza entities within box does not return empty.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinBoxDoesNotReturnEmpty() {
 		
 	}
 	
+	/**
+	 * Test get liza entities within box does not return entities outside of box.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinBoxDoesNotReturnEntitiesOutsideOfBox() {
 		
 	}
 	
+	/**
+	 * Test get liza entities within box returns all entities within box.
+	 */
 	@Test
 	public void testGetLizaEntitiesWithinBoxReturnsAllEntitiesWithinBox() {
 		

@@ -16,20 +16,43 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import Liza.LizaServer;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class EventEnabler.
+ */
 public class EventEnabler {
 
+	/** The Constant PLUGIN_MANAGER_LIST_NAME. */
 	private static final String PLUGIN_MANAGER_LIST_NAME = "plugins";
+	
+	/** The Constant PLUGIN_MANAGER_FILE_ASSOCIATION_MAP. */
 	private static final String PLUGIN_MANAGER_FILE_ASSOCIATION_MAP = "fileAssociations";
 
+	/** The Constant PLUGIN_ENABLED_FIELD_NAME. */
 	private static final String PLUGIN_ENABLED_FIELD_NAME = "isEnabled";
+	
+	/** The Constant PLUGIN_SERVER_FIELD_NAME. */
 	private static final String PLUGIN_SERVER_FIELD_NAME = "server";
+	
+	/** The Constant PLUGIN_LOADER_FIELD_NAME. */
 	private static final String PLUGIN_LOADER_FIELD_NAME = "loader";
+	
+	/** The Constant PLUGIN_DESCRIPTION_FIELD_NAME. */
 	private static final String PLUGIN_DESCRIPTION_FIELD_NAME = "description";
+	
+	/** The Constant PLUGIN_LOOKUP_FIELD_NAME. */
 	private static final String PLUGIN_LOOKUP_FIELD_NAME = "lookupNames";
 
+	/** The Constant PLUGIN_EXTENSION. */
 	private static final String PLUGIN_EXTENSION = ".jar";
 
 	
+	/**
+	 * Enable events.
+	 *
+	 * @param server the server
+	 * @param eventListener the event listener
+	 */
 	public void enableEvents(LizaServer server, LizaPlugin eventListener) {
 
 		Class<? extends PluginManager> pluginManager = ((SimplePluginManager) server
@@ -47,6 +70,13 @@ public class EventEnabler {
 		eventListener.onEnable();
 	}
 
+	/**
+	 * Adds the plugin.
+	 *
+	 * @param server the server
+	 * @param eventListener the event listener
+	 * @param pluginManager the plugin manager
+	 */
 	@SuppressWarnings("unchecked")
 	private void addPlugin(LizaServer server, LizaPlugin eventListener,
 			Class<? extends PluginManager> pluginManager) {
@@ -81,6 +111,14 @@ public class EventEnabler {
 		}
 	}
 
+	/**
+	 * Initialize plugin.
+	 *
+	 * @param server the server
+	 * @param eventListener the event listener
+	 * @param pluginLoader the plugin loader
+	 * @param desc the desc
+	 */
 	private void initializePlugin(LizaServer server, LizaPlugin eventListener,
 			PluginLoader pluginLoader, PluginDescriptionFile desc) {
 
@@ -116,6 +154,13 @@ public class EventEnabler {
 		}
 	}
 
+	/**
+	 * Gets the plugin loader.
+	 *
+	 * @param server the server
+	 * @param pluginManager the plugin manager
+	 * @return the plugin loader
+	 */
 	@SuppressWarnings("unchecked")
 	private PluginLoader getPluginLoader(LizaServer server,
 			Class<? extends PluginManager> pluginManager) {

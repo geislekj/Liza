@@ -4,6 +4,7 @@ import org.bukkit.entity.Silverfish;
 
 import Liza.LizaSilverfish;
 
+// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSilverfish is the Liza entity representation of the Bukkit
  * Silverfish class.
@@ -14,15 +15,17 @@ public class LizaCraftSilverfish extends LizaCraftMonster implements
 		LizaSilverfish {
 
 	/**
-	 * LizaCraftSilverfish Constructor
-	 * 
-	 * @param silverfish
-	 *            A Bukkit Silverfish
+	 * LizaCraftSilverfish Constructor.
+	 *
+	 * @param silverfish A Bukkit Silverfish
 	 */
 	public LizaCraftSilverfish(Silverfish silverfish) {
 		super(silverfish);
 	}
 
+	/* (non-Javadoc)
+	 * @see LizaCraft.Entity.LizaCraftMonster#getBukkitHandle()
+	 */
 	@Override
 	public Silverfish getBukkitHandle() {
 		return (Silverfish) this.entity;
