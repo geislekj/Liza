@@ -4,7 +4,6 @@ import org.bukkit.entity.Explosive;
 
 import Liza.LizaExplosive;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftExplosive is the Liza entity representation of the Bukkit Explosive
  * class.

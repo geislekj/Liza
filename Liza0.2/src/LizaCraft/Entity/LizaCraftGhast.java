@@ -4,7 +4,6 @@ import org.bukkit.entity.Ghast;
 
 import Liza.LizaGhast;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftGhast is the Liza entity representation of the Bukkit Ghast class.
  * 

@@ -4,7 +4,6 @@ import org.bukkit.entity.Giant;
 
 import Liza.LizaGiant;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftGiant is the Liza entity representation of
  *  the Bukkit Giant class.

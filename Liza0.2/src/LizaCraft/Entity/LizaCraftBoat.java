@@ -1,23 +1,20 @@
 package LizaCraft.Entity;
 
 import org.bukkit.entity.Boat;
-import org.bukkit.entity.Vehicle;
-
 import Liza.LizaBoat;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftBoat.
  */
 public class LizaCraftBoat extends LizaCraftVehicle implements LizaBoat {
 
 	/**
-	 * Instantiates a new liza craft boat.
+	 * LizaCraftAnimals Constructor.
 	 *
-	 * @param vehicle the vehicle
+	 * @param boat A Bukkit Boat
 	 */
-	public LizaCraftBoat(Vehicle vehicle) {
-		super(vehicle);
+	public LizaCraftBoat(Boat boat) {
+		super(boat);
 	}
 	
 	/* (non-Javadoc)

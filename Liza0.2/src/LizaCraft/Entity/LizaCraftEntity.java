@@ -24,7 +24,6 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.util.Vector;
 
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftEntity is the Liza entity representation of
  *  the Bukkit Entity class.

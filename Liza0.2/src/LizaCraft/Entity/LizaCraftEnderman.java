@@ -4,7 +4,6 @@ import org.bukkit.entity.Enderman;
 import org.bukkit.material.MaterialData;
 import Liza.LizaEnderman;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftEnderman is the Liza entity representation of the Bukkit Enderman
  * class.
@@ -16,7 +15,7 @@ public class LizaCraftEnderman extends LizaCraftMonster implements LizaEnderman 
 	/**
 	 * LizaCraftSpider Constructor.
 	 *
-	 * @param enderman the enderman
+	 * @param enderman A Bukkit Enderman
 	 */
 	public LizaCraftEnderman(Enderman enderman) {
 		super(enderman);

@@ -15,7 +15,7 @@ public class LizaCraftEnderDragon extends LizaCraftComplexLivingEntity implement
 	/**
 	 * LizaCraftEnderDragon Constructor.
 	 *
-	 * @param enderDragon the ender dragon
+	 * @param enderDragon A Bukkit enderDragon
 	 */
 	public LizaCraftEnderDragon(EnderDragon enderDragon) {
 		super(enderDragon);

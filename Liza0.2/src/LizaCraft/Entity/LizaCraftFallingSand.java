@@ -4,7 +4,6 @@ import org.bukkit.entity.FallingSand;
 
 import Liza.LizaFallingSand;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftFallingSand is the Liza entity representation of the Bukkit
  * FallingSand class.

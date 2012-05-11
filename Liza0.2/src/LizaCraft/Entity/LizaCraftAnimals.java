@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Animals;
 import Liza.LizaAnimals;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftAnimals is the Liza entity representation of the Bukkit CraftAnimals
  * class.

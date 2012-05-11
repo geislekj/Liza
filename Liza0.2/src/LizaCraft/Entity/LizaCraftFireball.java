@@ -5,7 +5,6 @@ import org.bukkit.util.Vector;
 
 import Liza.LizaFireball;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftFireball is the Liza entity representation of
  *  the Bukkit Fireball class.

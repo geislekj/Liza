@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.EnderPearl;
 import Liza.LizaEnderPearl;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftEnderPearl is the Liza entity representation of
  *  the Bukkit EnderPearl class.
