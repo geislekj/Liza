@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Creeper;
 import Liza.LizaCreeper;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftCreeper is the Liza entity representation of the Bukkit Creeper
  * class.

@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Fish;
 import Liza.LizaFish;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftFish is the Liza entity representation of the Bukkit Fish class.
  * 

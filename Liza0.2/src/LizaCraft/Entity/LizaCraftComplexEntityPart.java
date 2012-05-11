@@ -5,7 +5,6 @@ import org.bukkit.entity.ComplexLivingEntity;
 
 import Liza.LizaComplexEntityPart;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftComplexEntityPart is the Liza entity representation of the Bukkit
  * ComplexEntityPart class.

@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Blaze;
 import Liza.LizaBlaze;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftBlaze is the Liza entity representation of the Bukkit Blaze class.
  * 

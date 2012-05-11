@@ -8,7 +8,6 @@ import org.bukkit.entity.LivingEntity;
 import Liza.LizaCreature;
 import Liza.LizaLivingEntity;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftCreature is the Liza entity representation of
  *  the Bukkit Creature class.

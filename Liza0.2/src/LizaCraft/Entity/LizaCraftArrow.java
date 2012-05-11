@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Arrow;
 import Liza.LizaArrow;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftArrow is the Liza entity representation of the Bukkit Arrow class.
  * 

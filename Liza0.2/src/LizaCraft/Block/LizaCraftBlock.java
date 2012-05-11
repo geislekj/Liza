@@ -20,7 +20,6 @@ import org.bukkit.plugin.Plugin;
 //Liza Imports
 import Liza.LizaBlock;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftBlock is the Liza block representation of the Bukkit block class.
  * 

@@ -15,14 +15,9 @@ import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.Plugin;
 import Liza.LizaHumanEntity;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftHumanEntity is the Liza HumanEntity representation of
  *  the Bukkit HumanEntity class.
- *  
- *  DONE: Methods that return Bukkit classes that may later be implemented
- *  in Liza should be changed to use those interfaces and classes after
- *  they are created.
  *  
  * @author collinbc
  */

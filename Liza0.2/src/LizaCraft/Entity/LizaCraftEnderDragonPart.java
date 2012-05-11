@@ -5,7 +5,6 @@ import org.bukkit.entity.EnderDragonPart;
 import Liza.LizaEnderDragon;
 import Liza.LizaEnderDragonPart;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftEnderDragonPart is the Liza entity representation of
  *  the Bukkit EnderDragonPart class.
