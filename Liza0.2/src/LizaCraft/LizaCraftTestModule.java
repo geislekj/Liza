@@ -12,7 +12,6 @@ import Liza.LizaServer;
 import LizaCraft.Events.EventEnabler;
 import LizaCraft.Events.LizaPlugin;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftTestModule.
  */
@@ -156,7 +155,7 @@ public class LizaCraftTestModule {
 	 * Spoof event.
 	 * 
 	 * @param e
-	 *            the e
+	 *            the event
 	 */
 	public void spoofEvent(Event e) {
 		this.server.getPluginManager().callEvent(e);
@@ -166,7 +165,7 @@ public class LizaCraftTestModule {
 	 * Load plugin.
 	 * 
 	 * @param file
-	 *            the file
+	 *            the plugin file
 	 * @return the plugin
 	 */
 	public Plugin loadPlugin(File file) {
@@ -190,7 +189,7 @@ public class LizaCraftTestModule {
 	 * Enable plugin.
 	 * 
 	 * @param file
-	 *            the file
+	 *            the plugin file
 	 */
 	public void enablePlugin(File file) {
 		this.enablePlugin(this.plugins.get(file));
@@ -212,7 +211,7 @@ public class LizaCraftTestModule {
 	 * Disable plugin.
 	 * 
 	 * @param file
-	 *            the file
+	 *            the plugin file
 	 */
 	public void disablePlugin(final File file) {
 		Plugin plugin = this.plugins.get(file);

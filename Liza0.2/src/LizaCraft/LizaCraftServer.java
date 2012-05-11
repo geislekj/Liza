@@ -40,7 +40,6 @@ import Liza.LizaWorld;
 
 import com.avaje.ebean.config.ServerConfig;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftServer is the Liza server representation of
  *  the Bukkit Server class.
