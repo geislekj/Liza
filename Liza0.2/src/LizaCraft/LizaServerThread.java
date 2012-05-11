@@ -7,7 +7,6 @@ import java.io.PrintStream;
 
 import org.bukkit.craftbukkit.Main;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaServerThread.
  */

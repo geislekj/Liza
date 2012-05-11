@@ -7,7 +7,6 @@ import net.minecraft.server.ThreadServerApplication;
 
 import org.bukkit.craftbukkit.CraftServer;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class ServerGrabber.
  */
@@ -56,7 +55,6 @@ public class ServerGrabber {
 			minecraftServer = (MinecraftServer) minecraftServerField.get(serverThread);
 			minecraftServerField.setAccessible(false);
 		} catch (Exception e) { // lol
-			// TODO: do some proper exception handling
 			e.printStackTrace();
 		}
 		
