@@ -12,12 +12,10 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-//Bukkit Imports
 import org.bukkit.GameMode;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Server;
 import org.bukkit.World;
-import org.bukkit.World.Environment;
 import org.bukkit.WorldCreator;
 import org.bukkit.command.CommandException;
 import org.bukkit.command.CommandSender;
@@ -25,7 +23,6 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.help.HelpMap;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
@@ -38,12 +35,10 @@ import org.bukkit.plugin.ServicesManager;
 import org.bukkit.plugin.messaging.Messenger;
 import org.bukkit.scheduler.BukkitScheduler;
 
-//Misc Imports
-import com.avaje.ebean.config.ServerConfig;
-
-//Liza Imports
 import Liza.LizaServer;
 import Liza.LizaWorld;
+
+import com.avaje.ebean.config.ServerConfig;
 
 // TODO: Auto-generated Javadoc
 /**

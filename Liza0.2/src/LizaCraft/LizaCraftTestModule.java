@@ -1,44 +1,12 @@
 package LizaCraft;
 
 import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Field;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.SocketAddress;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import net.minecraft.server.EntityPlayer;
-import net.minecraft.server.ItemInWorldManager;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.NetLoginHandler;
-import net.minecraft.server.NetServerHandler;
-import net.minecraft.server.NetworkListenThread;
-import net.minecraft.server.NetworkManager;
-import net.minecraft.server.Packet1Login;
-import net.minecraft.server.ServerConfigurationManager;
-import net.minecraft.server.ThreadServerApplication;
-import net.minecraft.server.WorldServer;
 
 import org.bukkit.Server;
-import org.bukkit.World;
-import org.bukkit.craftbukkit.CraftServer;
-import org.bukkit.craftbukkit.CraftWorld;
 import org.bukkit.event.Event;
-import org.bukkit.plugin.InvalidDescriptionException;
-import org.bukkit.plugin.InvalidPluginException;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.PluginLoader;
-import org.bukkit.plugin.PluginManager;
-import org.bukkit.plugin.SimplePluginManager;
-import org.bukkit.plugin.UnknownDependencyException;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import Liza.LizaServer;
 import LizaCraft.Events.EventEnabler;
@@ -110,7 +78,6 @@ public class LizaCraftTestModule {
 	/**
 	 * Enable listening to events on the server.
 	 */
-	@SuppressWarnings("unchecked")
 	public void enableEvents() {
 		eventEnabler.enableEvents(this.server, this.eventListener);
 	}
