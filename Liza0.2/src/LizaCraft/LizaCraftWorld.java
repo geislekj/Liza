@@ -792,7 +792,7 @@ public class LizaCraftWorld implements LizaWorld{
 	 */
 	@Override
 	@Deprecated
-	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T>... classes) {
+	public <T extends Entity> Collection<T> getEntitiesByClass(@SuppressWarnings("unchecked") Class<T>... classes) {
 		return this.world.getEntitiesByClass(classes);	
 	}
 
