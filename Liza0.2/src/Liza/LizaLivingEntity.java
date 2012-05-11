@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.bukkit.entity.LivingEntity;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaLivingEntity is the Liza interface representation of
  * the Bukkit LivingEntity interface.
@@ -25,7 +24,7 @@ public interface LizaLivingEntity extends LivingEntity{
 			int maxDistance);
 
 	/**
-	 * Gets the line of sight liza.
+	 * Gets the line of sight, liza version.
 	 *
 	 * @param transparent the transparent
 	 * @param maxDistance the max distance

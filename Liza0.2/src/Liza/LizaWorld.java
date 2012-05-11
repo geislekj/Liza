@@ -5,7 +5,6 @@ import java.util.List;
 import org.bukkit.Location;
 import org.bukkit.World;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaWorld is the Liza interface representation of
  *  the Bukkit world interface.

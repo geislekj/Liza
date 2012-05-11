@@ -2,7 +2,6 @@ package Liza;
 
 import org.bukkit.event.Event;
 
-// TODO: Auto-generated Javadoc
 /**
  * The listener interface for receiving liza events.
  * The class that is interested in processing a liza

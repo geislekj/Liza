@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.bukkit.entity.Zombie;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaZombie is the Liza interface representation of
  *  the Bukkit Zombie interface.

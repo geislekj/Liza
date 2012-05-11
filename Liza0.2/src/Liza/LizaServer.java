@@ -2,7 +2,6 @@ package Liza;
 
 import org.bukkit.Server;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaServer is the Liza interface representation of
  *  the Bukkit Server interface.
