@@ -2,7 +2,6 @@ package Liza;
 
 import org.bukkit.block.Block;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaBlock is the Liza interface representation of
  * the Bukkit Block interface.

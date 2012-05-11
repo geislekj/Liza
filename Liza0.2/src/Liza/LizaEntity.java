@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.bukkit.entity.Entity;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaEntity is the Liza interface representation of
  *  the Bukkit entity interface.
@@ -14,14 +13,14 @@ import org.bukkit.entity.Entity;
 public interface LizaEntity extends Entity{
 
 	/**
-	 * Gets the bukkit handle.
+	 * Gets the Bukkit Entity handle for this wrapper class.
 	 *
-	 * @return the bukkit handle
+	 * @return the Bukkit Entity
 	 */
 	public Entity getBukkitHandle();
 
 	/**
-	 * Gets the nearby liza entities.
+	 * Gets the nearby Liza entities.
 	 *
 	 * @param x Size of the box along x axis
 	 * @param y Size of the box along y axis

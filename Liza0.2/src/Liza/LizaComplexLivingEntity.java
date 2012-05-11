@@ -4,7 +4,6 @@ import java.util.Set;
 
 import org.bukkit.entity.ComplexLivingEntity;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaComplexLivingEntity is the Liza interface representation of
  *  the Bukkit ComplexLivingEntity interface.
@@ -14,7 +13,7 @@ import org.bukkit.entity.ComplexLivingEntity;
 public interface LizaComplexLivingEntity extends ComplexLivingEntity {
 
 	/**
-	 * Gets the parts liza.
+	 * Gets the parts as Liza objects.
 	 *
 	 * @return the parts of this entity as liza objects
 	 */
