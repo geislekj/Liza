@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.SmallFireball;
 import Liza.LizaSmallFireball;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSmallFireball is the Liza entity representation of the Bukkit
  * SmallFireball class.

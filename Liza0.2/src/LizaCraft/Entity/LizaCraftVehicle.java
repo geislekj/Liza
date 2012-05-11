@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Vehicle;
 import Liza.LizaVehicle;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftVehicle is the Liza entity representation of
  *  the Bukkit Vehicle class.

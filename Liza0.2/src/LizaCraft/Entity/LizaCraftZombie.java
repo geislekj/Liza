@@ -4,7 +4,6 @@ import org.bukkit.entity.Zombie;
 
 import Liza.LizaZombie;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftZombie is the Liza entity representation of the Bukkit Zombie class.
  * 

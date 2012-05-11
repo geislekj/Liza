@@ -5,7 +5,6 @@ import org.bukkit.inventory.ItemStack;
 
 import Liza.LizaItem;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftItem is the Liza entity representation of the Bukkit Item class.
  * 

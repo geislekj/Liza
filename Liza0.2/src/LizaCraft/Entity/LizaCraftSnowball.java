@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Snowball;
 import Liza.LizaSnowball;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftSnowball is the Liza entity representation of
  *  the Bukkit Snowball class.

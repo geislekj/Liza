@@ -4,7 +4,6 @@ import org.bukkit.entity.NPC;
 
 import Liza.LizaNPC;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftnpc is the Liza entity representation of the Bukkit npc class.
  * 

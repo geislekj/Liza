@@ -16,7 +16,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import Liza.LizaServer;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class EventEnabler.
  */
@@ -91,7 +90,6 @@ public class EventEnabler {
 			pluginList.set(server.getPluginManager(), plugins);
 			pluginList.setAccessible(false);
 		} catch (Exception e) {
-			// TODO
 			e.printStackTrace();
 		}
 
@@ -106,7 +104,6 @@ public class EventEnabler {
 			lookupMap.set(server.getPluginManager(), lookupNames);
 			lookupMap.setAccessible(false);
 		} catch (Exception e) {
-			// TODO
 			e.printStackTrace();
 		}
 	}
@@ -149,7 +146,6 @@ public class EventEnabler {
 			descriptionField.set(eventListener, desc);
 			descriptionField.setAccessible(false);
 		} catch (Exception e) {
-			// TODO
 			e.printStackTrace();
 		}
 	}
@@ -181,7 +177,6 @@ public class EventEnabler {
 			}
 			pluginManagerMap.setAccessible(false);
 		} catch (Exception e) {
-			// TODO: Proper exception handling
 			e.printStackTrace();
 		}
 		return pluginLoader;

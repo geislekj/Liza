@@ -6,7 +6,6 @@ import org.bukkit.entity.Painting;
 
 import Liza.LizaPainting;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftPainting is the Liza entity representation of the Bukkit Painting
  * class.

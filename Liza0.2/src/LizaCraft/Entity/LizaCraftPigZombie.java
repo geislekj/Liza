@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.PigZombie;
 import Liza.LizaPigZombie;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftPigZombie is the Liza entity representation of
  *  the Bukkit PigZombie class.

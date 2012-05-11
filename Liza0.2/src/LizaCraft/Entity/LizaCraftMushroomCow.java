@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.MushroomCow;
 import Liza.LizaMushroomCow;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftMushroomCow is the Liza entity representation of the Bukkit
  * MushroomCow class.

@@ -4,7 +4,6 @@ import org.bukkit.entity.Weather;
 
 import Liza.LizaWeather;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizeCraftWeather is the Liza entity representation of the Bukkit weather
  * class.

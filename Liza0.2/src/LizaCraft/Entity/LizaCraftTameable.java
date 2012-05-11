@@ -5,7 +5,6 @@ import org.bukkit.entity.Tameable;
 
 import Liza.LizaTameable;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftTameable is the Liza entity representation of
  *  the Bukkit Tameable class.
@@ -14,7 +13,7 @@ import Liza.LizaTameable;
  */
 public class LizaCraftTameable implements LizaTameable {
 	
-	/** The tameable. */
+	/** The tameable entity. */
 	private Tameable tameable;
 	
 	/**
@@ -27,7 +26,6 @@ public class LizaCraftTameable implements LizaTameable {
 	}
 
 	/**
-	 * TODO: Change once LizaCraftAnimalTamer is implemented.
 	 *
 	 * @return the owner
 	 */

@@ -17,7 +17,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import Liza.LizaListener;
 import LizaCraft.LizaCraftTestModule;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaPlugin.
  */

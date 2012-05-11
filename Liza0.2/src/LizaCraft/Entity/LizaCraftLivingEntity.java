@@ -20,7 +20,6 @@ import Liza.LizaPlayer;
 import Liza.LizaSnowball;
 import LizaCraft.Block.LizaCraftBlock;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftLivingEntity is the Liza entity representation of
  *  the Bukkit LivingEntity class.

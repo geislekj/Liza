@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Slime;
 import Liza.LizaSlime;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftSlime is the Liza entity representation of
  *  the Bukkit Slime class.

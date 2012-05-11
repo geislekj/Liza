@@ -9,7 +9,6 @@ import org.bukkit.entity.Projectile;
 import Liza.LizaLivingEntity;
 import Liza.LizaProjectile;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftProjectile is the Liza entity representation of
  *  the Bukkit Projectile class.

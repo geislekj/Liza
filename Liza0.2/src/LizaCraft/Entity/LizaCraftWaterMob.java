@@ -4,7 +4,6 @@ import org.bukkit.entity.WaterMob;
 
 import Liza.LizaWaterMob;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftWaterMob is the Liza entity representation of the Bukkit WaterMob
  * class.

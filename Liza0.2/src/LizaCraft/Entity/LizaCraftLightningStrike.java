@@ -4,7 +4,6 @@ import org.bukkit.entity.LightningStrike;
 
 import Liza.LizaLightningStrike;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftLightningStrike.
  */
@@ -13,7 +12,7 @@ public class LizaCraftLightningStrike extends LizaCraftWeather implements LizaLi
 	/**
 	 * Instantiates a new liza craft lightning strike.
 	 *
-	 * @param lightning the lightning
+	 * @param lightning a lightning
 	 */
 	public LizaCraftLightningStrike(LightningStrike lightning) {
 		super(lightning);

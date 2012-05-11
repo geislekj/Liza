@@ -5,7 +5,6 @@ import org.bukkit.util.Vector;
 
 import Liza.LizaMinecart;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftMinecart.
  */
@@ -14,7 +13,7 @@ public class LizaCraftMinecart extends LizaCraftVehicle implements LizaMinecart 
 	/**
 	 * Instantiates a new liza craft minecart.
 	 *
-	 * @param minecart the minecart
+	 * @param minecart a minecart
 	 */
 	public LizaCraftMinecart(Minecart minecart){
 		super(minecart);

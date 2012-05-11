@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Monster;
 import Liza.LizaMonster;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizaCraftMonster is the Liza entity representation of
  *  the Bukkit Monster class.

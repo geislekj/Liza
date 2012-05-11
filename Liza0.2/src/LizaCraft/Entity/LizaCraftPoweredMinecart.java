@@ -5,7 +5,6 @@ import org.bukkit.entity.PoweredMinecart;
 
 import Liza.LizaPoweredMinecart;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftPoweredMinecart.
  */

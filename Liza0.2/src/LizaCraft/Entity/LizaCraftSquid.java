@@ -4,7 +4,6 @@ import org.bukkit.entity.Squid;
 
 import Liza.LizaSquid;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSquid is the Liza entity representation of the Bukkit Squid class.
  * 

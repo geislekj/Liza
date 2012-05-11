@@ -4,7 +4,6 @@ import org.bukkit.entity.MagmaCube;
 
 import Liza.LizaMagmaCube;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftMagmaCube is the Liza entity representation of the Bukkit MagmaCube
  * class.

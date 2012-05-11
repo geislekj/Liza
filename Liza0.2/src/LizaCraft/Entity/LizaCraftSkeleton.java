@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Skeleton;
 import Liza.LizaSkeleton;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSkeleton is the Liza entity representation of the Bukkit Skeleton
  * class.

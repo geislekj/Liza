@@ -5,7 +5,6 @@ import org.bukkit.entity.Wolf;
 
 import Liza.LizaWolf;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftWolf is the Liza entity representation of the Bukkit CraftWolf
  * class.

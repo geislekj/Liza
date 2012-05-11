@@ -4,7 +4,6 @@ import org.bukkit.entity.Villager;
 
 import Liza.LizaVillager;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftVillager is the Liza entity representation of the Bukkit Villager
  * class.

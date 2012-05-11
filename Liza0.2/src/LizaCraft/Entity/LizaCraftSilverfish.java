@@ -4,7 +4,6 @@ import org.bukkit.entity.Silverfish;
 
 import Liza.LizaSilverfish;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSilverfish is the Liza entity representation of the Bukkit
  * Silverfish class.

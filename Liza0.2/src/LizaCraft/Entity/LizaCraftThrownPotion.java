@@ -7,7 +7,6 @@ import org.bukkit.potion.PotionEffect;
 
 import Liza.LizaThrownPotion;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftThrownPotion is the Liza entity representation of the Bukkit
  * ThrownPotion class.

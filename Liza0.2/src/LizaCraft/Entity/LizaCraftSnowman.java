@@ -4,7 +4,6 @@ import org.bukkit.entity.Snowman;
 
 import Liza.LizaSnowman;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSnowman is the Liza entity representation of the Bukkit Snowman
  * class.

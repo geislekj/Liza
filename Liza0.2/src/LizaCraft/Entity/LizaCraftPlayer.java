@@ -18,7 +18,6 @@ import org.bukkit.plugin.Plugin;
 
 import Liza.LizaPlayer;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftPlayer is the Liza HumanEntity representation of the Bukkit Player
  * class.

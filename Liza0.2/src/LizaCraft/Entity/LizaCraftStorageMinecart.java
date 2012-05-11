@@ -5,7 +5,6 @@ import org.bukkit.inventory.Inventory;
 
 import Liza.LizaStorageMinecart;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class LizaCraftStorageMinecart.
  */

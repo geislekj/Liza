@@ -4,7 +4,6 @@ import org.bukkit.DyeColor;
 import org.bukkit.entity.Sheep;
 import Liza.LizaSheep;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSheep is the Liza entity representation of the Bukkit CraftSheep
  * class.

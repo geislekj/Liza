@@ -3,7 +3,6 @@ package LizaCraft.Entity;
 import org.bukkit.entity.Spider;
 import Liza.LizaSpider;
 
-// TODO: Auto-generated Javadoc
 /**
  * LizaCraftSpider is the Liza entity representation of the Bukkit Spider class.
  * 
