@@ -37,13 +37,13 @@ import Liza.LizaEntity;
 import Liza.LizaWorld;
 import LizaCraft.Entity.LizaCraftEntity;
 
-// TODO: Auto-generated Javadoc
 /**
  *  LizeCraftWorld is the Liza world representation of
  *  the Bukkit World class.
  *
  * @author geislekj
  */
+@SuppressWarnings("deprecation")
 public class LizaCraftWorld implements LizaWorld{
 
 	/** The world. */
@@ -78,8 +78,39 @@ public class LizaCraftWorld implements LizaWorld{
 	@Override
 	public List<LizaEntity> getLizaEntitiesWithinBox(Location corner1,
 			Location corner2) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Entity> entities = this.world.getEntities();
+		List<LizaEntity> boxEntities = new ArrayList<LizaEntity>();
+		
+		double x1, x2, y1, y2, z1, z2;
+		if (corner1.getX() < corner2.getX()) {
+			x1 = corner1.getX();
+			x2 = corner2.getX();
+		} else {
+			x2 = corner1.getX();
+			x1 = corner2.getX();
+		}
+		if (corner1.getY() < corner2.getY()) {
+			y1 = corner1.getY();
+			y2 = corner2.getY();
+		} else {
+			y2 = corner1.getY();
+			y1 = corner2.getY();
+		}
+		if (corner1.getZ() < corner2.getZ()) {
+			z1 = corner1.getZ();
+			z2 = corner2.getZ();
+		} else {
+			z2 = corner1.getZ();
+			z1 = corner2.getZ();
+		}
+		
+		for (Entity e : entities) {
+			if (x1 < e.getLocation().getX() && e.getLocation().getX() < x2)
+				if (z1 < e.getLocation().getZ() && e.getLocation().getZ() < z2)
+					if (y1 < e.getLocation().getY() && e.getLocation().getY() < y2)
+						boxEntities.add(new LizaCraftEntity(e));
+		}
+		return boxEntities;
 	}
 
 	/* (non-Javadoc)
@@ -760,8 +791,9 @@ public class LizaCraftWorld implements LizaWorld{
 	 * @see org.bukkit.World#getEntitiesByClass(java.lang.Class[])
 	 */
 	@Override
-	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T>... arg0) {
-		return this.world.getEntitiesByClass(arg0);	
+	@Deprecated
+	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T>... classes) {
+		return this.world.getEntitiesByClass(classes);	
 	}
 
 	/* (non-Javadoc)
@@ -784,8 +816,8 @@ public class LizaCraftWorld implements LizaWorld{
 	 * @see org.bukkit.plugin.messaging.PluginMessageRecipient#sendPluginMessage(org.bukkit.plugin.Plugin, java.lang.String, byte[])
 	 */
 	@Override
-	public void sendPluginMessage(Plugin arg0, String arg1, byte[] arg2) {
-		this.world.sendPluginMessage(arg0, arg1, arg2);
+	public void sendPluginMessage(Plugin source, String channel, byte[] message) {
+		this.world.sendPluginMessage(source, channel, message);
 	}
 
 	/* (non-Javadoc)
@@ -793,26 +825,23 @@ public class LizaCraftWorld implements LizaWorld{
 	 */
 	@Override
 	public boolean canGenerateStructures() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.world.canGenerateStructures();
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#getEntitiesByClass(java.lang.Class)
 	 */
 	@Override
-	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T> arg0) {
-		// TODO Auto-generated method stub
-		return null;
+	public <T extends Entity> Collection<T> getEntitiesByClass(Class<T> cls) {
+		return this.world.getEntitiesByClass(cls);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#getEntitiesByClasses(java.lang.Class<?>[])
 	 */
 	@Override
-	public Collection<Entity> getEntitiesByClasses(Class<?>... arg0) {
-		// TODO Auto-generated method stub
-		return null;
+	public Collection<Entity> getEntitiesByClasses(Class<?>... classes) {
+		return this.world.getEntitiesByClasses(classes);
 	}
 
 	/* (non-Javadoc)
@@ -820,8 +849,7 @@ public class LizaCraftWorld implements LizaWorld{
 	 */
 	@Override
 	public long getTicksPerAnimalSpawns() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.world.getTicksPerAnimalSpawns();
 	}
 
 	/* (non-Javadoc)
@@ -829,98 +857,88 @@ public class LizaCraftWorld implements LizaWorld{
 	 */
 	@Override
 	public long getTicksPerMonsterSpawns() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.world.getTicksPerMonsterSpawns();
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#playEffect(org.bukkit.Location, org.bukkit.Effect, java.lang.Object)
 	 */
 	@Override
-	public <T> void playEffect(Location arg0, Effect arg1, T arg2) {
-		// TODO Auto-generated method stub
-		
+	public <T> void playEffect(Location location, Effect effect, T data) {
+		this.world.playEffect(location, effect, data);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#playEffect(org.bukkit.Location, org.bukkit.Effect, java.lang.Object, int)
 	 */
 	@Override
-	public <T> void playEffect(Location arg0, Effect arg1, T arg2, int arg3) {
-		// TODO Auto-generated method stub
-		
+	public <T> void playEffect(Location location, Effect effect, T data, int radius) {
+		this.world.playEffect(location, effect, data, radius);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#setTicksPerAnimalSpawns(int)
 	 */
 	@Override
-	public void setTicksPerAnimalSpawns(int arg0) {
-		// TODO Auto-generated method stub
-		
+	public void setTicksPerAnimalSpawns(int ticksPerAnimalSpawns) {
+		this.world.setTicksPerAnimalSpawns(ticksPerAnimalSpawns);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#setTicksPerMonsterSpawns(int)
 	 */
 	@Override
-	public void setTicksPerMonsterSpawns(int arg0) {
-		// TODO Auto-generated method stub
-		
+	public void setTicksPerMonsterSpawns(int ticksPerMonsterSpawns) {
+		this.world.setTicksPerAnimalSpawns(ticksPerMonsterSpawns);		
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#spawnCreature(org.bukkit.Location, org.bukkit.entity.EntityType)
 	 */
 	@Override
-	public LivingEntity spawnCreature(Location arg0, EntityType arg1) {
-		// TODO Auto-generated method stub
-		return null;
+	public LivingEntity spawnCreature(Location loc, EntityType type) {
+		return this.world.spawnCreature(loc, type);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.metadata.Metadatable#getMetadata(java.lang.String)
 	 */
 	@Override
-	public List<MetadataValue> getMetadata(String arg0) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<MetadataValue> getMetadata(String metadataKey) {
+		return this.world.getMetadata(metadataKey);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.metadata.Metadatable#hasMetadata(java.lang.String)
 	 */
 	@Override
-	public boolean hasMetadata(String arg0) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean hasMetadata(String metadataKey) {
+		return this.world.hasMetadata(metadataKey);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.metadata.Metadatable#removeMetadata(java.lang.String, org.bukkit.plugin.Plugin)
 	 */
 	@Override
-	public void removeMetadata(String arg0, Plugin arg1) {
-		// TODO Auto-generated method stub
-		
+	public void removeMetadata(String metadataKey, Plugin plugin) {
+		this.world.removeMetadata(metadataKey, plugin);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.metadata.Metadatable#setMetadata(java.lang.String, org.bukkit.metadata.MetadataValue)
 	 */
 	@Override
-	public void setMetadata(String arg0, MetadataValue arg1) {
-		// TODO Auto-generated method stub
-		
+	public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
+		this.world.setMetadata(metadataKey, newMetadataValue);
 	}
 
 	/* (non-Javadoc)
 	 * @see org.bukkit.World#spawnCreature(org.bukkit.Location, org.bukkit.entity.CreatureType)
 	 */
 	@Override
-	public LivingEntity spawnCreature(Location arg0, CreatureType arg1) {
-		// TODO Auto-generated method stub
-		return null;
+	@Deprecated
+	public LivingEntity spawnCreature(Location loc, CreatureType type) {
+		return this.world.spawnCreature(loc, type);
 	}
 
 }
